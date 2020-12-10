@@ -1,0 +1,42 @@
+//
+//  BaseViewController.swift
+//  MercadoPagoTest
+//
+//  Created by Gonzalo Ivan Fuentes on 09/12/2020.
+//
+
+import UIKit
+
+class BaseViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .customBackgroundColor
+    }
+
+    func setNavBar(_ color: UIColor) {
+        navigationController?.navigationBar.backgroundColor = color
+        navigationController?.navigationBar.barTintColor = color
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: UIFont(name: Constants.mainFont, size: 20)]
+
+        navigationItem.largeTitleDisplayMode = .never
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+
+    func setStatusBar(_ color: UIColor) {
+        let statusBar = UIView(frame: (UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame)!)
+
+        statusBar.backgroundColor = color
+        statusBar.translatesAutoresizingMaskIntoConstraints = false
+        statusBar.autoresizingMask = .flexibleWidth
+        statusBar.autoresizingMask = .flexibleTopMargin
+
+        UIApplication.shared.keyWindow?.addSubview(statusBar)
+    }
+
+    func pushViewController(_ viewController: BaseViewController) {
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+}

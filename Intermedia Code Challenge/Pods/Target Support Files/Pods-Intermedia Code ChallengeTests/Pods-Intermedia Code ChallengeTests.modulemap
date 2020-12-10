@@ -1,0 +1,6 @@
+framework module Pods_Intermedia_Code_ChallengeTests {
+  umbrella header "Pods-Intermedia Code ChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

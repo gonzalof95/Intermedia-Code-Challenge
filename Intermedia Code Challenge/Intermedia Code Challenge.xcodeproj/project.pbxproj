@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B401E5CC056C28D68BC8679 /* Pods_Intermedia_Code_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2A4831F8155E95E748FEA1 /* Pods_Intermedia_Code_Challenge.framework */; };
+		36C727D6EF048A6811860688 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */; };
+		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
+		CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */; };
+		CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9011D12582DB7700ECCC0A /* Assets.xcassets */; };
+		CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011DF2582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift */; };
+		CE9011EB2582DB7700ECCC0A /* Intermedia_Code_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011EA2582DB7700ECCC0A /* Intermedia_Code_ChallengeUITests.swift */; };
+		CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */; };
+		CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012172582DD5B00ECCC0A /* BaseViewController.swift */; };
+		CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90121C2582DD9600ECCC0A /* Constants.swift */; };
+		CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012272582DEE500ECCC0A /* MainViewController.swift */; };
+		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE9011DC2582DB7700ECCC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9011BD2582DB7400ECCC0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9011C42582DB7400ECCC0A;
+			remoteInfo = "Intermedia Code Challenge";
+		};
+		CE9011E72582DB7700ECCC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9011BD2582DB7400ECCC0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE9011C42582DB7400ECCC0A;
+			remoteInfo = "Intermedia Code Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		388CEB2923B0CA35211CBEE3 /* Pods-Intermedia Code Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Intermedia Code Challenge/Pods-Intermedia Code Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		3C2A4831F8155E95E748FEA1 /* Pods_Intermedia_Code_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4029CEC140CD2DBAA8225B59 /* Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99546A73E2CCEDD71336B4D0 /* Pods-Intermedia Code ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Intermedia Code ChallengeTests/Pods-Intermedia Code ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE73A6CE3E84CDCAD8029F05 /* Pods-Intermedia Code Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code Challenge.release.xcconfig"; path = "Target Support Files/Pods-Intermedia Code Challenge/Pods-Intermedia Code Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		AEF5FAA840AF9BA0617E77DC /* Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B101683364171981C84F0293 /* Pods-Intermedia Code ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Intermedia Code ChallengeTests/Pods-Intermedia Code ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intermedia Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9011C82582DB7400ECCC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE9011D12582DB7700ECCC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE9011D62582DB7700ECCC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9011DB2582DB7700ECCC0A /* Intermedia Code ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intermedia Code ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9011DF2582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intermedia_Code_ChallengeTests.swift; sourceTree = "<group>"; };
+		CE9011E12582DB7700ECCC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9011E62582DB7700ECCC0A /* Intermedia Code ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intermedia Code ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9011EA2582DB7700ECCC0A /* Intermedia_Code_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intermedia_Code_ChallengeUITests.swift; sourceTree = "<group>"; };
+		CE9011EC2582DB7700ECCC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
+		CE9012172582DD5B00ECCC0A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CE90121C2582DD9600ECCC0A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE9012272582DEE500ECCC0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9011C22582DB7400ECCC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B401E5CC056C28D68BC8679 /* Pods_Intermedia_Code_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9011D82582DB7700ECCC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9011E32582DB7700ECCC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C727D6EF048A6811860688 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058A53A2B9B1149EB2301DDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C2A4831F8155E95E748FEA1 /* Pods_Intermedia_Code_Challenge.framework */,
+				CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */,
+				6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3036ED768BB61E6CD70C2E96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				388CEB2923B0CA35211CBEE3 /* Pods-Intermedia Code Challenge.debug.xcconfig */,
+				AE73A6CE3E84CDCAD8029F05 /* Pods-Intermedia Code Challenge.release.xcconfig */,
+				AEF5FAA840AF9BA0617E77DC /* Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.debug.xcconfig */,
+				4029CEC140CD2DBAA8225B59 /* Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.release.xcconfig */,
+				B101683364171981C84F0293 /* Pods-Intermedia Code ChallengeTests.debug.xcconfig */,
+				99546A73E2CCEDD71336B4D0 /* Pods-Intermedia Code ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE9011BC2582DB7400ECCC0A = {
+			isa = PBXGroup;
+			children = (
+				CE9011C72582DB7400ECCC0A /* Intermedia Code Challenge */,
+				CE9011DE2582DB7700ECCC0A /* Intermedia Code ChallengeTests */,
+				CE9011E92582DB7700ECCC0A /* Intermedia Code ChallengeUITests */,
+				CE9011C62582DB7400ECCC0A /* Products */,
+				3036ED768BB61E6CD70C2E96 /* Pods */,
+				058A53A2B9B1149EB2301DDF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9011C62582DB7400ECCC0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */,
+				CE9011DB2582DB7700ECCC0A /* Intermedia Code ChallengeTests.xctest */,
+				CE9011E62582DB7700ECCC0A /* Intermedia Code ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9011C72582DB7400ECCC0A /* Intermedia Code Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				CE9011FB2582DB8C00ECCC0A /* Support Files */,
+				CE90120A2582DCFE00ECCC0A /* Utils */,
+				CE90120E2582DD0B00ECCC0A /* Custom Views */,
+				CE9012212582DDB000ECCC0A /* App */,
+				CE9011D12582DB7700ECCC0A /* Assets.xcassets */,
+				CE9011D62582DB7700ECCC0A /* Info.plist */,
+			);
+			path = "Intermedia Code Challenge";
+			sourceTree = "<group>";
+		};
+		CE9011DE2582DB7700ECCC0A /* Intermedia Code ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9011DF2582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift */,
+				CE9011E12582DB7700ECCC0A /* Info.plist */,
+			);
+			path = "Intermedia Code ChallengeTests";
+			sourceTree = "<group>";
+		};
+		CE9011E92582DB7700ECCC0A /* Intermedia Code ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE9011EA2582DB7700ECCC0A /* Intermedia_Code_ChallengeUITests.swift */,
+				CE9011EC2582DB7700ECCC0A /* Info.plist */,
+			);
+			path = "Intermedia Code ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		CE9011FB2582DB8C00ECCC0A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */,
+				CE9011C82582DB7400ECCC0A /* AppDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		CE90120A2582DCFE00ECCC0A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */,
+				CE90121C2582DD9600ECCC0A /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE90120E2582DD0B00ECCC0A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE9012172582DD5B00ECCC0A /* BaseViewController.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		CE9012212582DDB000ECCC0A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE9012252582DEC700ECCC0A /* Main Screen */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE9012252582DEC700ECCC0A /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CE9012272582DEE500ECCC0A /* MainViewController.swift */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9011C42582DB7400ECCC0A /* Intermedia Code Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9011EF2582DB7700ECCC0A /* Build configuration list for PBXNativeTarget "Intermedia Code Challenge" */;
+			buildPhases = (
+				F453A50D5A59CE7E46077F66 /* [CP] Check Pods Manifest.lock */,
+				CE9011C12582DB7400ECCC0A /* Sources */,
+				CE9011C22582DB7400ECCC0A /* Frameworks */,
+				CE9011C32582DB7400ECCC0A /* Resources */,
+				822F6DE26D6DCEDA165CBC8C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intermedia Code Challenge";
+			productName = "Intermedia Code Challenge";
+			productReference = CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9011DA2582DB7700ECCC0A /* Intermedia Code ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9011F22582DB7700ECCC0A /* Build configuration list for PBXNativeTarget "Intermedia Code ChallengeTests" */;
+			buildPhases = (
+				13BC26AABC024377CDE32B69 /* [CP] Check Pods Manifest.lock */,
+				CE9011D72582DB7700ECCC0A /* Sources */,
+				CE9011D82582DB7700ECCC0A /* Frameworks */,
+				CE9011D92582DB7700ECCC0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9011DD2582DB7700ECCC0A /* PBXTargetDependency */,
+			);
+			name = "Intermedia Code ChallengeTests";
+			productName = "Intermedia Code ChallengeTests";
+			productReference = CE9011DB2582DB7700ECCC0A /* Intermedia Code ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE9011E52582DB7700ECCC0A /* Intermedia Code ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9011F52582DB7700ECCC0A /* Build configuration list for PBXNativeTarget "Intermedia Code ChallengeUITests" */;
+			buildPhases = (
+				FC97D88D5FFADAF030054D52 /* [CP] Check Pods Manifest.lock */,
+				CE9011E22582DB7700ECCC0A /* Sources */,
+				CE9011E32582DB7700ECCC0A /* Frameworks */,
+				CE9011E42582DB7700ECCC0A /* Resources */,
+				B2173C2216629E673E127005 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE9011E82582DB7700ECCC0A /* PBXTargetDependency */,
+			);
+			name = "Intermedia Code ChallengeUITests";
+			productName = "Intermedia Code ChallengeUITests";
+			productReference = CE9011E62582DB7700ECCC0A /* Intermedia Code ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9011BD2582DB7400ECCC0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					CE9011C42582DB7400ECCC0A = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					CE9011DA2582DB7700ECCC0A = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CE9011C42582DB7400ECCC0A;
+					};
+					CE9011E52582DB7700ECCC0A = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = CE9011C42582DB7400ECCC0A;
+					};
+				};
+			};
+			buildConfigurationList = CE9011C02582DB7400ECCC0A /* Build configuration list for PBXProject "Intermedia Code Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE9011BC2582DB7400ECCC0A;
+			productRefGroup = CE9011C62582DB7400ECCC0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9011C42582DB7400ECCC0A /* Intermedia Code Challenge */,
+				CE9011DA2582DB7700ECCC0A /* Intermedia Code ChallengeTests */,
+				CE9011E52582DB7700ECCC0A /* Intermedia Code ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9011C32582DB7400ECCC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9011D92582DB7700ECCC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9011E42582DB7700ECCC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13BC26AABC024377CDE32B69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Intermedia Code ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		822F6DE26D6DCEDA165CBC8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code Challenge/Pods-Intermedia Code Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code Challenge/Pods-Intermedia Code Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code Challenge/Pods-Intermedia Code Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2173C2216629E673E127005 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F453A50D5A59CE7E46077F66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Intermedia Code Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC97D88D5FFADAF030054D52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9011C12582DB7400ECCC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */,
+				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
+				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
+				CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */,
+				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
+				CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9011D72582DB7700ECCC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9011E22582DB7700ECCC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9011EB2582DB7700ECCC0A /* Intermedia_Code_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE9011DD2582DB7700ECCC0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9011C42582DB7400ECCC0A /* Intermedia Code Challenge */;
+			targetProxy = CE9011DC2582DB7700ECCC0A /* PBXContainerItemProxy */;
+		};
+		CE9011E82582DB7700ECCC0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE9011C42582DB7400ECCC0A /* Intermedia Code Challenge */;
+			targetProxy = CE9011E72582DB7700ECCC0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE9011ED2582DB7700ECCC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE9011EE2582DB7700ECCC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE9011F02582DB7700ECCC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 388CEB2923B0CA35211CBEE3 /* Pods-Intermedia Code Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Intermedia Code Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gonzalofuentes.Intermedia-Code-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE9011F12582DB7700ECCC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE73A6CE3E84CDCAD8029F05 /* Pods-Intermedia Code Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Intermedia Code Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gonzalofuentes.Intermedia-Code-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE9011F32582DB7700ECCC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B101683364171981C84F0293 /* Pods-Intermedia Code ChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Intermedia Code ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gonzalofuentes.Intermedia-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intermedia Code Challenge.app/Intermedia Code Challenge";
+			};
+			name = Debug;
+		};
+		CE9011F42582DB7700ECCC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99546A73E2CCEDD71336B4D0 /* Pods-Intermedia Code ChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Intermedia Code ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gonzalofuentes.Intermedia-Code-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intermedia Code Challenge.app/Intermedia Code Challenge";
+			};
+			name = Release;
+		};
+		CE9011F62582DB7700ECCC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF5FAA840AF9BA0617E77DC /* Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Intermedia Code ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gonzalofuentes.Intermedia-Code-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Intermedia Code Challenge";
+			};
+			name = Debug;
+		};
+		CE9011F72582DB7700ECCC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4029CEC140CD2DBAA8225B59 /* Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Intermedia Code ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gonzalofuentes.Intermedia-Code-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Intermedia Code Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9011C02582DB7400ECCC0A /* Build configuration list for PBXProject "Intermedia Code Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9011ED2582DB7700ECCC0A /* Debug */,
+				CE9011EE2582DB7700ECCC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9011EF2582DB7700ECCC0A /* Build configuration list for PBXNativeTarget "Intermedia Code Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9011F02582DB7700ECCC0A /* Debug */,
+				CE9011F12582DB7700ECCC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9011F22582DB7700ECCC0A /* Build configuration list for PBXNativeTarget "Intermedia Code ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9011F32582DB7700ECCC0A /* Debug */,
+				CE9011F42582DB7700ECCC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9011F52582DB7700ECCC0A /* Build configuration list for PBXNativeTarget "Intermedia Code ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9011F62582DB7700ECCC0A /* Debug */,
+				CE9011F72582DB7700ECCC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9011BD2582DB7400ECCC0A /* Project object */;
+}
