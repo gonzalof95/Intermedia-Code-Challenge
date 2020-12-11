@@ -6,6 +6,8 @@ target 'Intermedia Code Challenge' do
   use_frameworks!
 
   # Pods for Intermedia Code Challenge
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
   pod 'PureLayout'
 
 

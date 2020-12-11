@@ -18,6 +18,12 @@
 		CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012172582DD5B00ECCC0A /* BaseViewController.swift */; };
 		CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90121C2582DD9600ECCC0A /* Constants.swift */; };
 		CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012272582DEE500ECCC0A /* MainViewController.swift */; };
+		CE90129C2582EEA600ECCC0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */; };
+		CE9012A32582F0A200ECCC0A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012A22582F0A200ECCC0A /* LoginViewController.swift */; };
+		CE9012AB2582F0BF00ECCC0A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012AA2582F0BF00ECCC0A /* LoginView.swift */; };
+		CE9012B02582F0CD00ECCC0A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */; };
+		CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */; };
+		CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012BF2583036100ECCC0A /* CustomTextField.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +69,12 @@
 		CE9012172582DD5B00ECCC0A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CE90121C2582DD9600ECCC0A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE9012272582DEE500ECCC0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE9012A22582F0A200ECCC0A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../../../../Documents/LoginViewController.swift; sourceTree = "<group>"; };
+		CE9012AA2582F0BF00ECCC0A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../../../../../../../Documents/LoginView.swift; sourceTree = "<group>"; };
+		CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		CE9012BF2583036100ECCC0A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +159,7 @@
 				CE9012212582DDB000ECCC0A /* App */,
 				CE9011D12582DB7700ECCC0A /* Assets.xcassets */,
 				CE9011D62582DB7700ECCC0A /* Info.plist */,
+				CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */,
 			);
 			path = "Intermedia Code Challenge";
 			sourceTree = "<group>";
@@ -181,8 +194,9 @@
 		CE90120A2582DCFE00ECCC0A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */,
 				CE90121C2582DD9600ECCC0A /* Constants.swift */,
+				CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */,
+				CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -191,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				CE9012172582DD5B00ECCC0A /* BaseViewController.swift */,
+				CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */,
+				CE9012BF2583036100ECCC0A /* CustomTextField.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -198,6 +214,7 @@
 		CE9012212582DDB000ECCC0A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CE9012A02582F08400ECCC0A /* Login Screen  */,
 				CE9012252582DEC700ECCC0A /* Main Screen */,
 			);
 			path = App;
@@ -209,6 +226,15 @@
 				CE9012272582DEE500ECCC0A /* MainViewController.swift */,
 			);
 			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		CE9012A02582F08400ECCC0A /* Login Screen  */ = {
+			isa = PBXGroup;
+			children = (
+				CE9012A22582F0A200ECCC0A /* LoginViewController.swift */,
+				CE9012AA2582F0BF00ECCC0A /* LoginView.swift */,
+			);
+			path = "Login Screen ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */,
+				CE90129C2582EEA600ECCC0A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,11 +474,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9012A32582F0A200ECCC0A /* LoginViewController.swift in Sources */,
 				CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */,
+				CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */,
+				CE9012B02582F0CD00ECCC0A /* CustomButton.swift in Sources */,
 				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
 				CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */,
 				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
+				CE9012AB2582F0BF00ECCC0A /* LoginView.swift in Sources */,
+				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
 				CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
