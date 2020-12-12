@@ -7,17 +7,25 @@
 
 import FirebaseAuth
 
-class RegistrationPresenter {
-    weak var delegate: RegistrationViewControllerProtocol?
+class RegistrationPresenter: BasePresenter {
+    weak var delegate: BaseViewControllerProtocol?
 
     func autenticateUser(email: String, password: String) {
         Auth.auth().createUser(withEmail: email,
                                password: password) { (result, error) in
             if let _ = result, error == nil {
-                self.delegate?.pushNextViewController()
+                let viewController = MainViewController()
+                self.delegate?.pushNextViewController(viewController)
             } else {
-                self.delegate?.showError()
+                self.delegate?.showError(message: ErrorMessages.couldNotRegister)
             }
+        }
+    }
+
+    func registerButtonTapped(email: String, password: String) {
+        guard let delegate = delegate else { return }
+        if validateTextFields(email: email, password: password, delegate: delegate) {
+            autenticateUser(email: email, password: password)
         }
     }
 }

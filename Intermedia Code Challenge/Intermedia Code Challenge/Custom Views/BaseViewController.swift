@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol BaseViewControllerProtocol: AnyObject {
+    func pushNextViewController(_ viewController: BaseViewController)
+    func showError(message: String)
+}
+
 class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -35,12 +40,14 @@ class BaseViewController: UIViewController {
 
         UIApplication.shared.keyWindow?.addSubview(statusBar)
     }
+}
 
-    func pushViewController(_ viewController: BaseViewController) {
-        navigationController?.pushViewController(viewController, animated: true)
+extension BaseViewController: BaseViewControllerProtocol {
+    func pushNextViewController(_ viewController: BaseViewController) {
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 
-    func showAlert(message: String) {
+    func showError(message: String) {
         let alertController = UIAlertController(title: "Error",
                                                 message: message,
                                                 preferredStyle: .alert)

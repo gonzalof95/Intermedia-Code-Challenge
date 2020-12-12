@@ -8,11 +8,6 @@
 import UIKit
 import PureLayout
 
-protocol LoginViewControllerProtocol: AnyObject {
-    func pushNextViewController()
-    func showError()
-}
-
 class LoginViewController: BaseViewController {
 
     var customView: LoginView?
@@ -47,22 +42,11 @@ extension LoginViewController: LoginViewProtocol {
     func accessButtonTapped() {
         if let email = customView?.firebaseView?.mailTextField.text,
            let password = customView?.firebaseView?.passwordTextField.text {
-            presenter?.autenticateUser(email: email, password: password)
+            presenter?.accessButtonTapped(email: email, password: password)
         }
     }
 
     func registerButtonTapped() {
         presenter?.registerButtonTapped()
-    }
-}
-
-extension LoginViewController: LoginViewControllerProtocol {
-    func pushNextViewController() {
-        let viewController = MainViewController()
-        pushViewController(viewController)
-    }
-
-    func showError() {
-        showAlert(message: "Could not log the user.")
     }
 }

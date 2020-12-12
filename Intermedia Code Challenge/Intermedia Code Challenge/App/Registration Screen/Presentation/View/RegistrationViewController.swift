@@ -9,11 +9,6 @@ import UIKit
 import PureLayout
 import FirebaseAuth
 
-protocol RegistrationViewControllerProtocol: AnyObject {
-    func pushNextViewController()
-    func showError()
-}
-
 class RegistrationViewController: BaseViewController {
 
     var customView: RegisterView?
@@ -48,18 +43,7 @@ extension RegistrationViewController: RegisterViewProtocol {
     func registerButtonTapped() {
         if let email = customView?.firebaseView?.mailTextField.text,
            let password = customView?.firebaseView?.passwordTextField.text {
-            presenter?.autenticateUser(email: email, password: password)
+            presenter?.registerButtonTapped(email: email, password: password)
         }
-    }
-}
-
-extension RegistrationViewController: RegistrationViewControllerProtocol {
-    func pushNextViewController() {
-        let viewController = MainViewController()
-        pushViewController(viewController)
-    }
-
-    func showError() {
-        showAlert(message: "Could not register the user.")
     }
 }

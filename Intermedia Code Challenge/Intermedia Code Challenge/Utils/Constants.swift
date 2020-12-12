@@ -11,3 +11,10 @@ struct Constants {
     static let publicKey = ""
     static let baseURL = ""
 }
+
+struct ErrorMessages {
+    static let couldNotLog = "Could not log the user."
+    static let couldNotRegister = "Could not register the user." 
+    static let emptyField = "Complete the text fields."
+    static let invalidEmail = "Invalid email format."
+}
