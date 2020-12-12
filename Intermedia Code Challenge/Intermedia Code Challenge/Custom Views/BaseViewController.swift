@@ -39,4 +39,12 @@ class BaseViewController: UIViewController {
     func pushViewController(_ viewController: BaseViewController) {
         navigationController?.pushViewController(viewController, animated: true)
     }
+
+    func showAlert(message: String) {
+        let alertController = UIAlertController(title: "Error",
+                                                message: message,
+                                                preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Accept", style: .default))
+        self.present(alertController, animated: true, completion: nil)
+    }
 }

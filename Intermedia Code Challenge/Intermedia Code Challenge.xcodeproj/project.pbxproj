@@ -15,6 +15,7 @@
 		CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE20258555AA00BFCEBA /* RegistrationPresenter.swift */; };
 		CE05FE3525855C1700BFCEBA /* LoginViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */; };
 		CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE4425855C9700BFCEBA /* LoginView.swift */; };
+		CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE5225855E4600BFCEBA /* LoginPresenter.swift */; };
 		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
 		CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */; };
 		CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9011D12582DB7700ECCC0A /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		CE05FE20258555AA00BFCEBA /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
 		CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControlller.swift; sourceTree = "<group>"; };
 		CE05FE4425855C9700BFCEBA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CE05FE5225855E4600BFCEBA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intermedia Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C82582DB7400ECCC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		CE05FE2925855B4400BFCEBA /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				CE05FE5225855E4600BFCEBA /* LoginPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */,
 				CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */,
 				CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */,
 				CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */,

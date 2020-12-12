@@ -60,10 +60,6 @@ extension RegistrationViewController: RegistrationViewControllerProtocol {
     }
 
     func showError() {
-        let alertController = UIAlertController(title: "Error",
-                                                message: "Could not create the user",
-                                                preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Accept", style: .default))
-        self.present(alertController, animated: true, completion: nil)
+        showAlert(message: "Could not register the user.")
     }
 }
