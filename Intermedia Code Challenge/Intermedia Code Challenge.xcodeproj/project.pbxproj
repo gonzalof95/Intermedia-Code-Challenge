@@ -12,6 +12,9 @@
 		CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE072585452500BFCEBA /* RegistrationViewController.swift */; };
 		CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE0F2585453200BFCEBA /* RegisterView.swift */; };
 		CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE172585480900BFCEBA /* FirebaseView.swift */; };
+		CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE20258555AA00BFCEBA /* RegistrationPresenter.swift */; };
+		CE05FE3525855C1700BFCEBA /* LoginViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */; };
+		CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE4425855C9700BFCEBA /* LoginView.swift */; };
 		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
 		CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */; };
 		CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9011D12582DB7700ECCC0A /* Assets.xcassets */; };
@@ -22,8 +25,6 @@
 		CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90121C2582DD9600ECCC0A /* Constants.swift */; };
 		CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012272582DEE500ECCC0A /* MainViewController.swift */; };
 		CE90129C2582EEA600ECCC0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */; };
-		CE9012A32582F0A200ECCC0A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012A22582F0A200ECCC0A /* LoginViewController.swift */; };
-		CE9012AB2582F0BF00ECCC0A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012AA2582F0BF00ECCC0A /* LoginView.swift */; };
 		CE9012B02582F0CD00ECCC0A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */; };
 		CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */; };
 		CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012BF2583036100ECCC0A /* CustomTextField.swift */; };
@@ -59,6 +60,9 @@
 		CE05FE072585452500BFCEBA /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		CE05FE0F2585453200BFCEBA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		CE05FE172585480900BFCEBA /* FirebaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseView.swift; sourceTree = "<group>"; };
+		CE05FE20258555AA00BFCEBA /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControlller.swift; sourceTree = "<group>"; };
+		CE05FE4425855C9700BFCEBA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intermedia Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C82582DB7400ECCC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,8 +80,6 @@
 		CE90121C2582DD9600ECCC0A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE9012272582DEE500ECCC0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CE9012A22582F0A200ECCC0A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../../../../Documents/LoginViewController.swift; sourceTree = "<group>"; };
-		CE9012AA2582F0BF00ECCC0A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../../../../../../../Documents/LoginView.swift; sourceTree = "<group>"; };
 		CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		CE9012BF2583036100ECCC0A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -137,10 +139,51 @@
 		CE05FE062585450C00BFCEBA /* Registration Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CE05FE072585452500BFCEBA /* RegistrationViewController.swift */,
-				CE05FE0F2585453200BFCEBA /* RegisterView.swift */,
+				CE05FE1C2585557000BFCEBA /* Presentation */,
 			);
 			path = "Registration Screen";
+			sourceTree = "<group>";
+		};
+		CE05FE1C2585557000BFCEBA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FE1E2585558600BFCEBA /* View */,
+				CE05FE1D2585557B00BFCEBA /* Presenter */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE05FE1D2585557B00BFCEBA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FE20258555AA00BFCEBA /* RegistrationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE05FE1E2585558600BFCEBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FE0F2585453200BFCEBA /* RegisterView.swift */,
+				CE05FE072585452500BFCEBA /* RegistrationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE05FE2825855B3C00BFCEBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */,
+				CE05FE4425855C9700BFCEBA /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE05FE2925855B4400BFCEBA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		CE9011BC2582DB7400ECCC0A = {
@@ -230,8 +273,8 @@
 		CE9012212582DDB000ECCC0A /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CE05FE062585450C00BFCEBA /* Registration Screen */,
 				CE9012A02582F08400ECCC0A /* Login Screen  */,
+				CE05FE062585450C00BFCEBA /* Registration Screen */,
 				CE9012252582DEC700ECCC0A /* Main Screen */,
 			);
 			path = App;
@@ -248,8 +291,8 @@
 		CE9012A02582F08400ECCC0A /* Login Screen  */ = {
 			isa = PBXGroup;
 			children = (
-				CE9012A22582F0A200ECCC0A /* LoginViewController.swift */,
-				CE9012AA2582F0BF00ECCC0A /* LoginView.swift */,
+				CE05FE2825855B3C00BFCEBA /* View */,
+				CE05FE2925855B4400BFCEBA /* Presenter */,
 			);
 			path = "Login Screen ";
 			sourceTree = "<group>";
@@ -491,10 +534,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9012A32582F0A200ECCC0A /* LoginViewController.swift in Sources */,
+				CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */,
 				CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */,
 				CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */,
 				CE9012B02582F0CD00ECCC0A /* CustomButton.swift in Sources */,
+				CE05FE3525855C1700BFCEBA /* LoginViewControlller.swift in Sources */,
 				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
 				CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */,
@@ -502,8 +546,8 @@
 				CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */,
 				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
 				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
-				CE9012AB2582F0BF00ECCC0A /* LoginView.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
+				CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */,
 				CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

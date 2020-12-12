@@ -1,5 +1,5 @@
 //
-//  RegistrationViewController.swift
+//  LoginViewControlller.swift
 //  Intermedia Code Challenge
 //
 //  Created by Gonzalo Ivan Fuentes on 12/12/2020.
@@ -8,9 +8,9 @@
 import UIKit
 import PureLayout
 
-class RegistrationViewController: BaseViewController {
+class LoginViewController: BaseViewController {
 
-    var customView: RegisterView?
+    var customView: LoginView?
 
     required convenience init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -22,7 +22,7 @@ class RegistrationViewController: BaseViewController {
     }
 
     private func setView() {
-        self.customView = RegisterView()
+        self.customView = LoginView()
         guard let strongCustomView = customView else { return }
         strongCustomView.delegate = self
 
@@ -31,8 +31,14 @@ class RegistrationViewController: BaseViewController {
     }
 }
 
-extension RegistrationViewController: RegisterViewProtocol {
+extension LoginViewController: LoginViewProtocol {
+    func accessButtonTapped() {
+        customView?.accessButton.shake()
+    }
+
     func registerButtonTapped() {
-        customView?.registerButton.shake()
+        let presenter = RegistrationPresenter()
+        let viewController = RegistrationViewController(with: presenter)
+        pushViewController(viewController)
     }
 }
