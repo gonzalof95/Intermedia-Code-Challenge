@@ -1,8 +1,8 @@
 //
 //  BaseViewController.swift
-//  MercadoPagoTest
+//  Intermedia Code Challenge
 //
-//  Created by Gonzalo Ivan Fuentes on 09/12/2020.
+//  Created by Gonzalo Ivan Fuentes on 10/12/2020.
 //
 
 import UIKit

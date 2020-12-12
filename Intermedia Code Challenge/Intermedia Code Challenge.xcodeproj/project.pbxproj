@@ -260,6 +260,7 @@
 				CE90121C2582DD9600ECCC0A /* Constants.swift */,
 				CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */,
 				CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */,
+				CE05FE6A2585678C00BFCEBA /* BasePresenter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -268,7 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				CE9012172582DD5B00ECCC0A /* BaseViewController.swift */,
-				CE05FE6A2585678C00BFCEBA /* BasePresenter.swift */,
 				CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */,
 				CE9012BF2583036100ECCC0A /* CustomTextField.swift */,
 				CE05FE172585480900BFCEBA /* FirebaseView.swift */,
