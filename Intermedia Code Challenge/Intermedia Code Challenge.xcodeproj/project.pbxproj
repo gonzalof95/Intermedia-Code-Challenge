@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B401E5CC056C28D68BC8679 /* Pods_Intermedia_Code_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2A4831F8155E95E748FEA1 /* Pods_Intermedia_Code_Challenge.framework */; };
 		36C727D6EF048A6811860688 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */; };
+		CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE072585452500BFCEBA /* RegistrationViewController.swift */; };
+		CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE0F2585453200BFCEBA /* RegisterView.swift */; };
+		CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE172585480900BFCEBA /* FirebaseView.swift */; };
 		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
 		CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */; };
 		CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9011D12582DB7700ECCC0A /* Assets.xcassets */; };
@@ -53,6 +56,9 @@
 		AE73A6CE3E84CDCAD8029F05 /* Pods-Intermedia Code Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code Challenge.release.xcconfig"; path = "Target Support Files/Pods-Intermedia Code Challenge/Pods-Intermedia Code Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		AEF5FAA840AF9BA0617E77DC /* Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests/Pods-Intermedia Code Challenge-Intermedia Code ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B101683364171981C84F0293 /* Pods-Intermedia Code ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intermedia Code ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Intermedia Code ChallengeTests/Pods-Intermedia Code ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE05FE072585452500BFCEBA /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		CE05FE0F2585453200BFCEBA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CE05FE172585480900BFCEBA /* FirebaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseView.swift; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intermedia Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C82582DB7400ECCC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,15 @@
 				99546A73E2CCEDD71336B4D0 /* Pods-Intermedia Code ChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE05FE062585450C00BFCEBA /* Registration Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FE072585452500BFCEBA /* RegistrationViewController.swift */,
+				CE05FE0F2585453200BFCEBA /* RegisterView.swift */,
+			);
+			path = "Registration Screen";
 			sourceTree = "<group>";
 		};
 		CE9011BC2582DB7400ECCC0A = {
@@ -207,6 +222,7 @@
 				CE9012172582DD5B00ECCC0A /* BaseViewController.swift */,
 				CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */,
 				CE9012BF2583036100ECCC0A /* CustomTextField.swift */,
+				CE05FE172585480900BFCEBA /* FirebaseView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -214,6 +230,7 @@
 		CE9012212582DDB000ECCC0A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CE05FE062585450C00BFCEBA /* Registration Screen */,
 				CE9012A02582F08400ECCC0A /* Login Screen  */,
 				CE9012252582DEC700ECCC0A /* Main Screen */,
 			);
@@ -480,7 +497,10 @@
 				CE9012B02582F0CD00ECCC0A /* CustomButton.swift in Sources */,
 				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
+				CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */,
 				CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */,
+				CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */,
+				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
 				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
 				CE9012AB2582F0BF00ECCC0A /* LoginView.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
