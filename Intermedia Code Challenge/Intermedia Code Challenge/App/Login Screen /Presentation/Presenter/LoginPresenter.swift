@@ -16,9 +16,7 @@ class LoginPresenter: FirebasePresenter {
                 self.delegate?.setupView()
             }
         } else {
-            let presenter = HeroPresenter()
-            let viewController = HeroViewController(with: presenter)
-            delegate?.pushNextViewController(viewController)
+            delegate?.presentMainScreen()
         }
     }
 

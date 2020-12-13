@@ -18,7 +18,5 @@ class FactsViewController: BaseViewController {
 
     private func setupNavBar() {
         setNavBar(.customColorMain)
-        navigationItem.hidesBackButton = true
-        navigationItem.title = Constants.mainScreenTitle
     }
 }

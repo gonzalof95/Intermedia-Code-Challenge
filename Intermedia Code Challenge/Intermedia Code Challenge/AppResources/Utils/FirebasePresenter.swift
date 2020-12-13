@@ -36,9 +36,6 @@ class FirebasePresenter {
                 return
             }
         }
-
-        let presenter = HeroPresenter()
-        let viewController = HeroViewController(with: presenter)
-        delegate.pushNextViewController(viewController)
+        delegate.presentMainScreen()
     }
 }

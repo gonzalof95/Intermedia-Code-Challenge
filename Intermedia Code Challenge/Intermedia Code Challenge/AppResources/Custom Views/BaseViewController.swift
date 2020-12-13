@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PureLayout
 
 class BaseViewController: UIViewController {
     
@@ -20,9 +21,10 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont(name: Constants.mainFont, size: 20)]
-
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.hidesBackButton = true
+        navigationItem.title = Constants.mainScreenTitle
     }
 
     func setStatusBar(_ color: UIColor) {
@@ -48,5 +50,21 @@ extension BaseViewController: BaseViewControllerProtocol {
                                                 preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Accept", style: .default))
         self.present(alertController, animated: true, completion: nil)
+    }
+
+    func presentMainScreen() {
+        let tabBarController = UITabBarController()
+
+        let heroPresenter = HeroPresenter()
+        let heroViewController = HeroViewController(with: heroPresenter)
+
+        let factsViewController = FactsViewController()
+
+        let heroNavigationController = UINavigationController(rootViewController: heroViewController)
+        let factsNavigationController = UINavigationController(rootViewController: factsViewController)
+
+        tabBarController.setViewControllers([heroNavigationController, factsNavigationController], animated: false)
+        tabBarController.modalPresentationStyle = .fullScreen
+        present(tabBarController, animated: true)
     }
 }
