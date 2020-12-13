@@ -8,7 +8,19 @@
 import FirebaseAuth
 
 class LoginPresenter: FirebasePresenter {
-    weak var delegate: BaseViewControllerProtocol?
+    weak var delegate: LoginViewControllerProtocol?
+
+    func isUserLogged() {
+        if Auth.auth().currentUser == nil {
+            DispatchQueue.main.async {
+                self.delegate?.setupView()
+            }
+        } else {
+            let presenter = MainPresenter()
+            let viewController = MainViewController(with: presenter)
+            delegate?.pushNextViewController(viewController)
+        }
+    }
 
     func autenticateUser(email: String, password: String) {
         Auth.auth().signIn(withEmail: email,

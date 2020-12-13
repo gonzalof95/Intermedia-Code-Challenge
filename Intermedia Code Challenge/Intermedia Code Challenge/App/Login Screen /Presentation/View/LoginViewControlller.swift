@@ -8,6 +8,10 @@
 import UIKit
 import PureLayout
 
+protocol LoginViewControllerProtocol: BaseViewController {
+    func setupView()
+}
+
 class LoginViewController: BaseViewController {
 
     var customView: LoginView?
@@ -25,17 +29,7 @@ class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setView()
-    }
-
-    private func setView() {
-        self.customView = LoginView()
-        guard let strongCustomView = customView else { return }
-        strongCustomView.delegate = self
-
-        view.addSubview(strongCustomView)
-        customView?.autoPinEdgesToSuperviewEdges()
-        navigationItem.hidesBackButton = true
+        presenter?.isUserLogged()
     }
 }
 
@@ -49,5 +43,17 @@ extension LoginViewController: LoginViewProtocol {
 
     func registerButtonTapped() {
         presenter?.registerButtonTapped()
+    }
+}
+
+extension LoginViewController: LoginViewControllerProtocol {
+    func setupView() {
+        self.customView = LoginView()
+        guard let strongCustomView = customView else { return }
+        strongCustomView.delegate = self
+
+        view.addSubview(strongCustomView)
+        customView?.autoPinEdgesToSuperviewEdges()
+        navigationItem.hidesBackButton = true
     }
 }

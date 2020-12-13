@@ -12,8 +12,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         if let windowScene = scene as? UIWindowScene {
-            let presenter = MainPresenter()
-            let navigationController = UINavigationController(rootViewController: MainViewController(with: presenter))
+            let presenter = LoginPresenter()
+            let navigationController = UINavigationController(rootViewController: LoginViewController(with: presenter))
             navigationController.navigationBar.prefersLargeTitles = true
 
             let window = UIWindow(windowScene: windowScene)
