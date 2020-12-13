@@ -16,7 +16,12 @@
 		CE05FE3525855C1700BFCEBA /* LoginViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */; };
 		CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE4425855C9700BFCEBA /* LoginView.swift */; };
 		CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE5225855E4600BFCEBA /* LoginPresenter.swift */; };
-		CE05FE6B2585678C00BFCEBA /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE6A2585678C00BFCEBA /* BasePresenter.swift */; };
+		CE05FE6B2585678C00BFCEBA /* FirebasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FE6A2585678C00BFCEBA /* FirebasePresenter.swift */; };
+		CE05FEA22585871F00BFCEBA /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEA12585871F00BFCEBA /* MainPresenter.swift */; };
+		CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEA925858A2A00BFCEBA /* BaseViewControllerProtocol.swift */; };
+		CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */; };
+		CE05FEB725858A6800BFCEBA /* RegisterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEB625858A6800BFCEBA /* RegisterViewProtocol.swift */; };
+		CE05FEBC25858A8400BFCEBA /* MainViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */; };
 		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
 		CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */; };
 		CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9011D12582DB7700ECCC0A /* Assets.xcassets */; };
@@ -66,7 +71,12 @@
 		CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControlller.swift; sourceTree = "<group>"; };
 		CE05FE4425855C9700BFCEBA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE05FE5225855E4600BFCEBA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		CE05FE6A2585678C00BFCEBA /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		CE05FE6A2585678C00BFCEBA /* FirebasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePresenter.swift; sourceTree = "<group>"; };
+		CE05FEA12585871F00BFCEBA /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		CE05FEA925858A2A00BFCEBA /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		CE05FEB625858A6800BFCEBA /* RegisterViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocol.swift; sourceTree = "<group>"; };
+		CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intermedia Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C82582DB7400ECCC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +180,7 @@
 			children = (
 				CE05FE0F2585453200BFCEBA /* RegisterView.swift */,
 				CE05FE072585452500BFCEBA /* RegistrationViewController.swift */,
+				CE05FEB625858A6800BFCEBA /* RegisterViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 			children = (
 				CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */,
 				CE05FE4425855C9700BFCEBA /* LoginView.swift */,
+				CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +201,41 @@
 				CE05FE5225855E4600BFCEBA /* LoginPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE05FE9D2585867C00BFCEBA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FE2825855B3C00BFCEBA /* View */,
+				CE05FE2925855B4400BFCEBA /* Presenter */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE05FE9E2585869300BFCEBA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FEA0258586DA00BFCEBA /* View */,
+				CE05FE9F258586D400BFCEBA /* Presenter */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE05FE9F258586D400BFCEBA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FEA12585871F00BFCEBA /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE05FEA0258586DA00BFCEBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9012272582DEE500ECCC0A /* MainViewController.swift */,
+				CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CE9011BC2582DB7400ECCC0A = {
@@ -260,7 +307,7 @@
 				CE90121C2582DD9600ECCC0A /* Constants.swift */,
 				CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */,
 				CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */,
-				CE05FE6A2585678C00BFCEBA /* BasePresenter.swift */,
+				CE05FE6A2585678C00BFCEBA /* FirebasePresenter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -269,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9012172582DD5B00ECCC0A /* BaseViewController.swift */,
+				CE05FEA925858A2A00BFCEBA /* BaseViewControllerProtocol.swift */,
 				CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */,
 				CE9012BF2583036100ECCC0A /* CustomTextField.swift */,
 				CE05FE172585480900BFCEBA /* FirebaseView.swift */,
@@ -289,7 +337,7 @@
 		CE9012252582DEC700ECCC0A /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CE9012272582DEE500ECCC0A /* MainViewController.swift */,
+				CE05FE9E2585869300BFCEBA /* Presentation */,
 			);
 			path = "Main Screen";
 			sourceTree = "<group>";
@@ -297,8 +345,7 @@
 		CE9012A02582F08400ECCC0A /* Login Screen  */ = {
 			isa = PBXGroup;
 			children = (
-				CE05FE2825855B3C00BFCEBA /* View */,
-				CE05FE2925855B4400BFCEBA /* Presenter */,
+				CE05FE9D2585867C00BFCEBA /* Presentation */,
 			);
 			path = "Login Screen ";
 			sourceTree = "<group>";
@@ -540,20 +587,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */,
 				CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */,
 				CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */,
 				CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */,
 				CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */,
+				CE05FEB725858A6800BFCEBA /* RegisterViewProtocol.swift in Sources */,
 				CE9012B02582F0CD00ECCC0A /* CustomButton.swift in Sources */,
 				CE05FE3525855C1700BFCEBA /* LoginViewControlller.swift in Sources */,
 				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
 				CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */,
 				CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */,
+				CE05FEBC25858A8400BFCEBA /* MainViewControllerProtocol.swift in Sources */,
 				CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */,
 				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
+				CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */,
 				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
-				CE05FE6B2585678C00BFCEBA /* BasePresenter.swift in Sources */,
+				CE05FEA22585871F00BFCEBA /* MainPresenter.swift in Sources */,
+				CE05FE6B2585678C00BFCEBA /* FirebasePresenter.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
 				CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */,
 				CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */,

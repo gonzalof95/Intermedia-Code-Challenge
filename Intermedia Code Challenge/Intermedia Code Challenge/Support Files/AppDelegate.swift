@@ -13,8 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let presenter = LoginPresenter()
-        let loginViewController = LoginViewController(with: presenter)
+        let presenter = MainPresenter()
+        let loginViewController = MainViewController(with: presenter)
         let navigationController = UINavigationController(rootViewController: loginViewController)
 
         window = UIWindow(frame: UIScreen.main.bounds)

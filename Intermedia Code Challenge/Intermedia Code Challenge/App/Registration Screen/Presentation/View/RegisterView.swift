@@ -8,10 +8,6 @@
 import UIKit
 import PureLayout
 
-protocol RegisterViewProtocol: AnyObject {
-    func registerButtonTapped()
-}
-
 class RegisterView: UIView {
 
     let containerView = UIView(forAutoLayout: ())

@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol BaseViewControllerProtocol: AnyObject {
-    func pushNextViewController(_ viewController: BaseViewController)
-    func showError(message: String)
-}
-
 class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
