@@ -71,11 +71,11 @@ class LoginView: UIView {
         firebaseView?.autoPinEdge(.bottom, to: .top, of: accessButton)
     }
 
-    @objc func accessButtonTapped() {
+    @objc private func accessButtonTapped() {
         delegate?.accessButtonTapped()
     }
 
-    @objc func registerButtonTapped() {
+    @objc private func registerButtonTapped() {
         delegate?.registerButtonTapped()
     }
 }

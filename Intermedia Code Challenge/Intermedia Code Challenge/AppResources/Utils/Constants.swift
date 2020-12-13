@@ -7,7 +7,7 @@
 
 struct Constants {
     static let mainScreenTitle = "Marvel Challenge"
-    static let mainFont = "AvenirNext-DemiBold"
+    static let mainFont = "RobotoCondensed-Regular"
     static let publicKey = ""
     static let baseURL = ""
 }

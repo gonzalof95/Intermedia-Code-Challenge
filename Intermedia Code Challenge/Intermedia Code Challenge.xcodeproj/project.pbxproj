@@ -22,6 +22,7 @@
 		CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */; };
 		CE05FEB725858A6800BFCEBA /* RegisterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEB625858A6800BFCEBA /* RegisterViewProtocol.swift */; };
 		CE05FEBC25858A8400BFCEBA /* MainViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */; };
+		CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */; };
 		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
 		CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */; };
 		CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9011D12582DB7700ECCC0A /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		CE05FEB625858A6800BFCEBA /* RegisterViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocol.swift; sourceTree = "<group>"; };
 		CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intermedia Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C82582DB7400ECCC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +240,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CE05FEE12585A9B900BFCEBA /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				CE90120A2582DCFE00ECCC0A /* Utils */,
+				CE90120E2582DD0B00ECCC0A /* Custom Views */,
+				CE05FEE22585A9E600BFCEBA /* Fonts */,
+				CE9011D12582DB7700ECCC0A /* Assets.xcassets */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		CE05FEE22585A9E600BFCEBA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		CE9011BC2582DB7400ECCC0A = {
 			isa = PBXGroup;
 			children = (
@@ -263,11 +284,9 @@
 		CE9011C72582DB7400ECCC0A /* Intermedia Code Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				CE05FEE12585A9B900BFCEBA /* AppResources */,
 				CE9011FB2582DB8C00ECCC0A /* Support Files */,
-				CE90120A2582DCFE00ECCC0A /* Utils */,
-				CE90120E2582DD0B00ECCC0A /* Custom Views */,
 				CE9012212582DDB000ECCC0A /* App */,
-				CE9011D12582DB7700ECCC0A /* Assets.xcassets */,
 				CE9011D62582DB7700ECCC0A /* Info.plist */,
 				CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */,
 			);
@@ -458,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */,
 				CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */,
 				CE90129C2582EEA600ECCC0A /* GoogleService-Info.plist in Resources */,
 			);

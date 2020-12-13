@@ -58,7 +58,7 @@ class RegisterView: UIView {
         firebaseView?.autoPinEdge(.bottom, to: .top, of: registerButton)
     }
 
-    @objc func registerButtonTapped() {
+    @objc private func registerButtonTapped() {
         delegate?.registerButtonTapped()
     }
 }

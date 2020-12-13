@@ -26,11 +26,16 @@ class MainViewController: BaseViewController {
         super.viewDidLoad()
         presenter?.viewLoaded()
     }
+
+    private func setupNavBar() {
+        setNavBar(.customColorMain)
+        navigationItem.hidesBackButton = true
+        navigationItem.title = Constants.mainScreenTitle
+    }
 }
 
 extension MainViewController: MainViewControllerProtocol {
     func setupView() {
-        navigationItem.hidesBackButton = true
-        view.backgroundColor = .red
+        setupNavBar()
     }
 }
