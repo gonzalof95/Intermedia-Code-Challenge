@@ -1,10 +1,10 @@
 //
-//  MainViewControllerProtocol.swift
+//  HeroViewControllerProtocol.swift
 //  Intermedia Code Challenge
 //
 //  Created by Gonzalo Ivan Fuentes on 12/12/2020.
 //
 
-protocol MainViewControllerProtocol: BaseViewControllerProtocol {
+protocol HeroViewControllerProtocol: BaseViewControllerProtocol {
     func setupView()
 }

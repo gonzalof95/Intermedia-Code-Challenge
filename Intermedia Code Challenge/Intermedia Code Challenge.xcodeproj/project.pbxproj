@@ -24,6 +24,7 @@
 		CE05FEBC25858A8400BFCEBA /* MainViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */; };
 		CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */; };
 		CE05FEEC2585B63600BFCEBA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */; };
+		CE7476472586A6B200C63A77 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7476462586A6B200C63A77 /* FactsViewController.swift */; };
 		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
 		CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */; };
 		CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9011D12582DB7700ECCC0A /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7476462586A6B200C63A77 /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
 		CE9011C52582DB7400ECCC0A /* Intermedia Code Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intermedia Code Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9011C82582DB7400ECCC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9011CA2582DB7400ECCC0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -262,6 +264,38 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		CE7476412586A63D00C63A77 /* Facts Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CE7476422586A67E00C63A77 /* Presentation */,
+			);
+			path = "Facts Screen";
+			sourceTree = "<group>";
+		};
+		CE7476422586A67E00C63A77 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE7476442586A68F00C63A77 /* View */,
+				CE7476432586A68900C63A77 /* Presenter */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE7476432586A68900C63A77 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE7476442586A68F00C63A77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE7476462586A6B200C63A77 /* FactsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CE9011BC2582DB7400ECCC0A = {
 			isa = PBXGroup;
 			children = (
@@ -351,17 +385,18 @@
 			children = (
 				CE9012A02582F08400ECCC0A /* Login Screen  */,
 				CE05FE062585450C00BFCEBA /* Registration Screen */,
-				CE9012252582DEC700ECCC0A /* Main Screen */,
+				CE9012252582DEC700ECCC0A /* Hero Screen */,
+				CE7476412586A63D00C63A77 /* Facts Screen */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		CE9012252582DEC700ECCC0A /* Main Screen */ = {
+		CE9012252582DEC700ECCC0A /* Hero Screen */ = {
 			isa = PBXGroup;
 			children = (
 				CE05FE9E2585869300BFCEBA /* Presentation */,
 			);
-			path = "Main Screen";
+			path = "Hero Screen";
 			sourceTree = "<group>";
 		};
 		CE9012A02582F08400ECCC0A /* Login Screen  */ = {
@@ -632,6 +667,7 @@
 				CE05FE6B2585678C00BFCEBA /* FirebasePresenter.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
 				CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */,
+				CE7476472586A6B200C63A77 /* FactsViewController.swift in Sources */,
 				CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

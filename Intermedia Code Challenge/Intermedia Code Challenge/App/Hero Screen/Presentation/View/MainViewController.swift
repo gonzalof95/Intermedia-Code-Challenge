@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  HeroViewController.swift
 //  Intermedia Code Challenge
 //
 //  Created by Gonzalo Ivan Fuentes on 10/12/2020.
@@ -8,11 +8,11 @@
 import UIKit
 import PureLayout
 
-class MainViewController: BaseViewController {
+class HeroViewController: BaseViewController {
 
-    var presenter: MainPresenter?
+    var presenter: HeroPresenter?
 
-    init(with presenter: MainPresenter) {
+    init(with presenter: HeroPresenter) {
         super.init(nibName: nil, bundle: nil)
         self.presenter = presenter
         self.presenter?.delegate = self
@@ -24,6 +24,7 @@ class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .green
         presenter?.viewLoaded()
     }
 
@@ -34,7 +35,7 @@ class MainViewController: BaseViewController {
     }
 }
 
-extension MainViewController: MainViewControllerProtocol {
+extension HeroViewController: HeroViewControllerProtocol {
     func setupView() {
         setupNavBar()
     }
