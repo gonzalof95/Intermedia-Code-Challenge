@@ -21,7 +21,7 @@
 		CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEA925858A2A00BFCEBA /* BaseViewControllerProtocol.swift */; };
 		CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */; };
 		CE05FEB725858A6800BFCEBA /* RegisterViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEB625858A6800BFCEBA /* RegisterViewProtocol.swift */; };
-		CE05FEBC25858A8400BFCEBA /* MainViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */; };
+		CE05FEBC25858A8400BFCEBA /* HeroViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEBB25858A8400BFCEBA /* HeroViewControllerProtocol.swift */; };
 		CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */; };
 		CE05FEEC2585B63600BFCEBA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */; };
 		CE7476472586A6B200C63A77 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7476462586A6B200C63A77 /* EventsViewController.swift */; };
@@ -34,11 +34,13 @@
 		CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */; };
 		CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012172582DD5B00ECCC0A /* BaseViewController.swift */; };
 		CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90121C2582DD9600ECCC0A /* Constants.swift */; };
-		CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012272582DEE500ECCC0A /* MainViewController.swift */; };
+		CE9012282582DEE500ECCC0A /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012272582DEE500ECCC0A /* HeroViewController.swift */; };
 		CE90129C2582EEA600ECCC0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */; };
 		CE9012B02582F0CD00ECCC0A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */; };
 		CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */; };
 		CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012BF2583036100ECCC0A /* CustomTextField.swift */; };
+		CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2D7D12587043F002379F3 /* HeroCell.swift */; };
+		CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DB8D25881B70002379F3 /* HeroModel.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,7 +82,7 @@
 		CE05FEA925858A2A00BFCEBA /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		CE05FEB625858A6800BFCEBA /* RegisterViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocol.swift; sourceTree = "<group>"; };
-		CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CE05FEBB25858A8400BFCEBA /* HeroViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,11 +102,13 @@
 		CE90120F2582DD3B00ECCC0A /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
 		CE9012172582DD5B00ECCC0A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CE90121C2582DD9600ECCC0A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		CE9012272582DEE500ECCC0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE9012272582DEE500ECCC0A /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
 		CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		CE9012B42582FC9900ECCC0A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		CE9012BF2583036100ECCC0A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CED2D7D12587043F002379F3 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		CED2DB8D25881B70002379F3 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,8 +244,9 @@
 		CE05FEA0258586DA00BFCEBA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE9012272582DEE500ECCC0A /* MainViewController.swift */,
-				CE05FEBB25858A8400BFCEBA /* MainViewControllerProtocol.swift */,
+				CED2D7D12587043F002379F3 /* HeroCell.swift */,
+				CE9012272582DEE500ECCC0A /* HeroViewController.swift */,
+				CE05FEBB25858A8400BFCEBA /* HeroViewControllerProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 		CE9012252582DEC700ECCC0A /* Hero Screen */ = {
 			isa = PBXGroup;
 			children = (
+				CED2DB8B25881B5A002379F3 /* Model */,
 				CE05FE9E2585869300BFCEBA /* Presentation */,
 			);
 			path = "Hero Screen";
@@ -408,6 +414,14 @@
 				CE05FE9D2585867C00BFCEBA /* Presentation */,
 			);
 			path = "Login Screen ";
+			sourceTree = "<group>";
+		};
+		CED2DB8B25881B5A002379F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED2DB8D25881B70002379F3 /* HeroModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -650,6 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */,
+				CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */,
 				CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */,
 				CE74766A2586B8C200C63A77 /* CustomTabBarController.swift in Sources */,
 				CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */,
@@ -661,14 +676,15 @@
 				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
 				CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */,
-				CE9012282582DEE500ECCC0A /* MainViewController.swift in Sources */,
-				CE05FEBC25858A8400BFCEBA /* MainViewControllerProtocol.swift in Sources */,
+				CE9012282582DEE500ECCC0A /* HeroViewController.swift in Sources */,
+				CE05FEBC25858A8400BFCEBA /* HeroViewControllerProtocol.swift in Sources */,
 				CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */,
 				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
 				CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */,
 				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
 				CE05FEA22585871F00BFCEBA /* MainPresenter.swift in Sources */,
 				CE05FE6B2585678C00BFCEBA /* FirebasePresenter.swift in Sources */,
+				CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
 				CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */,
 				CE7476472586A6B200C63A77 /* EventsViewController.swift in Sources */,

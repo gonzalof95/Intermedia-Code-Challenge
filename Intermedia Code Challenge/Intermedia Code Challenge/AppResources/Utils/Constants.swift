@@ -7,10 +7,13 @@
 
 struct Constants {
     static let mainScreenTitle = "Marvel Challenge"
-    static let mainFont = "RobotoCondensed-Regular"
-    static let tabBarFont = "Roboto-Regular"
     static let publicKey = ""
     static let baseURL = ""
+}
+
+struct Fonts {
+    static let mainFont = "RobotoCondensed-Regular"
+    static let tabBarFont = "Roboto-Regular"
 }
 
 struct ErrorMessages {

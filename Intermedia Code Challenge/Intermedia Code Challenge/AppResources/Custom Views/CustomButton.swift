@@ -30,14 +30,14 @@ class CustomButton: UIButton {
     private func setStyle() {
         setTitleColor(.white, for: .normal)
 
-        titleLabel?.font = UIFont(name: Constants.mainFont, size: 18)
+        titleLabel?.font = UIFont(name: Fonts.mainFont, size: 18)
         layer.cornerRadius = 8
         isEnabled = false
         alpha = 0.25
     }
 
     private func setShadow() {
-        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowColor = UIColor.customShadowColor.cgColor
         layer.shadowOffset = CGSize(width: 0.0, height: 6.0)
         layer.shadowRadius = 8
         layer.shadowOpacity = 0.5
