@@ -13,4 +13,5 @@ extension UIColor {
     static let customMainButtonColor = UIColor(red: 255.0/255.0, green: 138.0/255.0, blue: 101.0/255.0, alpha: 1.0)
     static let customSecondButtonColor = UIColor(red: 3.0/255.0, green: 155.0/255.0, blue: 229.0/255.0, alpha: 1.0)
     static let customLoginBackgroundColor = UIColor(red: 44.0/255.0, green: 56.0/255.0, blue: 74.0/255.0, alpha: 1.0)
+    static let customWhiteColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
 }

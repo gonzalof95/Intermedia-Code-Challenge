@@ -37,8 +37,7 @@ class LoginPresenter: FirebasePresenter {
     }
 
     func registerButtonTapped() {
-        let presenter = RegistrationPresenter()
-        let viewController = RegistrationViewController(with: presenter)
+        let viewController = RegistrationViewController(with: RegistrationPresenter())
         delegate?.pushNextViewController(viewController)
     }
 

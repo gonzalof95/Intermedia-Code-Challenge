@@ -24,12 +24,18 @@ class FirebaseView: UIView {
         containerView.addSubview(imageView)
         addSubview(containerView)
 
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        addGestureRecognizer(tap)
         setupView()
         setupContraints()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    @objc func dismissKeyboard() {
+        endEditing(true)
     }
 
     private func setupView() {

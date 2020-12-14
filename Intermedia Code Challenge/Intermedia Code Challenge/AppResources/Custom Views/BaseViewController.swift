@@ -26,17 +26,6 @@ class BaseViewController: UIViewController {
         navigationItem.hidesBackButton = true
         navigationItem.title = Constants.mainScreenTitle
     }
-
-    func setStatusBar(_ color: UIColor) {
-        let statusBar = UIView(frame: (UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame)!)
-
-        statusBar.backgroundColor = color
-        statusBar.translatesAutoresizingMaskIntoConstraints = false
-        statusBar.autoresizingMask = .flexibleWidth
-        statusBar.autoresizingMask = .flexibleTopMargin
-
-        UIApplication.shared.keyWindow?.addSubview(statusBar)
-    }
 }
 
 extension BaseViewController: BaseViewControllerProtocol {
@@ -53,18 +42,7 @@ extension BaseViewController: BaseViewControllerProtocol {
     }
 
     func presentMainScreen() {
-        let tabBarController = UITabBarController()
-
-        let heroPresenter = HeroPresenter()
-        let heroViewController = HeroViewController(with: heroPresenter)
-
-        let factsViewController = FactsViewController()
-
-        let heroNavigationController = UINavigationController(rootViewController: heroViewController)
-        let factsNavigationController = UINavigationController(rootViewController: factsViewController)
-
-        tabBarController.setViewControllers([heroNavigationController, factsNavigationController], animated: false)
-        tabBarController.modalPresentationStyle = .fullScreen
+        let tabBarController = CustomTabBarController()
         present(tabBarController, animated: true)
     }
 }
