@@ -11,8 +11,8 @@ import PureLayout
 class HeroViewController: BaseViewController {
 
     var presenter: HeroPresenter?
-    var tableView = UITableView(forAutoLayout: ())
-    var heroArray: [HeroModel] = []
+    var heroView: HeroView?
+    var heroArray: [HeroModel] = []//TODO: sacarlo cuando lo tenga en el presenter
 
     init(with presenter: HeroPresenter) {
         super.init(nibName: nil, bundle: nil)
@@ -35,14 +35,11 @@ class HeroViewController: BaseViewController {
     }
 
     private func setupTable() {
-        view.addSubview(tableView)
+        self.heroView = HeroView(with: heroArray)
+        guard let strongCustomView = heroView else { return }
 
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = 129
-        tableView.separatorStyle = .none
-        tableView.autoPinEdgesToSuperviewEdges()
-        tableView.register(HeroCell.self, forCellReuseIdentifier: "cell")
+        view.addSubview(strongCustomView)
+        heroView?.autoPinEdgesToSuperviewEdges()
     }
 }
 
@@ -50,23 +47,5 @@ extension HeroViewController: HeroViewControllerProtocol {
     func setupView() {
         setupNavBar()
         setupTable()
-    }
-}
-
-extension HeroViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HeroCell
-
-        cell.set()
-
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

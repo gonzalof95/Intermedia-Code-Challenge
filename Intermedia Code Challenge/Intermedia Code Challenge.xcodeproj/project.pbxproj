@@ -41,6 +41,7 @@
 		CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9012BF2583036100ECCC0A /* CustomTextField.swift */; };
 		CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2D7D12587043F002379F3 /* HeroCell.swift */; };
 		CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DB8D25881B70002379F3 /* HeroModel.swift */; };
+		CED2DC882588E233002379F3 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DC872588E233002379F3 /* HeroView.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		CE9012BF2583036100ECCC0A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CED2D7D12587043F002379F3 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		CED2DB8D25881B70002379F3 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		CED2DC872588E233002379F3 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				CED2D7D12587043F002379F3 /* HeroCell.swift */,
+				CED2DC872588E233002379F3 /* HeroView.swift */,
 				CE9012272582DEE500ECCC0A /* HeroViewController.swift */,
 				CE05FEBB25858A8400BFCEBA /* HeroViewControllerProtocol.swift */,
 			);
@@ -674,6 +677,7 @@
 				CE9012B02582F0CD00ECCC0A /* CustomButton.swift in Sources */,
 				CE05FE3525855C1700BFCEBA /* LoginViewControlller.swift in Sources */,
 				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
+				CED2DC882588E233002379F3 /* HeroView.swift in Sources */,
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
 				CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */,
 				CE9012282582DEE500ECCC0A /* HeroViewController.swift in Sources */,
