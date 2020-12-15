@@ -20,21 +20,12 @@ class CustomTextField: UITextField {
 
     private func setLabel() {
         setStyle()
-        setShadow()
+        setViewShadow()
     }
 
     private func setStyle() {
         layer.cornerRadius = 4
         backgroundColor = .white
         isUserInteractionEnabled = true
-    }
-
-    private func setShadow() {
-        layer.shadowColor = UIColor.gray.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 6.0)
-        layer.shadowRadius = 8
-        layer.shadowOpacity = 0.5
-        layer.masksToBounds = false
-        clipsToBounds = true
     }
 }

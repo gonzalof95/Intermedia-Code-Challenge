@@ -39,8 +39,8 @@ class HeroViewController: BaseViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.tableFooterView = UIView(frame: .zero)
-        tableView.rowHeight = 120
+        tableView.rowHeight = 129
+        tableView.separatorStyle = .none
         tableView.autoPinEdgesToSuperviewEdges()
         tableView.register(HeroCell.self, forCellReuseIdentifier: "cell")
     }

@@ -9,6 +9,7 @@ import UIKit
 import PureLayout
 
 class HeroCell: UITableViewCell {
+    let cellView = UIView(forAutoLayout: ())
     let containerView = UIView(forAutoLayout: ())
     var iconImage = UIImageView(forAutoLayout: ())
     let nameLabel = UILabel(forAutoLayout: ())
@@ -19,7 +20,6 @@ class HeroCell: UITableViewCell {
 
         setCell()
         setConstraints()
-        set()
     }
 
     required init?(coder: NSCoder) {
@@ -30,13 +30,16 @@ class HeroCell: UITableViewCell {
         containerView.addSubview(iconImage)
         containerView.addSubview(nameLabel)
         containerView.addSubview(descriptionLabel)
-        addSubview(containerView)
+        cellView.addSubview(containerView)
+        addSubview(cellView)
+
+        cellView.backgroundColor = .customBackgroundColor
 
         containerView.backgroundColor = .customWhiteColor
+        containerView.setViewShadow()
         containerView.layer.cornerRadius =  8
 
         iconImage.clipsToBounds = true
-        iconImage.image = UIImage(named: "")
 
         nameLabel.textColor = .customBlackColor
         nameLabel.font = UIFont(name: Fonts.mainFont, size: 24)
@@ -47,34 +50,26 @@ class HeroCell: UITableViewCell {
     }
 
     private func setConstraints() {
-        iconImage.autoAlignAxis(.horizontal, toSameAxisOf: containerView)
-        iconImage.autoPinEdge(.leading, to: .leading, of: containerView)
+        cellView.autoPinEdgesToSuperviewEdges()
+        containerView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: 4.5, left: 4.5, bottom: 4.5, right: 4.5))
+
+        iconImage.autoAlignAxis(toSuperviewAxis: .horizontal)
+        iconImage.autoSetDimensions(to: CGSize(width: 120, height: 120))
         iconImage.autoPinEdge(.top, to: .top, of: containerView)
         iconImage.autoPinEdge(.bottom, to: .bottom, of: containerView)
-        iconImage.autoSetDimensions(to: CGSize(width: 120, height: 120))
+        iconImage.autoPinEdge(.leading, to: .leading, of: containerView)
 
-        nameLabel.autoAlignAxis(.vertical, toSameAxisOf: containerView)
-        nameLabel.autoPinEdge(.leading, to: .trailing, of: iconImage, withOffset: 16)
         nameLabel.autoPinEdge(.top, to: .top, of: containerView, withOffset: 17)
+        nameLabel.autoPinEdge(.leading, to: .trailing, of: iconImage, withOffset: 16)
 
-        descriptionLabel.autoAlignAxis(.vertical, toSameAxisOf: containerView)
-        descriptionLabel.autoPinEdge(.leading, to: .trailing, of: iconImage, withOffset: 16)
         descriptionLabel.autoPinEdge(.top, to: .bottom, of: nameLabel, withOffset: 9)
+        descriptionLabel.autoPinEdge(.leading, to: .trailing, of: iconImage, withOffset: 16)
         descriptionLabel.autoSetDimensions(to: CGSize(width: 178, height: 37))
-    }
-
-    private func setShadow() {
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 6.0)
-        layer.shadowRadius = 8
-        layer.shadowOpacity = 0.5
-        layer.masksToBounds = false
-        clipsToBounds = true
     }
 
     func set() {
         iconImage.image = UIImage(named: "riko")
-        nameLabel.text = ":VVVVVVVVVVVVVVV"
+        nameLabel.text = "random hero name"
         descriptionLabel.text = "Using the power of the Infinity Stones, Thanos believes he can ultimately save the universe by wiping out half of its population."
     }
 }

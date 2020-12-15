@@ -17,3 +17,14 @@ extension UIColor {
     static let customBlackColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     static let customShadowColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.2)
 }
+
+extension UIView {
+    func setViewShadow() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 6.0)
+        layer.shadowRadius = 8
+        layer.shadowOpacity = 0.5
+        layer.masksToBounds = false
+        clipsToBounds = true
+    }
+}
