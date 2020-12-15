@@ -10,10 +10,8 @@ import PureLayout
 
 class HeroView: UIView {
     var tableView = UITableView(forAutoLayout: ())
-    var heroArray: [HeroModel]
 
-    required init(with array: [HeroModel]) {
-        self.heroArray = array
+    required init() {
         super.init(frame: .zero)
         setView()
     }
@@ -25,29 +23,9 @@ class HeroView: UIView {
     private func setView() {
         addSubview(tableView)
 
-        tableView.delegate = self
-        tableView.dataSource = self
         tableView.rowHeight = 129
         tableView.separatorStyle = .none
         tableView.register(HeroCell.self, forCellReuseIdentifier: "cell")
         tableView.autoPinEdgesToSuperviewEdges()
-    }
-}
-
-extension HeroView: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HeroCell
-
-        cell.set()
-
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
