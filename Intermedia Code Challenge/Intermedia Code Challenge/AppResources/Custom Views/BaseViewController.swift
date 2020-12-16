@@ -20,7 +20,7 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = color
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
-            NSAttributedString.Key.font: UIFont(name: Fonts.mainFont, size: 20)]
+            NSAttributedString.Key.font: UIFont(name: Fonts.robotoCondensed, size: 20)]
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.hidesBackButton = true

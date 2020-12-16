@@ -12,7 +12,7 @@ class NetworkingClient {
     private var apiPubKey: String = ""
     private var hash: String = ""
 
-    func executeGetToken(completion: @escaping(Result<ResponseModel, networkError>) -> Void) {
+    func executeGet(completion: @escaping(Result<ResponseModel, networkError>) -> Void) {
 
         guard let baseURL = URLComponents(string: NetworkingConstants.baseURL) else {
             completion(.failure(.badURL))

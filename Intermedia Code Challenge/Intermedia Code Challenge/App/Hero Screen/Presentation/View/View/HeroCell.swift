@@ -7,6 +7,7 @@
 
 import UIKit
 import PureLayout
+import SDWebImage
 
 class HeroCell: UITableViewCell {
     let cellView = UIView(forAutoLayout: ())
@@ -42,11 +43,11 @@ class HeroCell: UITableViewCell {
         iconImage.clipsToBounds = true
 
         nameLabel.textColor = .customBlackColor
-        nameLabel.font = UIFont(name: Fonts.mainFont, size: 24)
+        nameLabel.font = UIFont(name: Fonts.robotoCondensed, size: 24)
 
         descriptionLabel.textColor = .customBlackColor
         descriptionLabel.numberOfLines = 0
-        descriptionLabel.font = UIFont(name: Fonts.mainFont, size: 14)
+        descriptionLabel.font = UIFont(name: Fonts.robotoRegular, size: 14)
     }
 
     private func setConstraints() {
@@ -69,7 +70,7 @@ class HeroCell: UITableViewCell {
     }
 
     func set(_ hero: HeroModel) {
-        iconImage.image = UIImage(named: "riko")
+        iconImage.sd_setImage(with: URL(string: hero.thumbnail.path + "." + hero.thumbnail.imageExtension), placeholderImage: UIImage(named: "riko"))
         nameLabel.text = hero.name
         descriptionLabel.text = hero.description
     }

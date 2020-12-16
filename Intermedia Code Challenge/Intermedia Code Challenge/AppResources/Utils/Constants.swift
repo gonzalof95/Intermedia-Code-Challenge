@@ -19,8 +19,8 @@ struct AssetConstants {
 }
 
 struct Fonts {
-    static let mainFont = "RobotoCondensed-Regular"
-    static let tabBarFont = "Roboto-Regular"
+    static let robotoCondensed = "RobotoCondensed-Regular"
+    static let robotoRegular = "Roboto-Regular"
 }
 
 struct ErrorMessages {

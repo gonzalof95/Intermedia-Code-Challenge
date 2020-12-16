@@ -17,7 +17,7 @@ class HeroPresenter {
     }
 
     func viewLoaded() {
-        client.executeGetToken { (result) in
+        client.executeGet { (result) in
             switch result {
             case .success(let response):
                 self.heroesList = response.responseData.results

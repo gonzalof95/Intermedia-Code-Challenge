@@ -26,7 +26,7 @@ class CustomButton: UIButton {
     private func setStyle() {
         setTitleColor(.white, for: .normal)
 
-        titleLabel?.font = UIFont(name: Fonts.mainFont, size: 18)
+        titleLabel?.font = UIFont(name: Fonts.robotoCondensed, size: 18)
         layer.cornerRadius = 8
         isEnabled = false
         alpha = 0.25
