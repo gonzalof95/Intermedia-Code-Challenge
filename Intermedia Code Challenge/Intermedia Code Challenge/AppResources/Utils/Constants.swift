@@ -7,8 +7,9 @@
 
 struct Constants {
     static let mainScreenTitle = "Marvel Challenge"
-    static let publicKey = ""
-    static let baseURL = ""
+    static let publicKey = "API_PUB_KEY"
+    static let baseURL = "https://gateway.marvel.com/v1/public/characters"
+    static let hash = "API_HASH"
 }
 
 struct Fonts {
