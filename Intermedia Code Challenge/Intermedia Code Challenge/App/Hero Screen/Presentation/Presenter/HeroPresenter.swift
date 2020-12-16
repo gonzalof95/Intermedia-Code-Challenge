@@ -10,17 +10,21 @@ import FirebaseAuth
 class HeroPresenter {
     weak var delegate: HeroViewControllerProtocol?
     let client: NetworkingClient
+    var heroesList: [HeroModel] = []
 
     required init(_ client: NetworkingClient) {
         self.client = client
     }
 
     func viewLoaded() {
-        delegate?.setupView()
         client.executeGetToken { (result) in
             switch result {
-            case .success(_):
-                print("success")
+            case .success(let response):
+                self.heroesList = response.responseData.results
+                DispatchQueue.main.async {
+                    print(self.heroesList)
+                    self.delegate?.setupView(self.heroesList)
+                }
             case .failure(let error):
                 print(error)
             }

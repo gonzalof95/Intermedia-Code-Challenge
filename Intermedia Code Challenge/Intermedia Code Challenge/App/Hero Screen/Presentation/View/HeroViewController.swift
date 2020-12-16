@@ -12,7 +12,7 @@ class HeroViewController: BaseViewController {
 
     var presenter: HeroPresenter?
     var heroView: HeroView?
-    var heroArray: [HeroModel] = []//TODO: sacarlo cuando lo tenga en el presenter
+    var heroesArray: [HeroModel] = []
 
     init(with presenter: HeroPresenter) {
         super.init(nibName: nil, bundle: nil)
@@ -30,11 +30,13 @@ class HeroViewController: BaseViewController {
         presenter?.viewLoaded()
     }
 
-    private func setupNavBar() {
+    override func viewWillAppear(_ animated: Bool) {
         setNavBar(.customColorMain)
     }
 
-    private func setupTable() {
+    private func setupTable(_ heroes: [HeroModel]) {
+        heroesArray = heroes
+
         self.heroView = HeroView()
         guard let strongCustomView = heroView else { return }
 
@@ -46,21 +48,20 @@ class HeroViewController: BaseViewController {
 }
 
 extension HeroViewController: HeroViewControllerProtocol {
-    func setupView() {
-        setupNavBar()
-        setupTable()
+    func setupView(_ heroes: [HeroModel]) {
+        setupTable(heroes)
     }
 }
 
 extension HeroViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return heroesArray.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HeroCell
-
-        cell.set()
+        let hero = heroesArray[indexPath.row]
+        cell.set(hero)
 
         return cell
     }

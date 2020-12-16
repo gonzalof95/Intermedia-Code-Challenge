@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol CustomButtonProtocol: AnyObject {
-    func buttonTapped()
-}
-
 class CustomButton: UIButton {
 
     override init(frame: CGRect) {

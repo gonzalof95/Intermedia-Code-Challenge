@@ -12,17 +12,18 @@ class NetworkingClient {
     private var apiPubKey: String = ""
     private var hash: String = ""
 
-    func executeGetToken(completion: @escaping(Result<HeroModel, networkError>) -> Void) {
+    func executeGetToken(completion: @escaping(Result<ResponseModel, networkError>) -> Void) {
 
-        guard let baseURL = URLComponents(string: Constants.baseURL) else {
+        guard let baseURL = URLComponents(string: NetworkingConstants.baseURL) else {
             completion(.failure(.badURL))
             return
         }
 
         var components = baseURL
-        components.queryItems = [URLQueryItem(name: "apikey", value: apiPubKey.getAPIKey(key: Constants.publicKey)),
-                                 URLQueryItem(name: "hash", value: hash.getAPIKey(key: Constants.hash)),
-                                 URLQueryItem(name: "ts", value: "1")]
+        components.queryItems = [URLQueryItem(name: "apikey", value: apiPubKey.getAPIKey(key: NetworkingConstants.publicKey)),
+                                 URLQueryItem(name: "hash", value: hash.getAPIKey(key: NetworkingConstants.hash)),
+                                 URLQueryItem(name: "ts", value: "1"),
+                                 URLQueryItem(name: "limit", value: "9")]
         let request = URLRequest(url: components.url!)
 
         print("-----------------------------------------------------------------")
@@ -38,10 +39,9 @@ class NetworkingClient {
                 completion(.failure(.noDataAvailable))
                 return
             }
-            print("JSON String: \(String(describing: String(data: data, encoding: .utf8)))")
-
+            //print("JSON String: \(String(describing: String(data: data, encoding: .utf8)))")
             do {
-                let responseData = try JSONDecoder().decode(HeroModel.self, from: data)
+                let responseData = try JSONDecoder().decode(ResponseModel.self, from: data)
                 completion(.success(responseData))
             } catch {
                 completion(.failure(.canNotProcessData))

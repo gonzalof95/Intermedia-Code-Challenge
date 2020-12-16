@@ -24,7 +24,7 @@ class BaseViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.hidesBackButton = true
-        navigationItem.title = Constants.mainScreenTitle
+        navigationItem.title = TitleConstants.mainScreenTitle
     }
 }
 

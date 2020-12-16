@@ -5,11 +5,17 @@
 //  Created by Gonzalo Ivan Fuentes on 10/12/2020.
 //
 
-struct Constants {
+struct TitleConstants {
     static let mainScreenTitle = "Marvel Challenge"
-    static let publicKey = "API_PUB_KEY"
-    static let baseURL = "https://gateway.marvel.com/v1/public/characters"
-    static let hash = "API_HASH"
+    static let firstTabBarTitle = "Personajes"
+    static let secondTabBarTitle = "Eventos"
+}
+
+struct AssetConstants {
+    static let heroIconEnabled = "iconSuperheroEnabled"
+    static let heroIconDisabled = "iconSuperHeroDisabled"
+    static let calendarIconEnabled = "iconCalendarEnabled"
+    static let calendarIconDisabled = "iconCalendarDisabled"
 }
 
 struct Fonts {
@@ -22,4 +28,10 @@ struct ErrorMessages {
     static let couldNotRegister = "Could not register the user." 
     static let emptyField = "Complete the text fields."
     static let invalidEmail = "Invalid email format."
+}
+
+struct NetworkingConstants {
+    static let baseURL = "https://gateway.marvel.com/v1/public/characters"
+    static let publicKey = "API_PUB_KEY"
+    static let hash = "API_HASH"
 }

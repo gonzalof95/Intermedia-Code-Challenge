@@ -61,15 +61,16 @@ class HeroCell: UITableViewCell {
 
         nameLabel.autoPinEdge(.top, to: .top, of: containerView, withOffset: 17)
         nameLabel.autoPinEdge(.leading, to: .trailing, of: iconImage, withOffset: 16)
+        nameLabel.autoPinEdge(.trailing, to: .trailing, of: containerView, withOffset: -30)
 
         descriptionLabel.autoPinEdge(.top, to: .bottom, of: nameLabel, withOffset: 9)
         descriptionLabel.autoPinEdge(.leading, to: .trailing, of: iconImage, withOffset: 16)
         descriptionLabel.autoSetDimensions(to: CGSize(width: 178, height: 37))
     }
 
-    func set() {
+    func set(_ hero: HeroModel) {
         iconImage.image = UIImage(named: "riko")
-        nameLabel.text = "random hero name"
-        descriptionLabel.text = "Using the power of the Infinity Stones, Thanos believes he can ultimately save the universe by wiping out half of its population."
+        nameLabel.text = hero.name
+        descriptionLabel.text = hero.description
     }
 }

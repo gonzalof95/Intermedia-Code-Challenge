@@ -6,5 +6,5 @@
 //
 
 protocol HeroViewControllerProtocol: BaseViewControllerProtocol {
-    func setupView()
+    func setupView(_ heroes: [HeroModel])
 }

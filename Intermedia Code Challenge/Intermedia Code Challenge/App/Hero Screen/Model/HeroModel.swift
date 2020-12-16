@@ -6,7 +6,17 @@
 //
 
 struct HeroModel: Decodable {
-    let image: String
     let name: String
     let description: String
+    let thumbnail: ThumbnailModel
+}
+
+struct ThumbnailModel: Decodable {
+    let path: String
+    let imageExtension: String
+
+    public enum CodingKeys: String, CodingKey {
+        case path
+        case imageExtension = "extension"
+    }
 }
