@@ -25,6 +25,7 @@
 		CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */; };
 		CE05FEEC2585B63600BFCEBA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */; };
 		CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31B877258A4898006B6E41 /* CustomImageView.swift */; };
+		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE7476472586A6B200C63A77 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7476462586A6B200C63A77 /* EventsViewController.swift */; };
 		CE74766A2586B8C200C63A77 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7476692586B8C200C63A77 /* CustomTabBarController.swift */; };
 		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
@@ -44,7 +45,6 @@
 		CEB6F8052589833F00CED9EB /* MVAPI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB6F8042589833F00CED9EB /* MVAPI-Info.plist */; };
 		CEB6F80D2589852000CED9EB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6F80C2589852000CED9EB /* String+Extension.swift */; };
 		CEB6F815258986A500CED9EB /* MVAPISample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB6F814258986A500CED9EB /* MVAPISample-Info.plist */; };
-		CEB6F81D25898CFD00CED9EB /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6F81C25898CFD00CED9EB /* ResponseModel.swift */; };
 		CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2D7D12587043F002379F3 /* HeroCell.swift */; };
 		CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DB8D25881B70002379F3 /* HeroModel.swift */; };
 		CED2DC882588E233002379F3 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DC872588E233002379F3 /* HeroView.swift */; };
@@ -93,6 +93,7 @@
 		CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		CE31B877258A4898006B6E41 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7476462586A6B200C63A77 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		CE7476692586B8C200C63A77 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -119,7 +120,6 @@
 		CEB6F8042589833F00CED9EB /* MVAPI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVAPI-Info.plist"; sourceTree = "<group>"; };
 		CEB6F80C2589852000CED9EB /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CEB6F814258986A500CED9EB /* MVAPISample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVAPISample-Info.plist"; sourceTree = "<group>"; };
-		CEB6F81C25898CFD00CED9EB /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		CED2D7D12587043F002379F3 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		CED2DB8D25881B70002379F3 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		CED2DC872588E233002379F3 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
@@ -334,6 +334,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CE31BCE5258BBB62006B6E41 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CE31BCEE258BE754006B6E41 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CE31BCE5258BBB62006B6E41 /* Repository */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CE31BCEF258BE779006B6E41 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CED2DB8B25881B5A002379F3 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		CE7476412586A63D00C63A77 /* Events Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,7 +494,8 @@
 		CE9012252582DEC700ECCC0A /* Hero Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CED2DB8B25881B5A002379F3 /* Model */,
+				CE31BCEF258BE779006B6E41 /* Core */,
+				CE31BCEE258BE754006B6E41 /* Infrastructure */,
 				CE05FE9E2585869300BFCEBA /* Presentation */,
 			);
 			path = "Hero Screen";
@@ -488,7 +513,6 @@
 			isa = PBXGroup;
 			children = (
 				CEB6F7EE2589735200CED9EB /* NetworkingClient.swift */,
-				CEB6F81C25898CFD00CED9EB /* ResponseModel.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -769,9 +793,9 @@
 				CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
 				CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */,
+				CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */,
 				CE7476472586A6B200C63A77 /* EventsViewController.swift in Sources */,
 				CEB6F80D2589852000CED9EB /* String+Extension.swift in Sources */,
-				CEB6F81D25898CFD00CED9EB /* ResponseModel.swift in Sources */,
 				CE9011CB2582DB7400ECCC0A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

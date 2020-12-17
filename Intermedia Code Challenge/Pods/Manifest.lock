@@ -79,6 +79,12 @@ PODS:
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
   - PureLayout (3.1.6)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
   - SDWebImage (5.10.0):
     - SDWebImage/Core (= 5.10.0)
   - SDWebImage/Core (5.10.0)
@@ -89,6 +95,8 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - PureLayout
+  - RxCocoa
+  - RxSwift
   - SDWebImage
 
 SPEC REPOS:
@@ -108,6 +116,9 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - PureLayout
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SDWebImage
 
 SPEC CHECKSUMS:
@@ -126,8 +137,11 @@ SPEC CHECKSUMS:
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
 
-PODFILE CHECKSUM: b5210922d8c67701637732f8cbdc451f6e9b8dc0
+PODFILE CHECKSUM: 607eab1a316b697336f108fc9e5f5a781fdd57fb
 
 COCOAPODS: 1.10.0

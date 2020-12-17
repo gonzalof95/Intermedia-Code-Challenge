@@ -12,7 +12,9 @@ target 'Intermedia Code Challenge' do
   pod 'Firebase/Database'
   pod 'PureLayout'
   pod 'SDWebImage'
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
+ 
   target 'Intermedia Code ChallengeTests' do
     inherit! :search_paths
     # Pods for testing

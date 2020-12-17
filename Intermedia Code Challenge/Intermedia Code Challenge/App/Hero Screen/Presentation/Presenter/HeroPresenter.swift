@@ -6,28 +6,40 @@
 //
 
 import FirebaseAuth
+import RxSwift
+import RxCocoa
 
 class HeroPresenter {
     weak var delegate: HeroViewControllerProtocol?
     let client: NetworkingClient
     var heroesList: [HeroModel] = []
 
+    private let repository = HeroRepository()
+    private let disposebag = DisposeBag()
+
     required init(_ client: NetworkingClient) {
         self.client = client
     }
 
     func viewLoaded() {
-        client.executeGet { (result) in
-            switch result {
-            case .success(let response):
-                self.heroesList = response.responseData.results
+        executeGet()
+    }
+
+    private func executeGet() {
+        repository.getHeroes()
+            .subscribe(onNext: { [weak self] response in
+                self?.heroesList = response.data.results
                 DispatchQueue.main.async {
-                    print(self.heroesList)
-                    self.delegate?.setupView(self.heroesList)
+                    print(self?.heroesList as Any)
+                    self?.successFetchHeroes()
                 }
-            case .failure(let error):
+            }, onError: { error in
                 print(error)
-            }
-        }
+            })
+            .disposed(by: disposebag)
+    }
+
+    private func successFetchHeroes() {
+        delegate?.setupView(heroesList)
     }
 }

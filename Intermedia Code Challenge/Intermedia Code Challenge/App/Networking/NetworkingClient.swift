@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import RxSwift
 
 class NetworkingClient {
 
     private var apiPubKey: String = ""
     private var hash: String = ""
 
-    func executeGet(completion: @escaping(Result<ResponseModel, networkError>) -> Void) {
+    func executeGet(completion: @escaping(Result<HeroResponseModel, networkError>) -> Void) {
 
         guard let baseURL = URLComponents(string: NetworkingConstants.baseURL) else {
             completion(.failure(.badURL))
@@ -24,7 +25,9 @@ class NetworkingClient {
                                  URLQueryItem(name: "hash", value: hash.getAPIKey(key: NetworkingConstants.hash)),
                                  URLQueryItem(name: "ts", value: "1"),
                                  URLQueryItem(name: "limit", value: "9")]
-        let request = URLRequest(url: components.url!)
+
+        let newUrl = URL(string: "https://gateway.marvel.com/v1/public/characters?apikey=3a783b25c80e1c44875356dd363f272d&hash=51a3ecf2f92a23817992a2663183325e&ts=1&offset=10&limit=10")!
+        let request = URLRequest(url: newUrl)
 
         print("-----------------------------------------------------------------")
         print("Request Start:")
@@ -41,7 +44,7 @@ class NetworkingClient {
             }
             //print("JSON String: \(String(describing: String(data: data, encoding: .utf8)))")
             do {
-                let responseData = try JSONDecoder().decode(ResponseModel.self, from: data)
+                let responseData = try JSONDecoder().decode(HeroResponseModel.self, from: data)
                 completion(.success(responseData))
             } catch {
                 completion(.failure(.canNotProcessData))
@@ -57,4 +60,27 @@ enum networkError: Error {
     case requestError
     case noDataAvailable
     case canNotProcessData
+}
+
+class NetworkService {
+    let baseURL = NetworkingConstants.baseURL
+
+    func execute<T: Decodable>(url: URL) -> Observable<T> {
+
+        return Observable.create { observer -> Disposable in
+            let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+                guard let data = data,
+                      let decode = try? JSONDecoder().decode(T.self, from: data) else {
+                    return
+                }
+
+                observer.onNext(decode)
+                observer.onCompleted()
+            }
+            task.resume()
+            return Disposables.create {
+                task.cancel()
+            }
+        }
+    }
 }
