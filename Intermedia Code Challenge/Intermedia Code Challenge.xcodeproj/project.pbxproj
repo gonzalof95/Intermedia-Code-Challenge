@@ -26,6 +26,9 @@
 		CE05FEEC2585B63600BFCEBA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */; };
 		CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31B877258A4898006B6E41 /* CustomImageView.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
+		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
+		CE31BD14258C111E006B6E41 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD13258C111E006B6E41 /* HeroService.swift */; };
+		CE31BD1C258C112A006B6E41 /* HeroServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD1B258C112A006B6E41 /* HeroServiceProtocol.swift */; };
 		CE7476472586A6B200C63A77 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7476462586A6B200C63A77 /* EventsViewController.swift */; };
 		CE74766A2586B8C200C63A77 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7476692586B8C200C63A77 /* CustomTabBarController.swift */; };
 		CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9011C82582DB7400ECCC0A /* AppDelegate.swift */; };
@@ -94,6 +97,9 @@
 		CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		CE31B877258A4898006B6E41 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
+		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
+		CE31BD13258C111E006B6E41 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
+		CE31BD1B258C112A006B6E41 /* HeroServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroServiceProtocol.swift; sourceTree = "<group>"; };
 		CE6C6DFAD37DE57D29807CD4 /* Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intermedia_Code_Challenge_Intermedia_Code_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7476462586A6B200C63A77 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		CE7476692586B8C200C63A77 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
@@ -353,9 +359,28 @@
 		CE31BCEF258BE779006B6E41 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CE31BD12258C1110006B6E41 /* Service */,
+				CE31BD0C258C0E86006B6E41 /* Repository */,
 				CED2DB8B25881B5A002379F3 /* Model */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		CE31BD0C258C0E86006B6E41 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CE31BD12258C1110006B6E41 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE31BD13258C111E006B6E41 /* HeroService.swift */,
+				CE31BD1B258C112A006B6E41 /* HeroServiceProtocol.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CE7476412586A63D00C63A77 /* Events Screen */ = {
@@ -769,6 +794,7 @@
 				CEB6F7EF2589735200CED9EB /* NetworkingClient.swift in Sources */,
 				CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */,
 				CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */,
+				CE31BD1C258C112A006B6E41 /* HeroServiceProtocol.swift in Sources */,
 				CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */,
 				CE74766A2586B8C200C63A77 /* CustomTabBarController.swift in Sources */,
 				CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */,
@@ -787,8 +813,10 @@
 				CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */,
 				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
 				CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */,
+				CE31BD14258C111E006B6E41 /* HeroService.swift in Sources */,
 				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
 				CE05FEA22585871F00BFCEBA /* HeroPresenter.swift in Sources */,
+				CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */,
 				CE05FE6B2585678C00BFCEBA /* FirebasePresenter.swift in Sources */,
 				CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,

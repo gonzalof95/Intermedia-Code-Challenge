@@ -11,14 +11,12 @@ import RxCocoa
 
 class HeroPresenter {
     weak var delegate: HeroViewControllerProtocol?
-    let client: NetworkingClient
-    var heroesList: [HeroModel] = []
-
-    private let repository = HeroRepository()
     private let disposebag = DisposeBag()
+    private let service: HeroService
+    private var heroesList: [HeroModel] = []
 
-    required init(_ client: NetworkingClient) {
-        self.client = client
+    init(service: HeroService) {
+        self.service = service
     }
 
     func viewLoaded() {
@@ -26,7 +24,7 @@ class HeroPresenter {
     }
 
     private func executeGet() {
-        repository.getHeroes()
+        service.execute()
             .subscribe(onNext: { [weak self] response in
                 self?.heroesList = response.data.results
                 DispatchQueue.main.async {
