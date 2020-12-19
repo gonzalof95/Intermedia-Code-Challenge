@@ -32,7 +32,7 @@ class FirebasePresenter {
 
         Database.database().reference().child("users").child(userUID).updateChildValues(values) { (error, ref) in
             if let error = error {
-                print("Failed to update databse: ", error)
+                debugPrint("Failed to update databse: ", error)
                 return
             }
         }

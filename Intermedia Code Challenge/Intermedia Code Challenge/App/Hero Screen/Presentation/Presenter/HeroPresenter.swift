@@ -13,6 +13,8 @@ class HeroPresenter {
     private let disposebag = DisposeBag()
     private let service: HeroService
     private var heroesList: [HeroModel] = []
+    var apiCalling = false
+    var timesRecalled = 0
 
     init(service: HeroService) {
         self.service = service
@@ -23,15 +25,15 @@ class HeroPresenter {
     }
 
     private func executeGet(offset: Int = 0, isReloadingData: Bool = false) {
+        print("offest= ", offset)
         service.execute(offset)
             .subscribe(onNext: { [weak self] response in
                 self?.heroesList = response.data.results
                 DispatchQueue.main.async {
-                    print(self?.heroesList as Any)
                     self?.successFetchHeroes(isReloadingData)
                 }
             }, onError: { error in
-                print(error)
+                debugPrint(error)
             })
             .disposed(by: disposebag)
     }
@@ -44,7 +46,11 @@ class HeroPresenter {
         }
     }
 
-    func requestMoreData(_ offset: Int, _ isReloadingData: Bool) {
-        executeGet(offset: offset, isReloadingData: isReloadingData)
+    func requestMoreData(_ isApiCalling: Bool , _ timesRecalled: Int, _ isReloadingData: Bool) {
+        if !isApiCalling {
+            apiCalling = true
+            self.timesRecalled += 1
+            executeGet(offset: self.timesRecalled * 15, isReloadingData: isReloadingData)
+        }
     }
 }

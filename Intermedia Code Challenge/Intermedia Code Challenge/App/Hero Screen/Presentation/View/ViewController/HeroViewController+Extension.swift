@@ -31,11 +31,9 @@ extension HeroViewController: UIScrollViewDelegate {
         let contentHeight = scrollView.contentSize.height
 
         if offsetY > contentHeight - scrollView.frame.height {
-            if !apiCalling {
-                apiCalling = true
-                timesRecalled += 1
-                presenter?.requestMoreData(timesRecalled * 15, true)
-            }
+            presenter?.requestMoreData(presenter?.apiCalling ?? false,
+                                       presenter?.timesRecalled ?? 0,
+                                       true)
         }
     }
 }

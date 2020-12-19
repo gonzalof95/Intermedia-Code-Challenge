@@ -14,7 +14,7 @@ class RegistrationPresenter: FirebasePresenter {
         Auth.auth().createUser(withEmail: email,
                                password: password) { (result, error) in
             if let error = error {
-                print("Failed to sign in with error: ", error)
+                debugPrint("Failed to sign in with error: ", error)
                 self.delegate?.showError(message: ErrorMessages.couldNotRegister)
                 return
             }

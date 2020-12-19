@@ -14,9 +14,6 @@ class HeroViewController: BaseViewController {
     var heroView: HeroView?
     var heroesArray: [HeroModel] = []
 
-    var apiCalling = false
-    var timesRecalled = 0
-
     init(with presenter: HeroPresenter) {
         super.init(nibName: nil, bundle: nil)
         self.presenter = presenter
@@ -57,7 +54,7 @@ extension HeroViewController: HeroViewControllerProtocol {
 
     func reloadTable(_ heroes: [HeroModel]) {
         heroesArray += heroes
-        apiCalling = false
+        presenter?.apiCalling = false
         heroView?.tableView.reloadData()
     }
 }
