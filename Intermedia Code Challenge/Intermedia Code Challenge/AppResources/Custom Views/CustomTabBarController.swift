@@ -45,8 +45,14 @@ class CustomTabBarController: UITabBarController {
               let disabledHeroIcon = UIImage(named: AssetConstants.heroIconDisabled),
               let disabledCalendarIcon = UIImage(named: AssetConstants.calendarIconDisabled) else { return }
 
-        let heroNavigationController =  generateNavigationController(HeroViewController(with: HeroPresenter(service: HeroService(repository: HeroRepository()))), title: TitleConstants.firstTabBarTitle, selectedImage: selectedHeroIcon, disabledImage: disabledHeroIcon)
-        let eventsNavigationController = generateNavigationController(EventsViewController(), title: TitleConstants.secondTabBarTitle, selectedImage: selectedCalendarIcon, disabledImage: disabledCalendarIcon)
+        let heroNavigationController =  generateNavigationController(HeroViewController(with: HeroPresenter(service: HeroService(repository: HeroRepository(url: NetworkingConstants.baseURL)))),
+                                                                     title: TitleConstants.firstTabBarTitle,
+                                                                     selectedImage: selectedHeroIcon,
+                                                                     disabledImage: disabledHeroIcon)
+        let eventsNavigationController = generateNavigationController(EventsViewController(),
+                                                                      title: TitleConstants.secondTabBarTitle,
+                                                                      selectedImage: selectedCalendarIcon,
+                                                                      disabledImage: disabledCalendarIcon)
 
         viewControllers = [heroNavigationController, eventsNavigationController]
     }

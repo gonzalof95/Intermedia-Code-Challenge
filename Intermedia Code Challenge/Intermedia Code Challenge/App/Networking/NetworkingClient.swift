@@ -7,80 +7,59 @@
 
 import Foundation
 import RxSwift
-
-class NetworkingClient {
-
-    private var apiPubKey: String = ""
-    private var hash: String = ""
-
-    func executeGet(completion: @escaping(Result<HeroResponseModel, networkError>) -> Void) {
-
-        guard let baseURL = URLComponents(string: NetworkingConstants.baseURL) else {
-            completion(.failure(.badURL))
-            return
-        }
-
-        var components = baseURL
-        components.queryItems = [URLQueryItem(name: "apikey", value: apiPubKey.getAPIKey(key: NetworkingConstants.publicKey)),
-                                 URLQueryItem(name: "hash", value: hash.getAPIKey(key: NetworkingConstants.hash)),
-                                 URLQueryItem(name: "ts", value: "1"),
-                                 URLQueryItem(name: "limit", value: "9")]
-
-        let newUrl = URL(string: "https://gateway.marvel.com/v1/public/characters?apikey=3a783b25c80e1c44875356dd363f272d&hash=51a3ecf2f92a23817992a2663183325e&ts=1&offset=10&limit=10")!
-        let request = URLRequest(url: newUrl)
-
-        print("-----------------------------------------------------------------")
-        print("Request Start:")
-        print("URL: ", request)
-
-        URLSession.shared.dataTask(with: request) { (data, response, err) in
-            if (err != nil) {
-                completion(.failure(.requestError))
-            }
-
-            guard let data = data else {
-                completion(.failure(.noDataAvailable))
-                return
-            }
-            //print("JSON String: \(String(describing: String(data: data, encoding: .utf8)))")
-            do {
-                let responseData = try JSONDecoder().decode(HeroResponseModel.self, from: data)
-                completion(.success(responseData))
-            } catch {
-                completion(.failure(.canNotProcessData))
-            }
-            print("Request End")
-            print("-----------------------------------------------------------------")
-        }.resume()
-    }
-}
-
-enum networkError: Error {
-    case badURL
-    case requestError
-    case noDataAvailable
-    case canNotProcessData
-}
+import Alamofire
 
 class NetworkService {
-    let baseURL = NetworkingConstants.baseURL
+    private var publicKey: String = ""
+    private var hash: String = ""
 
-    func execute<T: Decodable>(url: URL) -> Observable<T> {
-        
+    func execute<T: Decodable>(baseUrl: String) -> Observable<T> {
+        let url = appendQueryParams(baseUrl)
+
         return Observable.create { observer -> Disposable in
-            let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                do {
-                    let model: T = try JSONDecoder().decode(T.self, from: data ?? Data())
-                    observer.onNext(model)
-                } catch let error {
-                    observer.onError(error)
+
+            AF.request(url)
+                .validate().responseJSON { response in
+                    switch response.result {
+                    case .success:
+                        guard let data = response.data else {
+                            observer.onError(response.error ?? networkError.notFound)
+                            return
+                        }
+                        do {
+                            let responseData = try JSONDecoder().decode(T.self, from: data)
+                            observer.onNext(responseData)
+                        } catch {
+                            observer.onError(error)
+                        }
+                    case .failure(let error):
+                        if let statusCode = response.response?.statusCode,
+                           let reason = networkError(rawValue: statusCode) {
+                            observer.onError(reason)
+                        }
+                        observer.onError(error)
+                    }
                 }
-                observer.onCompleted()
-            }
-            task.resume()
-            return Disposables.create {
-                task.cancel()
-            }
+            return Disposables.create()
         }
+    }
+
+    func appendQueryParams(_ baseUrl: String) -> String {
+        publicKey = publicKey.getAPIKey(key: NetworkingConstants.publicKey)
+        hash = hash.getAPIKey(key: NetworkingConstants.hash)
+
+        let url = baseUrl + "?" +
+                "apikey=" + "3a783b25c80e1c44875356dd363f272d" + "&" +
+                "hash=" + "51a3ecf2f92a23817992a2663183325e" + "&" +
+                "ts=" + "1" + "&" +
+                "offset=" + "10" + "&" +
+                "limit=" + "10"
+
+        return url
+    }
+
+    enum networkError: Int, Error {
+        case unAuthorized = 401
+        case notFound = 404
     }
 }
