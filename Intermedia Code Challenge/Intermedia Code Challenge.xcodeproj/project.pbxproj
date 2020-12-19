@@ -24,6 +24,7 @@
 		CE05FEBC25858A8400BFCEBA /* HeroViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05FEBB25858A8400BFCEBA /* HeroViewControllerProtocol.swift */; };
 		CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */; };
 		CE05FEEC2585B63600BFCEBA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */; };
+		CE12DF20258E649000E6F015 /* HeroViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DF1F258E649000E6F015 /* HeroViewController+Extension.swift */; };
 		CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31B877258A4898006B6E41 /* CustomImageView.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
@@ -95,6 +96,7 @@
 		CE05FEBB25858A8400BFCEBA /* HeroViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CE05FEE32585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		CE05FEEB2585B63600BFCEBA /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CE12DF1F258E649000E6F015 /* HeroViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroViewController+Extension.swift"; sourceTree = "<group>"; };
 		CE31B877258A4898006B6E41 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9012272582DEE500ECCC0A /* HeroViewController.swift */,
+				CE12DF1F258E649000E6F015 /* HeroViewController+Extension.swift */,
 				CE05FEBB25858A8400BFCEBA /* HeroViewControllerProtocol.swift */,
 			);
 			path = ViewController;
@@ -359,9 +362,9 @@
 		CE31BCEF258BE779006B6E41 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CED2DB8B25881B5A002379F3 /* Model */,
 				CE31BD12258C1110006B6E41 /* Service */,
 				CE31BD0C258C0E86006B6E41 /* Repository */,
-				CED2DB8B25881B5A002379F3 /* Model */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -791,6 +794,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE12DF20258E649000E6F015 /* HeroViewController+Extension.swift in Sources */,
 				CEB6F7EF2589735200CED9EB /* NetworkingClient.swift in Sources */,
 				CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */,
 				CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */,
