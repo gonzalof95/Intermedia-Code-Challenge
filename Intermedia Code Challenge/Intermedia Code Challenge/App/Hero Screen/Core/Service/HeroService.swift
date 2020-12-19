@@ -19,3 +19,28 @@ class HeroService: HeroServiceProtocol {
         return repository.getHeroes()
     }
 }
+//
+//extension String {
+//    func getCompleteUrl(baseURL: String) -> String {
+//
+//        let completeURL = appendQueryParams(baseURL: baseURL)
+//
+//        return completeURL
+//    }
+//
+//    func appendQueryParams(baseURL: String) -> String {
+//        var apiPubKey: String = ""
+//        var hash: String = ""
+//
+//        apiPubKey = apiPubKey.getAPIKey(key: NetworkingConstants.publicKey)
+//        hash = hash.getAPIKey(key: NetworkingConstants.hash)
+//
+//        let completeURL = baseURL +
+//            "apikey=" + apiPubKey +
+//            "hash=" + hash +
+//            "ts=" + "1" +
+//            "limit=" + "10"
+//
+//        return completeURL
+//    }
+//}

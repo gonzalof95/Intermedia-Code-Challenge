@@ -66,15 +66,15 @@ class NetworkService {
     let baseURL = NetworkingConstants.baseURL
 
     func execute<T: Decodable>(url: URL) -> Observable<T> {
-
+        
         return Observable.create { observer -> Disposable in
-            let task = URLSession.shared.dataTask(with: url) { data, _, _ in
-                guard let data = data,
-                      let decode = try? JSONDecoder().decode(T.self, from: data) else {
-                    return
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                do {
+                    let model: T = try JSONDecoder().decode(T.self, from: data ?? Data())
+                    observer.onNext(model)
+                } catch let error {
+                    observer.onError(error)
                 }
-
-                observer.onNext(decode)
                 observer.onCompleted()
             }
             task.resume()
