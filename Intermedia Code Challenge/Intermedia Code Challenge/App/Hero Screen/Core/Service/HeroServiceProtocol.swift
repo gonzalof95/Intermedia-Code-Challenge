@@ -9,5 +9,5 @@ import Foundation
 import RxSwift
 
 protocol HeroServiceProtocol {
-    func execute() -> Observable<HeroResponseModel>
+    func execute(_ offset: Int) -> Observable<HeroResponseModel>
 }

@@ -7,7 +7,6 @@
 
 import FirebaseAuth
 import RxSwift
-import RxCocoa
 
 class HeroPresenter {
     weak var delegate: HeroViewControllerProtocol?
@@ -23,13 +22,13 @@ class HeroPresenter {
         executeGet()
     }
 
-    private func executeGet() {
-        service.execute()
+    private func executeGet(offset: Int = 0, isReloadingData: Bool = false) {
+        service.execute(offset)
             .subscribe(onNext: { [weak self] response in
                 self?.heroesList = response.data.results
                 DispatchQueue.main.async {
                     print(self?.heroesList as Any)
-                    self?.successFetchHeroes()
+                    self?.successFetchHeroes(isReloadingData)
                 }
             }, onError: { error in
                 print(error)
@@ -37,7 +36,15 @@ class HeroPresenter {
             .disposed(by: disposebag)
     }
 
-    private func successFetchHeroes() {
-        delegate?.setupView(heroesList)
+    private func successFetchHeroes(_ isReloading: Bool) {
+        if !isReloading {
+            delegate?.setupView(heroesList)
+        } else {
+            delegate?.reloadTable(heroesList)
+        }
+    }
+
+    func requestMoreData(_ offset: Int, _ isReloadingData: Bool) {
+        executeGet(offset: offset, isReloadingData: isReloadingData)
     }
 }

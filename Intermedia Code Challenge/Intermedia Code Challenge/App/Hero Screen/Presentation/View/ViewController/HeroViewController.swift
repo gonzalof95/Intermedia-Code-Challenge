@@ -14,6 +14,9 @@ class HeroViewController: BaseViewController {
     var heroView: HeroView?
     var heroesArray: [HeroModel] = []
 
+    var apiCalling = false
+    var timesRecalled = 0
+
     init(with presenter: HeroPresenter) {
         super.init(nibName: nil, bundle: nil)
         self.presenter = presenter
@@ -51,6 +54,12 @@ extension HeroViewController: HeroViewControllerProtocol {
     func setupView(_ heroes: [HeroModel]) {
         setupTable(heroes)
     }
+
+    func reloadTable(_ heroes: [HeroModel]) {
+        heroesArray += heroes
+        apiCalling = false
+        heroView?.tableView.reloadData()
+    }
 }
 
 extension HeroViewController: UITableViewDelegate, UITableViewDataSource {
@@ -68,5 +77,24 @@ extension HeroViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+extension HeroViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+
+        if offsetY > contentHeight - scrollView.frame.height {
+            if !apiCalling {
+                beginCall()
+            }
+        }
+    }
+
+    func beginCall() {
+        apiCalling = true
+        timesRecalled += 1
+        presenter?.requestMoreData(timesRecalled * 15, true)
     }
 }

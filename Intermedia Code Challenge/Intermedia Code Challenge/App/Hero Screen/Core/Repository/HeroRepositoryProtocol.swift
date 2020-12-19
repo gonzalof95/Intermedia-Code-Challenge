@@ -9,5 +9,5 @@ import Foundation
 import RxSwift
 
 protocol HeroRepositoryProtocol {
-    func getHeroes() -> Observable<HeroResponseModel>
+    func getHeroes(_ offset: Int) -> Observable<HeroResponseModel>
 }

@@ -70,7 +70,7 @@ class HeroCell: UITableViewCell {
     }
 
     func set(_ hero: HeroModel) {
-        iconImage.sd_setImage(with: URL(string: hero.thumbnail.path + "." + hero.thumbnail.imageExtension), placeholderImage: UIImage(named: "riko"))
+        iconImage.sd_setImage(with: URL(string: hero.thumbnail.path + "." + hero.thumbnail.imageExtension), placeholderImage: UIImage(named: "blank"))
         nameLabel.text = hero.name
         descriptionLabel.text = hero.description
     }

@@ -15,7 +15,7 @@ class HeroService: HeroServiceProtocol {
         self.repository = repository
     }
 
-    func execute() -> Observable<HeroResponseModel> {
-        return repository.getHeroes()
+    func execute(_ offset: Int) -> Observable<HeroResponseModel> {
+        return repository.getHeroes(offset)
     }
 }

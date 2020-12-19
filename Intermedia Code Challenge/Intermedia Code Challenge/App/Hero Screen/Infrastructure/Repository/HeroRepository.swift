@@ -18,7 +18,7 @@ class HeroRepository: HeroRepositoryProtocol {
         self.url = url
     }
 
-    func getHeroes() -> Observable<HeroResponseModel> {
-        return networkService.execute(baseUrl: url)
+    func getHeroes(_ offset: Int) -> Observable<HeroResponseModel> {
+        return networkService.execute(url, offset)
     }
 }
