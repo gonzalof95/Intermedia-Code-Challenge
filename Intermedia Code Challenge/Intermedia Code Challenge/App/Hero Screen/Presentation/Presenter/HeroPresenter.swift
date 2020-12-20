@@ -12,7 +12,7 @@ class HeroPresenter {
     weak var delegate: HeroViewControllerProtocol?
     private let disposebag = DisposeBag()
     private let service: HeroService
-    private var heroesList: [HeroModel] = []
+    var heroesList: [HeroModel] = []
     var apiCalling = false
     var timesRecalled = 0
 
@@ -30,6 +30,7 @@ class HeroPresenter {
             .subscribe(onNext: { [weak self] response in
                 self?.heroesList = response.data.results
                 DispatchQueue.main.async {
+                    //print(self?.heroesList)
                     self?.successFetchHeroes(isReloadingData)
                 }
             }, onError: { error in
@@ -52,5 +53,10 @@ class HeroPresenter {
             self.timesRecalled += 1
             executeGet(offset: self.timesRecalled * 15, isReloadingData: isReloadingData)
         }
+    }
+
+    func rowTaped(hero: HeroModel) {
+        let presenter = DetailPresenter(hero: hero)
+        delegate?.pushNextViewController(DetailViewController(with: presenter))
     }
 }

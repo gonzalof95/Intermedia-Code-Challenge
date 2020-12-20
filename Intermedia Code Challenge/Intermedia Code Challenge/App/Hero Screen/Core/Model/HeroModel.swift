@@ -18,9 +18,11 @@ struct HeroResponseData: Decodable {
 }
 
 struct HeroModel: Decodable {
+    let id: Int
     let name: String
     let description: String
     let thumbnail: ThumbnailModel
+    let comics: ComicsListModel
 }
 
 struct ThumbnailModel: Decodable {

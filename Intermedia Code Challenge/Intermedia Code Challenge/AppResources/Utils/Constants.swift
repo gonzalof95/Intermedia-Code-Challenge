@@ -9,6 +9,7 @@ struct TitleConstants {
     static let mainScreenTitle = "Marvel Challenge"
     static let firstTabBarTitle = "Personajes"
     static let secondTabBarTitle = "Eventos"
+    static let detailScreenTitle =  "COMICS EN LOS QUE APARECE"
 }
 
 struct AssetConstants {

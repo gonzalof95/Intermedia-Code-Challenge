@@ -31,7 +31,8 @@ class HeroViewController: BaseViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        setNavBar(.customColorMain)
+        setNavBar(.customColorMain, hidesBackButton: true)
+        setScreenTitle()
     }
 
     private func setupTable(_ heroes: [HeroModel]) {

@@ -15,16 +15,23 @@ class BaseViewController: UIViewController {
         view.backgroundColor = .customBackgroundColor
     }
 
-    func setNavBar(_ color: UIColor) {
+    func setNavBar(_ color: UIColor, hidesBackButton: Bool) {
         navigationController?.navigationBar.backgroundColor = color
         navigationController?.navigationBar.barTintColor = color
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        if hidesBackButton {
+            navigationItem.hidesBackButton = true
+        } else {
+            navigationItem.hidesBackButton = false
+        }
+    }
+
+    func setScreenTitle(title: String = TitleConstants.mainScreenTitle) {
         navigationController?.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
-            NSAttributedString.Key.font: UIFont(name: Fonts.robotoCondensed, size: 20)]
+            NSAttributedString.Key.font: UIFont(name: Fonts.robotoCondensed, size: 20) as Any]
         navigationItem.largeTitleDisplayMode = .never
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.hidesBackButton = true
-        navigationItem.title = TitleConstants.mainScreenTitle
+        navigationItem.title = title
     }
 }
 

@@ -16,6 +16,8 @@ extension UIColor {
     static let customWhiteColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     static let customBlackColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     static let customShadowColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.2)
+    static let customDetailLabelColor = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.6)
+    static let customDescriptionColor = UIColor(red: 34.0/255.0, green: 32.0/255.0, blue: 83.0/255.0, alpha: 1.0)
 }
 
 extension UIView {

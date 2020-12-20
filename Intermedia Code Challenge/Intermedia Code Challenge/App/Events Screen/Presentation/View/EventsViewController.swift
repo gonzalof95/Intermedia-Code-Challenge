@@ -17,6 +17,7 @@ class EventsViewController: BaseViewController {
     }
 
     private func setupNavBar() {
-        setNavBar(.customColorMain)
+        setNavBar(.customColorMain, hidesBackButton: true)
+        setScreenTitle()
     }
 }

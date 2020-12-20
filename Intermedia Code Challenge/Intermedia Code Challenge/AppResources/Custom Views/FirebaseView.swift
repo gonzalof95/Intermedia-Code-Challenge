@@ -9,7 +9,6 @@ import UIKit
 import PureLayout
 
 class FirebaseView: UIView {
-
     let containerView = UIView(forAutoLayout: ())
     let mailTextField =  CustomTextField(forAutoLayout: ())
     let passwordTextField = CustomTextField(forAutoLayout: ())
