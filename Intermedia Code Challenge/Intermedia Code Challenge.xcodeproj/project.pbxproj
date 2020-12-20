@@ -29,8 +29,14 @@
 		CE12DF3C258EA7DB00E6F015 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DF3B258EA7DA00E6F015 /* DetailViewController.swift */; };
 		CE12DF44258EA82F00E6F015 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DF43258EA82F00E6F015 /* DetailPresenter.swift */; };
 		CE12DF49258EA84A00E6F015 /* DetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DF48258EA84A00E6F015 /* DetailViewControllerProtocol.swift */; };
-		CE12DF4E258EB01A00E6F015 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DF4D258EB01A00E6F015 /* DetailView.swift */; };
-		CE12DF53258EC47200E6F015 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DF52258EC47100E6F015 /* DetailCell.swift */; };
+		CE12DFCB258FD4E500E6F015 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DFC9258FD4E500E6F015 /* ImageTableViewCell.swift */; };
+		CE12DFCC258FD4E500E6F015 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12DFCA258FD4E500E6F015 /* ImageTableViewCell.xib */; };
+		CE12DFD4258FDBC200E6F015 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DFD2258FDBC200E6F015 /* DescriptionTableViewCell.swift */; };
+		CE12DFD5258FDBC200E6F015 /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12DFD3258FDBC200E6F015 /* DescriptionTableViewCell.xib */; };
+		CE12DFDF258FDEDD00E6F015 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DFDD258FDEDD00E6F015 /* TitleTableViewCell.swift */; };
+		CE12DFE0258FDEDD00E6F015 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12DFDE258FDEDD00E6F015 /* TitleTableViewCell.xib */; };
+		CE12DFEA258FE02600E6F015 /* ComicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DFE8258FE02600E6F015 /* ComicTableViewCell.swift */; };
+		CE12DFEB258FE02600E6F015 /* ComicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12DFE9258FE02600E6F015 /* ComicTableViewCell.xib */; };
 		CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31B877258A4898006B6E41 /* CustomImageView.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
@@ -107,8 +113,14 @@
 		CE12DF3B258EA7DA00E6F015 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CE12DF43258EA82F00E6F015 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		CE12DF48258EA84A00E6F015 /* DetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerProtocol.swift; sourceTree = "<group>"; };
-		CE12DF4D258EB01A00E6F015 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010DetailView.swift"; sourceTree = "<group>"; };
-		CE12DF52258EC47100E6F015 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		CE12DFC9258FD4E500E6F015 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		CE12DFCA258FD4E500E6F015 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		CE12DFD2258FDBC200E6F015 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		CE12DFD3258FDBC200E6F015 /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		CE12DFDD258FDEDD00E6F015 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		CE12DFDE258FDEDD00E6F015 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		CE12DFE8258FE02600E6F015 /* ComicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicTableViewCell.swift; sourceTree = "<group>"; };
+		CE12DFE9258FE02600E6F015 /* ComicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicTableViewCell.xib; sourceTree = "<group>"; };
 		CE31B877258A4898006B6E41 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
@@ -356,8 +368,7 @@
 		CE12DF39258EA7BA00E6F015 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE12DF52258EC47100E6F015 /* DetailCell.swift */,
-				CE12DF4D258EB01A00E6F015 /* DetailView.swift */,
+				CE12DFC2258FD3B800E6F015 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -369,6 +380,53 @@
 				CE12DF48258EA84A00E6F015 /* DetailViewControllerProtocol.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE12DFC2258FD3B800E6F015 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE12DFE7258FE00F00E6F015 /* ComicTableViewCell */,
+				CE12DFDC258FDEC900E6F015 /* TitleTableViewCell */,
+				CE12DFD1258FDBAD00E6F015 /* DescriptionTableViewCell */,
+				CE12DFD0258FDBA100E6F015 /* ImageTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE12DFD0258FDBA100E6F015 /* ImageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE12DFC9258FD4E500E6F015 /* ImageTableViewCell.swift */,
+				CE12DFCA258FD4E500E6F015 /* ImageTableViewCell.xib */,
+			);
+			path = ImageTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE12DFD1258FDBAD00E6F015 /* DescriptionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE12DFD2258FDBC200E6F015 /* DescriptionTableViewCell.swift */,
+				CE12DFD3258FDBC200E6F015 /* DescriptionTableViewCell.xib */,
+			);
+			path = DescriptionTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE12DFDC258FDEC900E6F015 /* TitleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE12DFDD258FDEDD00E6F015 /* TitleTableViewCell.swift */,
+				CE12DFDE258FDEDD00E6F015 /* TitleTableViewCell.xib */,
+			);
+			path = TitleTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE12DFE7258FE00F00E6F015 /* ComicTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE12DFE8258FE02600E6F015 /* ComicTableViewCell.swift */,
+				CE12DFE9258FE02600E6F015 /* ComicTableViewCell.xib */,
+			);
+			path = ComicTableViewCell;
 			sourceTree = "<group>";
 		};
 		CE31BAFC258AC2AF006B6E41 /* ViewController */ = {
@@ -735,10 +793,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE12DFCC258FD4E500E6F015 /* ImageTableViewCell.xib in Resources */,
 				CEB6F815258986A500CED9EB /* MVAPISample-Info.plist in Resources */,
 				CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */,
 				CEB6F8052589833F00CED9EB /* MVAPI-Info.plist in Resources */,
+				CE12DFD5258FDBC200E6F015 /* DescriptionTableViewCell.xib in Resources */,
+				CE12DFEB258FE02600E6F015 /* ComicTableViewCell.xib in Resources */,
 				CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */,
+				CE12DFE0258FDEDD00E6F015 /* TitleTableViewCell.xib in Resources */,
 				CE05FEEC2585B63600BFCEBA /* Roboto-Regular.ttf in Resources */,
 				CE90129C2582EEA600ECCC0A /* GoogleService-Info.plist in Resources */,
 			);
@@ -870,7 +932,6 @@
 			files = (
 				CE12DF20258E649000E6F015 /* HeroViewController+Extension.swift in Sources */,
 				CEB6F7EF2589735200CED9EB /* NetworkingClient.swift in Sources */,
-				CE12DF4E258EB01A00E6F015 /* DetailView.swift in Sources */,
 				CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */,
 				CE12DF2F258E811300E6F015 /* ComicsModel.swift in Sources */,
 				CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */,
@@ -889,19 +950,22 @@
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
 				CE12DF3C258EA7DB00E6F015 /* DetailViewController.swift in Sources */,
 				CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */,
+				CE12DFCB258FD4E500E6F015 /* ImageTableViewCell.swift in Sources */,
 				CE9012282582DEE500ECCC0A /* HeroViewController.swift in Sources */,
 				CE05FEBC25858A8400BFCEBA /* HeroViewControllerProtocol.swift in Sources */,
 				CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */,
 				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
 				CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */,
 				CE31BD14258C111E006B6E41 /* HeroService.swift in Sources */,
+				CE12DFEA258FE02600E6F015 /* ComicTableViewCell.swift in Sources */,
 				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
 				CE05FEA22585871F00BFCEBA /* HeroPresenter.swift in Sources */,
 				CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */,
 				CE12DF44258EA82F00E6F015 /* DetailPresenter.swift in Sources */,
 				CE05FE6B2585678C00BFCEBA /* FirebasePresenter.swift in Sources */,
-				CE12DF53258EC47200E6F015 /* DetailCell.swift in Sources */,
 				CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */,
+				CE12DFD4258FDBC200E6F015 /* DescriptionTableViewCell.swift in Sources */,
+				CE12DFDF258FDEDD00E6F015 /* TitleTableViewCell.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
 				CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */,
 				CE12DF49258EA84A00E6F015 /* DetailViewControllerProtocol.swift in Sources */,

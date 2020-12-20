@@ -57,6 +57,6 @@ class HeroPresenter {
 
     func rowTaped(hero: HeroModel) {
         let presenter = DetailPresenter(hero: hero)
-        delegate?.pushNextViewController(DetailViewController(with: presenter))
+        delegate?.pushNextViewController(DetailViewController(with: presenter, heroData: hero))
     }
 }
