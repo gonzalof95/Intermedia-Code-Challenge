@@ -25,7 +25,6 @@ class HeroPresenter {
     }
 
     private func executeGet(offset: Int = 0, isReloadingData: Bool = false) {
-        print("offest= ", offset)
         service.execute(offset)
             .subscribe(onNext: { [weak self] response in
                 self?.heroesList = response.data.results
@@ -56,7 +55,7 @@ class HeroPresenter {
     }
 
     func rowTaped(hero: HeroModel) {
-        let presenter = DetailPresenter(hero: hero)
+        let presenter = DetailPresenter(hero: hero, service: ComicsService(repository: ComicsRepository(url: NetworkingConstants.baseURL)))
         delegate?.pushNextViewController(DetailViewController(with: presenter, heroData: hero))
     }
 }

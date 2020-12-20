@@ -28,7 +28,8 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
             return cell	
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: ComicTableViewCell.identifier) as! ComicTableViewCell
-            cell.configure(with: comicsArray[indexPath.row - 3].name, subtitle: "1990")
+            cell.configure(with: comicsArray[indexPath.row - 3].title, subtitle: comicsArray[indexPath.row - 3].id
+            )
             return cell
         }
     }

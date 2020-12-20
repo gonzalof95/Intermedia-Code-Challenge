@@ -17,12 +17,12 @@ class ComicTableViewCell: UITableViewCell {
         return UINib(nibName: "ComicTableViewCell", bundle: nil)
     }
 
-    public func configure(with title: String, subtitle: String) {
+    public func configure(with title: String, subtitle: Int) {
         titleLabel.text = title
         titleLabel.font = UIFont(name: Fonts.robotoRegular, size: 16)
         titleLabel.textColor = .customBlackColor
 
-        subtitleLabel.text = subtitle
+        subtitleLabel.text = "\(subtitle)"
         subtitleLabel.font = UIFont(name: Fonts.robotoRegular, size: 14)
         subtitleLabel.textColor = .customDetailLabelColor
     }

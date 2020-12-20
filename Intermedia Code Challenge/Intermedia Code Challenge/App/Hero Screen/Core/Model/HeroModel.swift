@@ -22,7 +22,6 @@ struct HeroModel: Decodable {
     let name: String
     let description: String
     let thumbnail: ThumbnailModel
-    let comics: ComicsListModel
 }
 
 struct ThumbnailModel: Decodable {

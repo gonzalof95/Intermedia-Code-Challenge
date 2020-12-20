@@ -1,14 +1,14 @@
 //
-//  HeroRepository.swift
+//  DetailScreenRepository.swift
 //  Intermedia Code Challenge
 //
-//  Created by Gonzalo Ivan Fuentes on 17/12/2020.
+//  Created by Gonzalo Ivan Fuentes on 20/12/2020.
 //
 
 import Foundation
 import RxSwift
 
-class HeroRepository: HeroRepositoryProtocol {
+class ComicsRepository: ComicsRepositoryProtocol {
     private let networkService: NetworkService
     private let url: String
 
@@ -17,7 +17,7 @@ class HeroRepository: HeroRepositoryProtocol {
         self.url = url
     }
 
-    func getHeroes(_ offset: Int) -> Observable<HeroResponseModel> {
-        return networkService.execute(url, offset)
+    func getComics(_ offset: Int, _ heroID: Int) -> Observable<ComicsResponseModel> {
+        return networkService.execute(url + "/1011335/comics", offset)
     }
 }

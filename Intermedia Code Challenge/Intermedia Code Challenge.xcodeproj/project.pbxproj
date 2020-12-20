@@ -38,6 +38,10 @@
 		CE12DFEA258FE02600E6F015 /* ComicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DFE8258FE02600E6F015 /* ComicTableViewCell.swift */; };
 		CE12DFEB258FE02600E6F015 /* ComicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12DFE9258FE02600E6F015 /* ComicTableViewCell.xib */; };
 		CE12DFF9258FE37600E6F015 /* DetailViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DFF8258FE37600E6F015 /* DetailViewController+Extension.swift */; };
+		CE12E007258FE62B00E6F015 /* DetailScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E006258FE62B00E6F015 /* DetailScreenRepository.swift */; };
+		CE12E00C258FE64000E6F015 /* DetailScreenRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E00B258FE64000E6F015 /* DetailScreenRepositoryProtocol.swift */; };
+		CE12E011258FE79000E6F015 /* ComicsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E010258FE79000E6F015 /* ComicsService.swift */; };
+		CE12E016258FE79B00E6F015 /* ComicsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E015258FE79B00E6F015 /* ComicsServiceProtocol.swift */; };
 		CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31B877258A4898006B6E41 /* CustomImageView.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
@@ -123,6 +127,10 @@
 		CE12DFE8258FE02600E6F015 /* ComicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicTableViewCell.swift; sourceTree = "<group>"; };
 		CE12DFE9258FE02600E6F015 /* ComicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicTableViewCell.xib; sourceTree = "<group>"; };
 		CE12DFF8258FE37600E6F015 /* DetailViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Extension.swift"; sourceTree = "<group>"; };
+		CE12E006258FE62B00E6F015 /* DetailScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenRepository.swift; sourceTree = "<group>"; };
+		CE12E00B258FE64000E6F015 /* DetailScreenRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenRepositoryProtocol.swift; sourceTree = "<group>"; };
+		CE12E010258FE79000E6F015 /* ComicsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsService.swift; sourceTree = "<group>"; };
+		CE12E015258FE79B00E6F015 /* ComicsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsServiceProtocol.swift; sourceTree = "<group>"; };
 		CE31B877258A4898006B6E41 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
@@ -320,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				CE12DF2B258E80F800E6F015 /* Core */,
+				CE12E003258FE5E600E6F015 /* Infrastructure */,
 				CE12DF36258EA79E00E6F015 /* Presentation */,
 			);
 			path = DetailScreen;
@@ -329,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				CE12DF2C258E80FD00E6F015 /* Model */,
+				CE12E004258FE5F600E6F015 /* Service */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -430,6 +440,32 @@
 				CE12DFE9258FE02600E6F015 /* ComicTableViewCell.xib */,
 			);
 			path = ComicTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE12E003258FE5E600E6F015 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E005258FE60700E6F015 /* Repository */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CE12E004258FE5F600E6F015 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E010258FE79000E6F015 /* ComicsService.swift */,
+				CE12E015258FE79B00E6F015 /* ComicsServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CE12E005258FE60700E6F015 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E006258FE62B00E6F015 /* DetailScreenRepository.swift */,
+				CE12E00B258FE64000E6F015 /* DetailScreenRepositoryProtocol.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		CE31BAFC258AC2AF006B6E41 /* ViewController */ = {
@@ -943,7 +979,9 @@
 				CE74766A2586B8C200C63A77 /* CustomTabBarController.swift in Sources */,
 				CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */,
 				CE12DFF9258FE37600E6F015 /* DetailViewController+Extension.swift in Sources */,
+				CE12E011258FE79000E6F015 /* ComicsService.swift in Sources */,
 				CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */,
+				CE12E007258FE62B00E6F015 /* DetailScreenRepository.swift in Sources */,
 				CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */,
 				CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */,
 				CE05FEB725858A6800BFCEBA /* RegisterViewProtocol.swift in Sources */,
@@ -966,9 +1004,11 @@
 				CE05FEA22585871F00BFCEBA /* HeroPresenter.swift in Sources */,
 				CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */,
 				CE12DF44258EA82F00E6F015 /* DetailPresenter.swift in Sources */,
+				CE12E00C258FE64000E6F015 /* DetailScreenRepositoryProtocol.swift in Sources */,
 				CE05FE6B2585678C00BFCEBA /* FirebasePresenter.swift in Sources */,
 				CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */,
 				CE12DFD4258FDBC200E6F015 /* DescriptionTableViewCell.swift in Sources */,
+				CE12E016258FE79B00E6F015 /* ComicsServiceProtocol.swift in Sources */,
 				CE12DFDF258FDEDD00E6F015 /* TitleTableViewCell.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
 				CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */,

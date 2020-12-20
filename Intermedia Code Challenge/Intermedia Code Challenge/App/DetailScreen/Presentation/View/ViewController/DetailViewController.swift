@@ -10,7 +10,7 @@ import PureLayout
 
 class DetailViewController: BaseViewController {
     var presenter: DetailPresenter?
-    var comicsArray: [ComicModel] = []
+    var comicsArray: [ComicsModel] = []
     var heroData: HeroModel
     let tableView = UITableView(forAutoLayout: ())
 
@@ -34,7 +34,7 @@ class DetailViewController: BaseViewController {
         setNavBar(.customColorMain, hidesBackButton: false)
     }
 
-    private func setupViewValues(_ hero: HeroModel, _ comics: [ComicModel]) {
+    private func setupViewValues(_ hero: HeroModel, _ comics: [ComicsModel]) {
         comicsArray = comics
         heroData = hero
 
@@ -57,7 +57,7 @@ class DetailViewController: BaseViewController {
 }
 
 extension DetailViewController: DetailViewControllerProtocol {
-    func setupView(_ hero: HeroModel, _ comics: [ComicModel]) {
+    func setupView(_ hero: HeroModel, _ comics: [ComicsModel]) {
         setupViewValues(hero, comics)
     }
 }

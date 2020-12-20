@@ -6,5 +6,5 @@
 //
 
 protocol DetailViewControllerProtocol: BaseViewControllerProtocol {
-    func setupView(_ hero: HeroModel, _ comics: [ComicModel])
+    func setupView(_ hero: HeroModel, _ comics: [ComicsModel])
 }
