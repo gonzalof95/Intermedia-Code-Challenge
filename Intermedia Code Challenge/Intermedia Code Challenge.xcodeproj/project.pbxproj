@@ -42,7 +42,7 @@
 		CE12E00C258FE64000E6F015 /* DetailScreenRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E00B258FE64000E6F015 /* DetailScreenRepositoryProtocol.swift */; };
 		CE12E011258FE79000E6F015 /* ComicsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E010258FE79000E6F015 /* ComicsService.swift */; };
 		CE12E016258FE79B00E6F015 /* ComicsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E015258FE79B00E6F015 /* ComicsServiceProtocol.swift */; };
-		CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31B877258A4898006B6E41 /* CustomImageView.swift */; };
+		CE12E021258FFA9200E6F015 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E020258FFA9200E6F015 /* DetailView.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
 		CE31BD14258C111E006B6E41 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD13258C111E006B6E41 /* HeroService.swift */; };
@@ -131,7 +131,7 @@
 		CE12E00B258FE64000E6F015 /* DetailScreenRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenRepositoryProtocol.swift; sourceTree = "<group>"; };
 		CE12E010258FE79000E6F015 /* ComicsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsService.swift; sourceTree = "<group>"; };
 		CE12E015258FE79B00E6F015 /* ComicsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsServiceProtocol.swift; sourceTree = "<group>"; };
-		CE31B877258A4898006B6E41 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		CE12E020258FFA9200E6F015 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
 		CE31BD13258C111E006B6E41 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
@@ -398,6 +398,7 @@
 		CE12DFC2258FD3B800E6F015 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CE12E020258FFA9200E6F015 /* DetailView.swift */,
 				CE12DFD0258FDBA100E6F015 /* ImageTableViewCell */,
 				CE12DFD1258FDBAD00E6F015 /* DescriptionTableViewCell */,
 				CE12DFDC258FDEC900E6F015 /* TitleTableViewCell */,
@@ -472,7 +473,6 @@
 			isa = PBXGroup;
 			children = (
 				CE05FE3425855C1700BFCEBA /* LoginViewControlller.swift */,
-				CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -481,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				CE05FE4425855C9700BFCEBA /* LoginView.swift */,
+				CE05FEB125858A5000BFCEBA /* LoginViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -672,7 +673,6 @@
 				CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */,
 				CE9012BF2583036100ECCC0A /* CustomTextField.swift */,
 				CE7476692586B8C200C63A77 /* CustomTabBarController.swift */,
-				CE31B877258A4898006B6E41 /* CustomImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -977,7 +977,6 @@
 				CE31BD1C258C112A006B6E41 /* HeroServiceProtocol.swift in Sources */,
 				CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */,
 				CE74766A2586B8C200C63A77 /* CustomTabBarController.swift in Sources */,
-				CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */,
 				CE12DFF9258FE37600E6F015 /* DetailViewController+Extension.swift in Sources */,
 				CE12E011258FE79000E6F015 /* ComicsService.swift in Sources */,
 				CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */,
@@ -995,6 +994,7 @@
 				CE12DFCB258FD4E500E6F015 /* ImageTableViewCell.swift in Sources */,
 				CE9012282582DEE500ECCC0A /* HeroViewController.swift in Sources */,
 				CE05FEBC25858A8400BFCEBA /* HeroViewControllerProtocol.swift in Sources */,
+				CE12E021258FFA9200E6F015 /* DetailView.swift in Sources */,
 				CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */,
 				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
 				CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */,

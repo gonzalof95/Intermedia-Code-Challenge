@@ -12,7 +12,7 @@ class DetailViewController: BaseViewController {
     var presenter: DetailPresenter?
     var comicsArray: [ComicsModel] = []
     var heroData: HeroModel
-    let tableView = UITableView(forAutoLayout: ())
+    var detailView: DetailView?
 
     init(with presenter: DetailPresenter, heroData: HeroModel) {
         self.heroData = heroData
@@ -37,22 +37,15 @@ class DetailViewController: BaseViewController {
     private func setupViewValues(_ hero: HeroModel, _ comics: [ComicsModel]) {
         comicsArray = comics
         heroData = hero
-
         setScreenTitle(title: hero.name)
-        tableView.delegate = self
-        tableView.dataSource = self
 
-        registerTableViewCells()
+        self.detailView = DetailView()
+        guard let strongCustomView = detailView else { return }
 
-        view.addSubview(tableView)
-        tableView.autoPinEdgesToSuperviewEdges()
-    }
-
-    private func registerTableViewCells() {
-        tableView.register(ImageTableViewCell.nib(), forCellReuseIdentifier: "ImageTableViewCell")
-        tableView.register(DescriptionTableViewCell.nib(), forCellReuseIdentifier: "DescriptionTableViewCell")
-        tableView.register(TitleTableViewCell.nib(), forCellReuseIdentifier: "TitleTableViewCell")
-        tableView.register(ComicTableViewCell.nib(), forCellReuseIdentifier: "ComicTableViewCell")
+        strongCustomView.tableView.delegate = self
+        strongCustomView.tableView.dataSource = self
+        view.addSubview(strongCustomView)
+        detailView?.autoPinEdgesToSuperviewEdges()
     }
 }
 
@@ -64,6 +57,6 @@ extension DetailViewController: DetailViewControllerProtocol {
     func reloadTable(_ comics: [ComicsModel]) {
         comicsArray += comics
         presenter?.apiCalling = false
-        tableView.reloadData()
+        detailView?.tableView.reloadData()
     }
 }

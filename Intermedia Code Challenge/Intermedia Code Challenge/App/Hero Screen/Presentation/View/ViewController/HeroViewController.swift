@@ -9,7 +9,6 @@ import UIKit
 import PureLayout
 
 class HeroViewController: BaseViewController {
-
     var presenter: HeroPresenter?
     var heroView: HeroView?
     var heroesArray: [HeroModel] = []

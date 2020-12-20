@@ -9,7 +9,6 @@ import UIKit
 import PureLayout
 
 class RegisterView: UIView {
-
     let containerView = UIView(forAutoLayout: ())
     let registerButton = CustomButton(forAutoLayout: ())
     var firebaseView: FirebaseView?

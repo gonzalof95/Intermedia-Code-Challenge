@@ -10,7 +10,6 @@ import PureLayout
 import FirebaseAuth
 
 class RegistrationViewController: BaseViewController {
-
     var customView: RegisterView?
     var presenter: RegistrationPresenter?
 
