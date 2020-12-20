@@ -19,6 +19,7 @@ class ImageTableViewCell: UITableViewCell {
     public func configure(with imageUrl: String) {
         heroImageView.sd_setImage(with: URL(string: imageUrl), placeholderImage: UIImage(named: "blank"))
         heroImageView.contentMode = .scaleAspectFill
+        separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
     }
 
     override func awakeFromNib() {

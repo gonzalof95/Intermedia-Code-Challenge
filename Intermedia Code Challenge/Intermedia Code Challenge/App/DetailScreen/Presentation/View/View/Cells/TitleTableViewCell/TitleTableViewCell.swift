@@ -19,6 +19,7 @@ class TitleTableViewCell: UITableViewCell {
         titleLabel.text = title
         titleLabel.font = UIFont(name: Fonts.robotoCondensed, size: 20)
         titleLabel.textColor = .customBlackColor
+        separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
     }
 
     override func awakeFromNib() {

@@ -26,7 +26,6 @@ class HeroViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
         presenter?.viewLoaded()
     }
 

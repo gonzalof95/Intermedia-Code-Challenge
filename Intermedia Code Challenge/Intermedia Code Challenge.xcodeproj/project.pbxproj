@@ -37,6 +37,7 @@
 		CE12DFE0258FDEDD00E6F015 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12DFDE258FDEDD00E6F015 /* TitleTableViewCell.xib */; };
 		CE12DFEA258FE02600E6F015 /* ComicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DFE8258FE02600E6F015 /* ComicTableViewCell.swift */; };
 		CE12DFEB258FE02600E6F015 /* ComicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12DFE9258FE02600E6F015 /* ComicTableViewCell.xib */; };
+		CE12DFF9258FE37600E6F015 /* DetailViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12DFF8258FE37600E6F015 /* DetailViewController+Extension.swift */; };
 		CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31B877258A4898006B6E41 /* CustomImageView.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
@@ -121,6 +122,7 @@
 		CE12DFDE258FDEDD00E6F015 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		CE12DFE8258FE02600E6F015 /* ComicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicTableViewCell.swift; sourceTree = "<group>"; };
 		CE12DFE9258FE02600E6F015 /* ComicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicTableViewCell.xib; sourceTree = "<group>"; };
+		CE12DFF8258FE37600E6F015 /* DetailViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Extension.swift"; sourceTree = "<group>"; };
 		CE31B877258A4898006B6E41 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				CE12DF3B258EA7DA00E6F015 /* DetailViewController.swift */,
+				CE12DFF8258FE37600E6F015 /* DetailViewController+Extension.swift */,
 				CE12DF48258EA84A00E6F015 /* DetailViewControllerProtocol.swift */,
 			);
 			path = ViewController;
@@ -385,10 +388,10 @@
 		CE12DFC2258FD3B800E6F015 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CE12DFE7258FE00F00E6F015 /* ComicTableViewCell */,
-				CE12DFDC258FDEC900E6F015 /* TitleTableViewCell */,
-				CE12DFD1258FDBAD00E6F015 /* DescriptionTableViewCell */,
 				CE12DFD0258FDBA100E6F015 /* ImageTableViewCell */,
+				CE12DFD1258FDBAD00E6F015 /* DescriptionTableViewCell */,
+				CE12DFDC258FDEC900E6F015 /* TitleTableViewCell */,
+				CE12DFE7258FE00F00E6F015 /* ComicTableViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -939,6 +942,7 @@
 				CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */,
 				CE74766A2586B8C200C63A77 /* CustomTabBarController.swift in Sources */,
 				CE31B878258A4898006B6E41 /* CustomImageView.swift in Sources */,
+				CE12DFF9258FE37600E6F015 /* DetailViewController+Extension.swift in Sources */,
 				CE05FE21258555AA00BFCEBA /* RegistrationPresenter.swift in Sources */,
 				CE90121D2582DD9600ECCC0A /* Constants.swift in Sources */,
 				CE9012C02583036100ECCC0A /* CustomTextField.swift in Sources */,

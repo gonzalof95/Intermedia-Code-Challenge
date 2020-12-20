@@ -20,6 +20,7 @@ class DescriptionTableViewCell: UITableViewCell {
         descriptionLabel.font = UIFont(name: Fonts.robotoRegular, size: 14)
         descriptionLabel.textColor = .customDescriptionColor
         descriptionLabel.numberOfLines = 0
+        separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
     }
 
     override func awakeFromNib() {
