@@ -5,7 +5,6 @@
 //  Created by Gonzalo Ivan Fuentes on 12/12/2020.
 //
 
-import FirebaseAuth
 import RxSwift
 
 class HeroPresenter {
@@ -25,10 +24,16 @@ class HeroPresenter {
     }
 
     private func executeGet(offset: Int = 0, isReloadingData: Bool = false) {
+        if !isReloadingData {
+            delegate?.showAnimation()
+        }
         service.execute(offset)
             .subscribe(onNext: { [weak self] response in
                 self?.heroesList = response.data.results
                 DispatchQueue.main.async {
+                    if !isReloadingData {
+                        self?.delegate?.hideAnimation()
+                    }
                     self?.successFetchHeroes(isReloadingData)
                 }
             }, onError: { error in
@@ -54,7 +59,8 @@ class HeroPresenter {
     }
 
     func rowTaped(hero: HeroModel) {
-        let presenter = DetailPresenter(hero: hero, service: ComicsService(repository: ComicsRepository(url: NetworkingConstants.baseURL)))
+        let presenter = DetailPresenter(hero: hero,
+                                        service: ComicsService(repository: ComicsRepository(url: NetworkingConstants.baseURL)))
         delegate?.pushNextViewController(DetailViewController(with: presenter, heroData: hero))
     }
 }

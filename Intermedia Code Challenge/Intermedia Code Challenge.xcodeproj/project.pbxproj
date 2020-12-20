@@ -43,6 +43,14 @@
 		CE12E011258FE79000E6F015 /* ComicsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E010258FE79000E6F015 /* ComicsService.swift */; };
 		CE12E016258FE79B00E6F015 /* ComicsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E015258FE79B00E6F015 /* ComicsServiceProtocol.swift */; };
 		CE12E021258FFA9200E6F015 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E020258FFA9200E6F015 /* DetailView.swift */; };
+		CE12E0702590019100E6F015 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CE12E06F2590019100E6F015 /* loading.json */; };
+		CE12E07F259002C300E6F015 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E07E259002C300E6F015 /* EventsModel.swift */; };
+		CE12E087259006DC00E6F015 /* StoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E086259006DC00E6F015 /* StoriesService.swift */; };
+		CE12E08C259006E500E6F015 /* StoriesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E08B259006E500E6F015 /* StoriesServiceProtocol.swift */; };
+		CE12E0922590075B00E6F015 /* EventsScreenRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0912590075B00E6F015 /* EventsScreenRepositoryProtocol.swift */; };
+		CE12E09A2590076600E6F015 /* EventsScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0992590076600E6F015 /* EventsScreenRepository.swift */; };
+		CE12E0A22590089500E6F015 /* EventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0A12590089500E6F015 /* EventsPresenter.swift */; };
+		CE12E0A7259008C500E6F015 /* EventsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0A6259008C500E6F015 /* EventsViewControllerProtocol.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
 		CE31BD14258C111E006B6E41 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD13258C111E006B6E41 /* HeroService.swift */; };
@@ -132,6 +140,14 @@
 		CE12E010258FE79000E6F015 /* ComicsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsService.swift; sourceTree = "<group>"; };
 		CE12E015258FE79B00E6F015 /* ComicsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsServiceProtocol.swift; sourceTree = "<group>"; };
 		CE12E020258FFA9200E6F015 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CE12E06F2590019100E6F015 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		CE12E07E259002C300E6F015 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010EventsModel.swift"; sourceTree = "<group>"; };
+		CE12E086259006DC00E6F015 /* StoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesService.swift; sourceTree = "<group>"; };
+		CE12E08B259006E500E6F015 /* StoriesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesServiceProtocol.swift; sourceTree = "<group>"; };
+		CE12E0912590075B00E6F015 /* EventsScreenRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsScreenRepositoryProtocol.swift; sourceTree = "<group>"; };
+		CE12E0992590076600E6F015 /* EventsScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsScreenRepository.swift; sourceTree = "<group>"; };
+		CE12E0A12590089500E6F015 /* EventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsPresenter.swift; sourceTree = "<group>"; };
+		CE12E0A6259008C500E6F015 /* EventsViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
 		CE31BD13258C111E006B6E41 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
@@ -307,6 +323,7 @@
 		CE05FEE12585A9B900BFCEBA /* AppResources */ = {
 			isa = PBXGroup;
 			children = (
+				CE12E06F2590019100E6F015 /* loading.json */,
 				CE90120A2582DCFE00ECCC0A /* Utils */,
 				CE90120E2582DD0B00ECCC0A /* Custom Views */,
 				CE05FEE22585A9E600BFCEBA /* Fonts */,
@@ -469,6 +486,57 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		CE12E0772590023F00E6F015 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E07A2590026A00E6F015 /* Repository */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CE12E0782590024600E6F015 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E07B2590027500E6F015 /* Model */,
+				CE12E07C2590027A00E6F015 /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE12E0792590025B00E6F015 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E0A12590089500E6F015 /* EventsPresenter.swift */,
+			);
+			path = "\U0010Presenter";
+			sourceTree = "<group>";
+		};
+		CE12E07A2590026A00E6F015 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E0992590076600E6F015 /* EventsScreenRepository.swift */,
+				CE12E0912590075B00E6F015 /* EventsScreenRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CE12E07B2590027500E6F015 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E07E259002C300E6F015 /* EventsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE12E07C2590027A00E6F015 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E086259006DC00E6F015 /* StoriesService.swift */,
+				CE12E08B259006E500E6F015 /* StoriesServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		CE31BAFC258AC2AF006B6E41 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,6 +628,8 @@
 		CE7476412586A63D00C63A77 /* Events Screen */ = {
 			isa = PBXGroup;
 			children = (
+				CE12E0782590024600E6F015 /* Core */,
+				CE12E0772590023F00E6F015 /* Infrastructure */,
 				CE7476422586A67E00C63A77 /* Presentation */,
 			);
 			path = "Events Screen";
@@ -569,22 +639,16 @@
 			isa = PBXGroup;
 			children = (
 				CE7476442586A68F00C63A77 /* View */,
-				CE7476432586A68900C63A77 /* Presenter */,
+				CE12E0792590025B00E6F015 /* Presenter */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		CE7476432586A68900C63A77 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		CE7476442586A68F00C63A77 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CE7476462586A6B200C63A77 /* EventsViewController.swift */,
+				CE12E0A6259008C500E6F015 /* EventsViewControllerProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -832,6 +896,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE12E0702590019100E6F015 /* loading.json in Resources */,
 				CE12DFCC258FD4E500E6F015 /* ImageTableViewCell.xib in Resources */,
 				CEB6F815258986A500CED9EB /* MVAPISample-Info.plist in Resources */,
 				CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */,
@@ -972,7 +1037,10 @@
 				CE12DF20258E649000E6F015 /* HeroViewController+Extension.swift in Sources */,
 				CEB6F7EF2589735200CED9EB /* NetworkingClient.swift in Sources */,
 				CE05FEB225858A5000BFCEBA /* LoginViewProtocol.swift in Sources */,
+				CE12E08C259006E500E6F015 /* StoriesServiceProtocol.swift in Sources */,
+				CE12E087259006DC00E6F015 /* StoriesService.swift in Sources */,
 				CE12DF2F258E811300E6F015 /* ComicsModel.swift in Sources */,
+				CE12E0922590075B00E6F015 /* EventsScreenRepositoryProtocol.swift in Sources */,
 				CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */,
 				CE31BD1C258C112A006B6E41 /* HeroServiceProtocol.swift in Sources */,
 				CE05FE5325855E4600BFCEBA /* LoginPresenter.swift in Sources */,
@@ -988,13 +1056,16 @@
 				CE05FE3525855C1700BFCEBA /* LoginViewControlller.swift in Sources */,
 				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
 				CED2DC882588E233002379F3 /* HeroView.swift in Sources */,
+				CE12E07F259002C300E6F015 /* EventsModel.swift in Sources */,
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
 				CE12DF3C258EA7DB00E6F015 /* DetailViewController.swift in Sources */,
+				CE12E09A2590076600E6F015 /* EventsScreenRepository.swift in Sources */,
 				CE05FE082585452500BFCEBA /* RegistrationViewController.swift in Sources */,
 				CE12DFCB258FD4E500E6F015 /* ImageTableViewCell.swift in Sources */,
 				CE9012282582DEE500ECCC0A /* HeroViewController.swift in Sources */,
 				CE05FEBC25858A8400BFCEBA /* HeroViewControllerProtocol.swift in Sources */,
 				CE12E021258FFA9200E6F015 /* DetailView.swift in Sources */,
+				CE12E0A7259008C500E6F015 /* EventsViewControllerProtocol.swift in Sources */,
 				CE05FE102585453300BFCEBA /* RegisterView.swift in Sources */,
 				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
 				CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */,
@@ -1011,6 +1082,7 @@
 				CE12E016258FE79B00E6F015 /* ComicsServiceProtocol.swift in Sources */,
 				CE12DFDF258FDEDD00E6F015 /* TitleTableViewCell.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
+				CE12E0A22590089500E6F015 /* EventsPresenter.swift in Sources */,
 				CE05FE4525855C9700BFCEBA /* LoginView.swift in Sources */,
 				CE12DF49258EA84A00E6F015 /* DetailViewControllerProtocol.swift in Sources */,
 				CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */,

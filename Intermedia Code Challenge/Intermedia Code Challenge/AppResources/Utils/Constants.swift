@@ -32,7 +32,9 @@ struct ErrorMessages {
 }
 
 struct NetworkingConstants {
-    static let baseURL = "https://gateway.marvel.com/v1/public/characters"
+    static let baseURL = "https://gateway.marvel.com/v1/public/"
     static let publicKey = "API_PUB_KEY"
     static let hash = "API_HASH"
+    static let heroLimit = 15
+    static let eventLimit = 20
 }

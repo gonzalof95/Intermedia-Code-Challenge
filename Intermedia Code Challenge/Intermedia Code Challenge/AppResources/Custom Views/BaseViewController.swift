@@ -7,8 +7,10 @@
 
 import UIKit
 import PureLayout
+import Lottie
 
 class BaseViewController: UIViewController {
+    let animationView = AnimationView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,5 +53,20 @@ extension BaseViewController: BaseViewControllerProtocol {
     func presentMainScreen() {
         let tabBarController = CustomTabBarController()
         present(tabBarController, animated: true)
+    }
+
+    func showAnimation() {
+        animationView.animation = Animation.named("loading")
+        animationView.frame = view.bounds
+        animationView.backgroundColor = .customColorMain
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.play()
+        view.addSubview(animationView)
+    }
+
+    func hideAnimation() {
+        animationView.stop()
+        animationView.removeFromSuperview()
     }
 }

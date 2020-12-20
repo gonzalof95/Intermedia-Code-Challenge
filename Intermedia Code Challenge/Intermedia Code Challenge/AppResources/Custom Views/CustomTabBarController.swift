@@ -49,7 +49,7 @@ class CustomTabBarController: UITabBarController {
                                                                      title: TitleConstants.firstTabBarTitle,
                                                                      selectedImage: selectedHeroIcon,
                                                                      disabledImage: disabledHeroIcon)
-        let eventsNavigationController = generateNavigationController(EventsViewController(),
+        let eventsNavigationController = generateNavigationController(EventsViewController(with: EventsPresenter(service: StoriesService(repository: EventsRepository(url: NetworkingConstants.baseURL)))),
                                                                       title: TitleConstants.secondTabBarTitle,
                                                                       selectedImage: selectedCalendarIcon,
                                                                       disabledImage: disabledCalendarIcon)

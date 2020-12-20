@@ -18,6 +18,7 @@ class HeroRepository: HeroRepositoryProtocol {
     }
 
     func getHeroes(_ offset: Int) -> Observable<HeroResponseModel> {
-        return networkService.execute(url, offset)
+        let fullUrl = url + "/characters"
+        return networkService.execute(fullUrl, offset, NetworkingConstants.heroLimit)
     }
 }

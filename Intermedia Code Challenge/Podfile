@@ -6,15 +6,14 @@ target 'Intermedia Code Challenge' do
   use_frameworks!
 
   # Pods for Intermedia Code Challenge
-  pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'PureLayout'
   pod 'SDWebImage'
   pod 'RxSwift'
-  pod 'RxCocoa'
   pod 'Alamofire'
+  pod 'lottie-ios'
  
   target 'Intermedia Code ChallengeTests' do
     inherit! :search_paths

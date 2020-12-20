@@ -13,8 +13,8 @@ class NetworkService {
     private var publicKey: String = ""
     private var hash: String = ""
 
-    func execute<T: Decodable>(_ baseUrl: String, _ offset: Int) -> Observable<T> {
-        let url = appendQueryParams(baseUrl, offset)
+    func execute<T: Decodable>(_ baseUrl: String, _ offset: Int = 0, _ limit: Int) -> Observable<T> {
+        let url = appendQueryParams(baseUrl, offset, limit)
 
         return Observable.create { observer -> Disposable in
 
@@ -44,7 +44,7 @@ class NetworkService {
         }
     }
 
-    func appendQueryParams(_ baseUrl: String, _ offset: Int) -> String {
+    func appendQueryParams(_ baseUrl: String, _ offset: Int, _ limit: Int) -> String {
         publicKey = publicKey.getAPIKey(key: NetworkingConstants.publicKey)
         hash = hash.getAPIKey(key: NetworkingConstants.hash)
 
@@ -53,7 +53,7 @@ class NetworkService {
                 "hash=" + "51a3ecf2f92a23817992a2663183325e" + "&" +
                 "ts=" + "1" + "&" +
                 "offset=" + "\(offset)" + "&" +
-                "limit=" + "15"
+                "limit=" + "\(limit)"
 
         return url
     }
