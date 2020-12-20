@@ -29,8 +29,6 @@ class DetailCell: UITableViewCell {
         containerView.addSubview(detailLabel)
         addSubview(containerView)
 
-        containerView.backgroundColor = .customBackgroundColor
-
         titleLabel.textColor = .customBlackColor
         titleLabel.font = UIFont(name: Fonts.robotoRegular, size: 16)
 
@@ -39,8 +37,6 @@ class DetailCell: UITableViewCell {
     }
 
     private func setConstraints() {
-        containerView.autoPinEdgesToSuperviewEdges()
-
         titleLabel.autoPinEdge(.top, to: .top, of: containerView, withOffset: 32)
         titleLabel.autoPinEdge(.leading, to: .trailing, of: containerView, withOffset: 16)
 

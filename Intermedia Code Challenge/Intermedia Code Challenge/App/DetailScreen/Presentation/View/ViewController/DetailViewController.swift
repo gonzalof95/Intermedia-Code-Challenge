@@ -9,9 +9,9 @@ import UIKit
 import PureLayout
 
 class DetailViewController: BaseViewController {
-
     var presenter: DetailPresenter?
     var detailView: DetailView?
+    var comicsArray: [ComicModel] = []
 
     init(with presenter: DetailPresenter) {
         super.init(nibName: nil, bundle: nil)
@@ -34,18 +34,41 @@ class DetailViewController: BaseViewController {
     }
 
     private func setupViewValues(_ hero: HeroModel, _ comics: [ComicModel]) {
+        comicsArray = comics
+
         setScreenTitle(title: hero.name)
         self.detailView = DetailView()
         guard let strongCustomView = detailView else { return }
 
+        strongCustomView.tableView.delegate = self
+        strongCustomView.tableView.dataSource = self
+
         view.addSubview(strongCustomView)
-        detailView?.autoPinEdgesToSuperviewEdges()
         detailView?.set(hero)
+        detailView?.autoPinEdgesToSuperviewEdges()
     }
 }
 
 extension DetailViewController: DetailViewControllerProtocol {
     func setupView(_ hero: HeroModel, _ comics: [ComicModel]) {
         setupViewValues(hero, comics)
+    }
+}
+
+extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return comicsArray.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell") as! DetailCell
+        let comic = comicsArray[indexPath.row]
+        cell.set(comic)
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

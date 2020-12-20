@@ -15,8 +15,6 @@ class DetailView: UIView {
     let scrollView = UIScrollView(forAutoLayout:())
     let descriptionLabel = UILabel(forAutoLayout: ())
     let titleLabel = UILabel(forAutoLayout: ())
-
-
     var tableView = UITableView(forAutoLayout: ())
 
     required init() {
@@ -40,9 +38,10 @@ class DetailView: UIView {
         containerView.addSubview(tableView)
         addSubview(scrollView)
 
-        setupTableView()
-
         imageView.clipsToBounds = true
+
+        tableView.rowHeight = 88
+        tableView.register(DetailCell.self, forCellReuseIdentifier: "detailCell")
 
         descriptionLabel.textColor = .customDescriptionColor
         descriptionLabel.numberOfLines = 0
@@ -51,11 +50,6 @@ class DetailView: UIView {
         titleLabel.textColor = .customBlackColor
         titleLabel.font = UIFont(name: Fonts.robotoCondensed, size: 20)
         titleLabel.text = TitleConstants.detailScreenTitle
-    }
-
-    private func setupTableView() {
-        tableView.rowHeight = 88
-        tableView.register(DetailCell.self, forCellReuseIdentifier: "cell")
     }
 
     private func setConstraints() {
@@ -80,6 +74,7 @@ class DetailView: UIView {
         tableView.autoPinEdge(.top, to: .bottom, of: titleLabel, withOffset: 14)
         tableView.autoPinEdge(.leading, to: .leading, of: containerView)
         tableView.autoPinEdge(.trailing, to: .trailing, of: containerView)
+        tableView.autoPinEdge(.bottom, to: .bottom, of: containerView)
     }
 
     func set(_ hero: HeroModel) {
