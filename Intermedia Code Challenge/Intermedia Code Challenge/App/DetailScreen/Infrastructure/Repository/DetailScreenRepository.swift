@@ -18,6 +18,8 @@ class ComicsRepository: ComicsRepositoryProtocol {
     }
 
     func getComics(_ offset: Int, _ heroID: Int) -> Observable<ComicsResponseModel> {
-        return networkService.execute(url + "/1011335/comics", offset)
+        //TODO: cambiar aca por el id posta
+        let fullUrl = url + "/1011335/comics"
+        return networkService.execute(fullUrl, offset)
     }
 }

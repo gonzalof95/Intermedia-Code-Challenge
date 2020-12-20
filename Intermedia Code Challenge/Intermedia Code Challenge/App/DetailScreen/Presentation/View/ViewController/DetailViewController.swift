@@ -60,4 +60,10 @@ extension DetailViewController: DetailViewControllerProtocol {
     func setupView(_ hero: HeroModel, _ comics: [ComicsModel]) {
         setupViewValues(hero, comics)
     }
+
+    func reloadTable(_ comics: [ComicsModel]) {
+        comicsArray += comics
+        presenter?.apiCalling = false
+        tableView.reloadData()
+    }
 }

@@ -7,4 +7,5 @@
 
 protocol DetailViewControllerProtocol: BaseViewControllerProtocol {
     func setupView(_ hero: HeroModel, _ comics: [ComicsModel])
+    func reloadTable(_ comics: [ComicsModel])
 }

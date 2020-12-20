@@ -15,6 +15,9 @@ class DetailPresenter {
     var comicsList: [ComicsModel] = []
     let hero: HeroModel
 
+    var apiCalling = false
+    var timesRecalled = 0
+
     init(hero: HeroModel, service: ComicsService) {
         self.hero = hero
         self.service = service
@@ -24,12 +27,12 @@ class DetailPresenter {
         executeGet()
     }
 
-    private func executeGet() {
-        service.execute(0, hero.id)
+    private func executeGet(offset: Int = 0, isReloadingData: Bool = false) {
+        service.execute(offset, hero.id)
             .subscribe(onNext: { [weak self] response in
                 self?.comicsList = response.data.results
                 DispatchQueue.main.async {
-                    self?.successFetchComics()
+                    self?.successFetchComics(isReloadingData)
                 }
             }, onError: { error in
                 debugPrint(error)
@@ -37,7 +40,19 @@ class DetailPresenter {
             .disposed(by: disposebag)
     }
 
-    private func successFetchComics() {
-        delegate?.setupView(hero, comicsList)
+    private func successFetchComics(_ isReloading: Bool) {
+        if !isReloading {
+            delegate?.setupView(hero, comicsList)
+        } else {
+            delegate?.reloadTable(comicsList)
+        }
+    }
+
+    func requestMoreData(_ isApiCalling: Bool , _ timesRecalled: Int, _ isReloadingData: Bool) {
+        if !isApiCalling {
+            apiCalling = true
+            self.timesRecalled += 1
+            executeGet(offset: self.timesRecalled * 15, isReloadingData: isReloadingData)
+        }
     }
 }

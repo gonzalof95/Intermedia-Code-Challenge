@@ -12,7 +12,7 @@ struct ComicsResponseModel: Decodable {
 
 struct ComicsResponseData: Decodable {
     let offset: Int
-    let limit: Int
+    var limit: Int = 0
     let count: Int
     let results: [ComicsModel]
 }
