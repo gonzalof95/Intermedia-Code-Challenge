@@ -14,9 +14,9 @@ class DetailPresenter {
     private let service: ComicsService
     var comicsList: [ComicsModel] = []
     let hero: HeroModel
-
     var apiCalling = false
     var timesRecalled = 0
+    var limit = 0
 
     init(hero: HeroModel, service: ComicsService) {
         self.hero = hero
@@ -30,6 +30,7 @@ class DetailPresenter {
     private func executeGet(offset: Int = 0, isReloadingData: Bool = false) {
         service.execute(offset, hero.id)
             .subscribe(onNext: { [weak self] response in
+                self?.limit = response.data.limit
                 self?.comicsList = response.data.results
                 DispatchQueue.main.async {
                     self?.successFetchComics(isReloadingData)
@@ -49,7 +50,7 @@ class DetailPresenter {
     }
 
     func requestMoreData(_ isApiCalling: Bool , _ timesRecalled: Int, _ isReloadingData: Bool) {
-        if !isApiCalling {
+        if !isApiCalling && (timesRecalled * 15) < limit {
             apiCalling = true
             self.timesRecalled += 1
             executeGet(offset: self.timesRecalled * 15, isReloadingData: isReloadingData)

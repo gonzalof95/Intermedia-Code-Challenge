@@ -29,7 +29,6 @@ class HeroPresenter {
             .subscribe(onNext: { [weak self] response in
                 self?.heroesList = response.data.results
                 DispatchQueue.main.async {
-                    //print(self?.heroesList)
                     self?.successFetchHeroes(isReloadingData)
                 }
             }, onError: { error in
