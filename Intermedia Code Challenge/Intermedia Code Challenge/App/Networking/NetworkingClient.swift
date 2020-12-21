@@ -44,13 +44,13 @@ class NetworkService {
         }
     }
 
-    func appendQueryParams(_ baseUrl: String, _ offset: Int, _ limit: Int) -> String {
+    func appendQueryParams(_ baseUrl: String, _ offset: Int, _ limit: Int) -> String {
         publicKey = publicKey.getAPIKey(key: NetworkingConstants.publicKey)
         hash = hash.getAPIKey(key: NetworkingConstants.hash)
 
         let url = baseUrl + "?" +
-                "apikey=" + "3a783b25c80e1c44875356dd363f272d" + "&" +
-                "hash=" + "51a3ecf2f92a23817992a2663183325e" + "&" +
+                "apikey=" + publicKey + "&" +
+                "hash=" + hash + "&" +
                 "ts=" + "1" + "&" +
                 "offset=" + "\(offset)" + "&" +
                 "limit=" + "\(limit)"

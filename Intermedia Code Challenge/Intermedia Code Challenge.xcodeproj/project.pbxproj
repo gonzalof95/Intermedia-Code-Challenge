@@ -54,6 +54,7 @@
 		CE12E0C7259017A700E6F015 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0C5259017A700E6F015 /* EventsTableViewCell.swift */; };
 		CE12E0C8259017A700E6F015 /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E0C6259017A700E6F015 /* EventsTableViewCell.xib */; };
 		CE12E0D125901C0200E6F015 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0D025901C0200E6F015 /* EventsView.swift */; };
+		CE12E0FE259034A200E6F015 /* EventsViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0FD259034A200E6F015 /* EventsViewController+Extension.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
 		CE31BD14258C111E006B6E41 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD13258C111E006B6E41 /* HeroService.swift */; };
@@ -76,7 +77,6 @@
 		CEB6F7EF2589735200CED9EB /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6F7EE2589735200CED9EB /* NetworkingClient.swift */; };
 		CEB6F8052589833F00CED9EB /* MVAPI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB6F8042589833F00CED9EB /* MVAPI-Info.plist */; };
 		CEB6F80D2589852000CED9EB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6F80C2589852000CED9EB /* String+Extension.swift */; };
-		CEB6F815258986A500CED9EB /* MVAPISample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB6F814258986A500CED9EB /* MVAPISample-Info.plist */; };
 		CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2D7D12587043F002379F3 /* HeroCell.swift */; };
 		CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DB8D25881B70002379F3 /* HeroModel.swift */; };
 		CED2DC882588E233002379F3 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DC872588E233002379F3 /* HeroView.swift */; };
@@ -154,6 +154,7 @@
 		CE12E0C5259017A700E6F015 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		CE12E0C6259017A700E6F015 /* EventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
 		CE12E0D025901C0200E6F015 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		CE12E0FD259034A200E6F015 /* EventsViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventsViewController+Extension.swift"; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
 		CE31BD13258C111E006B6E41 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
@@ -183,7 +184,6 @@
 		CEB6F7EE2589735200CED9EB /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 		CEB6F8042589833F00CED9EB /* MVAPI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVAPI-Info.plist"; sourceTree = "<group>"; };
 		CEB6F80C2589852000CED9EB /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		CEB6F814258986A500CED9EB /* MVAPISample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVAPISample-Info.plist"; sourceTree = "<group>"; };
 		CED2D7D12587043F002379F3 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		CED2DB8D25881B70002379F3 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		CED2DC872588E233002379F3 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
@@ -329,7 +329,7 @@
 		CE05FEE12585A9B900BFCEBA /* AppResources */ = {
 			isa = PBXGroup;
 			children = (
-				CE12E06F2590019100E6F015 /* loading.json */,
+				CE12E0F72590330C00E6F015 /* Animations */,
 				CE90120A2582DCFE00ECCC0A /* Utils */,
 				CE90120E2582DD0B00ECCC0A /* Custom Views */,
 				CE05FEE22585A9E600BFCEBA /* Fonts */,
@@ -557,8 +557,35 @@
 			children = (
 				CE12E0A6259008C500E6F015 /* EventsViewControllerProtocol.swift */,
 				CE7476462586A6B200C63A77 /* EventsViewController.swift */,
+				CE12E0FD259034A200E6F015 /* EventsViewController+Extension.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE12E0F72590330C00E6F015 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E06F2590019100E6F015 /* loading.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		CE12E0F82590334E00E6F015 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE05FEA925858A2A00BFCEBA /* BaseViewControllerProtocol.swift */,
+				CE9012172582DD5B00ECCC0A /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		CE12E0FC2590346900E6F015 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E0D025901C0200E6F015 /* EventsView.swift */,
+				CE12E0C42590179A00E6F015 /* Cells */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CE31BAFC258AC2AF006B6E41 /* ViewController */ = {
@@ -671,8 +698,7 @@
 		CE7476442586A68F00C63A77 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE12E0D025901C0200E6F015 /* EventsView.swift */,
-				CE12E0C42590179A00E6F015 /* Cells */,
+				CE12E0FC2590346900E6F015 /* Views */,
 				CE12E0CF25901BF000E6F015 /* ViewController */,
 			);
 			path = View;
@@ -709,7 +735,6 @@
 				CE9011D62582DB7700ECCC0A /* Info.plist */,
 				CE90129B2582EEA600ECCC0A /* GoogleService-Info.plist */,
 				CEB6F8042589833F00CED9EB /* MVAPI-Info.plist */,
-				CEB6F814258986A500CED9EB /* MVAPISample-Info.plist */,
 			);
 			path = "Intermedia Code Challenge";
 			sourceTree = "<group>";
@@ -756,9 +781,8 @@
 		CE90120E2582DD0B00ECCC0A /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE12E0F82590334E00E6F015 /* BaseViewController */,
 				CE05FE172585480900BFCEBA /* FirebaseView.swift */,
-				CE9012172582DD5B00ECCC0A /* BaseViewController.swift */,
-				CE05FEA925858A2A00BFCEBA /* BaseViewControllerProtocol.swift */,
 				CE9012AF2582F0CD00ECCC0A /* CustomButton.swift */,
 				CE9012BF2583036100ECCC0A /* CustomTextField.swift */,
 				CE7476692586B8C200C63A77 /* CustomTabBarController.swift */,
@@ -923,7 +947,6 @@
 			files = (
 				CE12E0702590019100E6F015 /* loading.json in Resources */,
 				CE12DFCC258FD4E500E6F015 /* ImageTableViewCell.xib in Resources */,
-				CEB6F815258986A500CED9EB /* MVAPISample-Info.plist in Resources */,
 				CE05FEE42585AA2A00BFCEBA /* RobotoCondensed-Regular.ttf in Resources */,
 				CEB6F8052589833F00CED9EB /* MVAPI-Info.plist in Resources */,
 				CE12DFD5258FDBC200E6F015 /* DescriptionTableViewCell.xib in Resources */,
@@ -1107,6 +1130,7 @@
 				CE05FE6B2585678C00BFCEBA /* FirebasePresenter.swift in Sources */,
 				CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */,
 				CE12DFD4258FDBC200E6F015 /* DescriptionTableViewCell.swift in Sources */,
+				CE12E0FE259034A200E6F015 /* EventsViewController+Extension.swift in Sources */,
 				CE12E016258FE79B00E6F015 /* ComicsServiceProtocol.swift in Sources */,
 				CE12DFDF258FDEDD00E6F015 /* TitleTableViewCell.swift in Sources */,
 				CE9012B52582FC9900ECCC0A /* UIImageView+Extension.swift in Sources */,
