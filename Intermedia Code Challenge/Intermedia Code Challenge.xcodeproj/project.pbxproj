@@ -51,6 +51,9 @@
 		CE12E09A2590076600E6F015 /* EventsScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0992590076600E6F015 /* EventsScreenRepository.swift */; };
 		CE12E0A22590089500E6F015 /* EventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0A12590089500E6F015 /* EventsPresenter.swift */; };
 		CE12E0A7259008C500E6F015 /* EventsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0A6259008C500E6F015 /* EventsViewControllerProtocol.swift */; };
+		CE12E0C7259017A700E6F015 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0C5259017A700E6F015 /* EventsTableViewCell.swift */; };
+		CE12E0C8259017A700E6F015 /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E0C6259017A700E6F015 /* EventsTableViewCell.xib */; };
+		CE12E0D125901C0200E6F015 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E0D025901C0200E6F015 /* EventsView.swift */; };
 		CE31BCE7258BBB78006B6E41 /* HeroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */; };
 		CE31BD0E258C0E9E006B6E41 /* HeroRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */; };
 		CE31BD14258C111E006B6E41 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31BD13258C111E006B6E41 /* HeroService.swift */; };
@@ -148,6 +151,9 @@
 		CE12E0992590076600E6F015 /* EventsScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsScreenRepository.swift; sourceTree = "<group>"; };
 		CE12E0A12590089500E6F015 /* EventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsPresenter.swift; sourceTree = "<group>"; };
 		CE12E0A6259008C500E6F015 /* EventsViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CE12E0C5259017A700E6F015 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		CE12E0C6259017A700E6F015 /* EventsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
+		CE12E0D025901C0200E6F015 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		CE31BCE6258BBB78006B6E41 /* HeroRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepository.swift; sourceTree = "<group>"; };
 		CE31BD0D258C0E9E006B6E41 /* HeroRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocol.swift; sourceTree = "<group>"; };
 		CE31BD13258C111E006B6E41 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
@@ -397,6 +403,7 @@
 		CE12DF39258EA7BA00E6F015 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE12E020258FFA9200E6F015 /* DetailView.swift */,
 				CE12DFC2258FD3B800E6F015 /* Cells */,
 			);
 			path = View;
@@ -415,7 +422,6 @@
 		CE12DFC2258FD3B800E6F015 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CE12E020258FFA9200E6F015 /* DetailView.swift */,
 				CE12DFD0258FDBA100E6F015 /* ImageTableViewCell */,
 				CE12DFD1258FDBAD00E6F015 /* DescriptionTableViewCell */,
 				CE12DFDC258FDEC900E6F015 /* TitleTableViewCell */,
@@ -537,6 +543,24 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		CE12E0C42590179A00E6F015 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E0C5259017A700E6F015 /* EventsTableViewCell.swift */,
+				CE12E0C6259017A700E6F015 /* EventsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE12E0CF25901BF000E6F015 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E0A6259008C500E6F015 /* EventsViewControllerProtocol.swift */,
+				CE7476462586A6B200C63A77 /* EventsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		CE31BAFC258AC2AF006B6E41 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,8 +671,9 @@
 		CE7476442586A68F00C63A77 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CE7476462586A6B200C63A77 /* EventsViewController.swift */,
-				CE12E0A6259008C500E6F015 /* EventsViewControllerProtocol.swift */,
+				CE12E0D025901C0200E6F015 /* EventsView.swift */,
+				CE12E0C42590179A00E6F015 /* Cells */,
+				CE12E0CF25901BF000E6F015 /* ViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -904,6 +929,7 @@
 				CE12DFD5258FDBC200E6F015 /* DescriptionTableViewCell.xib in Resources */,
 				CE12DFEB258FE02600E6F015 /* ComicTableViewCell.xib in Resources */,
 				CE9011D22582DB7700ECCC0A /* Assets.xcassets in Resources */,
+				CE12E0C8259017A700E6F015 /* EventsTableViewCell.xib in Resources */,
 				CE12DFE0258FDEDD00E6F015 /* TitleTableViewCell.xib in Resources */,
 				CE05FEEC2585B63600BFCEBA /* Roboto-Regular.ttf in Resources */,
 				CE90129C2582EEA600ECCC0A /* GoogleService-Info.plist in Resources */,
@@ -1057,6 +1083,7 @@
 				CE9011C92582DB7400ECCC0A /* AppDelegate.swift in Sources */,
 				CED2DC882588E233002379F3 /* HeroView.swift in Sources */,
 				CE12E07F259002C300E6F015 /* EventsModel.swift in Sources */,
+				CE12E0D125901C0200E6F015 /* EventsView.swift in Sources */,
 				CE9012182582DD5B00ECCC0A /* BaseViewController.swift in Sources */,
 				CE12DF3C258EA7DB00E6F015 /* DetailViewController.swift in Sources */,
 				CE12E09A2590076600E6F015 /* EventsScreenRepository.swift in Sources */,
@@ -1070,6 +1097,7 @@
 				CE05FE182585480900BFCEBA /* FirebaseView.swift in Sources */,
 				CE05FEAA25858A2A00BFCEBA /* BaseViewControllerProtocol.swift in Sources */,
 				CE31BD14258C111E006B6E41 /* HeroService.swift in Sources */,
+				CE12E0C7259017A700E6F015 /* EventsTableViewCell.swift in Sources */,
 				CE12DFEA258FE02600E6F015 /* ComicTableViewCell.swift in Sources */,
 				CE9012102582DD3B00ECCC0A /* UIKit+Extension.swift in Sources */,
 				CE05FEA22585871F00BFCEBA /* HeroPresenter.swift in Sources */,

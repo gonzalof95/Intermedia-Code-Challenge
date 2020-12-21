@@ -22,15 +22,22 @@ class EventsPresenter {
     }
 
     private func executeGet() {
+        delegate?.showAnimation()
         service.execute()
             .subscribe(onNext: { [weak self] response in
                 self?.eventsList = response.data.results
                 print(response)
                 DispatchQueue.main.async {
+                    self?.delegate?.hideAnimation()
+                    self?.successFetchEvents()
                 }
             }, onError: { error in
                 debugPrint(error)
             })
             .disposed(by: disposebag)
+    }
+
+    private func successFetchEvents() {
+        delegate?.setupView(eventsList)
     }
 }

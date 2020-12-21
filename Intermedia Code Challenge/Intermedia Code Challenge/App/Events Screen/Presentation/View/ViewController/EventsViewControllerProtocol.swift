@@ -6,5 +6,5 @@
 //
 
 protocol EventsViewControllerProtocol: BaseViewControllerProtocol {
-    func setupView()
+    func setupView(_ events: [EventsModel])
 }
