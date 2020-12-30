@@ -40,14 +40,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d86-cx-b3X">
-                                <rect key="frame" x="274" y="48" width="32" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="JSw-XS-EHb"/>
-                                    <constraint firstAttribute="height" constant="24" id="Lmr-pF-nhj"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="button"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzY-FA-mUd">
                                 <rect key="frame" x="136" y="47" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -59,12 +51,10 @@
                         <constraints>
                             <constraint firstItem="lzY-FA-mUd" firstAttribute="leading" secondItem="Qyf-bT-UiT" secondAttribute="trailing" constant="33" id="35o-gZ-xuP"/>
                             <constraint firstItem="Td9-ak-DCu" firstAttribute="leading" secondItem="Qyf-bT-UiT" secondAttribute="trailing" constant="33" id="7wO-A1-dzp"/>
-                            <constraint firstAttribute="trailing" secondItem="d86-cx-b3X" secondAttribute="trailing" constant="24" id="DHh-wb-gzk"/>
-                            <constraint firstItem="d86-cx-b3X" firstAttribute="top" secondItem="EtY-fR-cMI" secondAttribute="top" constant="48" id="Gmb-po-IDy"/>
                             <constraint firstItem="lzY-FA-mUd" firstAttribute="top" secondItem="sxh-jb-kF6" secondAttribute="bottom" constant="9" id="Iyc-zV-4cr"/>
                             <constraint firstItem="sxh-jb-kF6" firstAttribute="top" secondItem="EtY-fR-cMI" secondAttribute="top" constant="17" id="KYT-Wb-pVn"/>
+                            <constraint firstAttribute="bottom" secondItem="Td9-ak-DCu" secondAttribute="bottom" constant="27" id="KvE-is-tXu"/>
                             <constraint firstItem="Qyf-bT-UiT" firstAttribute="leading" secondItem="EtY-fR-cMI" secondAttribute="leading" constant="17" id="R42-kG-bT8"/>
-                            <constraint firstAttribute="bottom" secondItem="d86-cx-b3X" secondAttribute="bottom" constant="48" id="bo5-fM-Bk8"/>
                             <constraint firstItem="Td9-ak-DCu" firstAttribute="top" secondItem="lzY-FA-mUd" secondAttribute="bottom" constant="4" id="bqe-0D-UNL"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="eIq-fx-Szy"/>
                             <constraint firstItem="Qyf-bT-UiT" firstAttribute="top" secondItem="EtY-fR-cMI" secondAttribute="top" constant="17" id="gTy-tp-oov"/>
@@ -84,7 +74,6 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="containerView" destination="EtY-fR-cMI" id="yF5-a1-5Y4"/>
-                <outlet property="detailButton" destination="d86-cx-b3X" id="cWt-Uy-dEe"/>
                 <outlet property="endLabel" destination="Td9-ak-DCu" id="b2f-Eg-0vC"/>
                 <outlet property="eventImageView" destination="Qyf-bT-UiT" id="zYO-Le-POZ"/>
                 <outlet property="startLabel" destination="lzY-FA-mUd" id="xXa-h7-c7U"/>
@@ -94,7 +83,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="button" width="34" height="26.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

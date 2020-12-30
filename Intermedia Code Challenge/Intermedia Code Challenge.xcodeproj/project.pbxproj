@@ -80,6 +80,10 @@
 		CED2D7D22587043F002379F3 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2D7D12587043F002379F3 /* HeroCell.swift */; };
 		CED2DB8E25881B70002379F3 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DB8D25881B70002379F3 /* HeroModel.swift */; };
 		CED2DC882588E233002379F3 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2DC872588E233002379F3 /* HeroView.swift */; };
+		CED4C964259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4C963259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift */; };
+		CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4C96B259CC49D00215702 /* CustomButtonSnapshotTestCases.swift */; };
+		CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA49259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift */; };
+		CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA50259D0D9C00215702 /* LoginViewSnapshotTestCases.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +191,10 @@
 		CED2D7D12587043F002379F3 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		CED2DB8D25881B70002379F3 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 		CED2DC872588E233002379F3 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		CED4C963259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewSnapshotTestCases.swift; sourceTree = "<group>"; };
+		CED4C96B259CC49D00215702 /* CustomButtonSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonSnapshotTestCases.swift; sourceTree = "<group>"; };
+		CED4CA49259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextViewSnapshotTestCases.swift; sourceTree = "<group>"; };
+		CED4CA50259D0D9C00215702 /* LoginViewSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSnapshotTestCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -742,6 +750,7 @@
 		CE9011DE2582DB7700ECCC0A /* Intermedia Code ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				CED4C968259CC45E00215702 /* UITests */,
 				CE9011DF2582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift */,
 				CE9011E12582DB7700ECCC0A /* Info.plist */,
 			);
@@ -837,6 +846,49 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CED4C968259CC45E00215702 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CED4C969259CC47700215702 /* AppResources */,
+				CED4CA4E259D0D7500215702 /* App */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		CED4C969259CC47700215702 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				CED4C96A259CC47F00215702 /* Custom Views */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		CED4C96A259CC47F00215702 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				CED4C963259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift */,
+				CED4C96B259CC49D00215702 /* CustomButtonSnapshotTestCases.swift */,
+				CED4CA49259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		CED4CA4E259D0D7500215702 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CA4F259D0D8500215702 /* Login Screen */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CED4CA4F259D0D8500215702 /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CA50259D0D9C00215702 /* LoginViewSnapshotTestCases.swift */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -867,6 +919,7 @@
 				CE9011D72582DB7700ECCC0A /* Sources */,
 				CE9011D82582DB7700ECCC0A /* Frameworks */,
 				CE9011D92582DB7700ECCC0A /* Resources */,
+				0D5972B96EC057B5B89F0E3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -976,6 +1029,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D5972B96EC057B5B89F0E3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code ChallengeTests/Pods-Intermedia Code ChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code ChallengeTests/Pods-Intermedia Code ChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intermedia Code ChallengeTests/Pods-Intermedia Code ChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		13BC26AABC024377CDE32B69 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1148,7 +1218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */,
+				CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */,
 				CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */,
+				CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */,
+				CED4C964259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1227,7 +1301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1282,7 +1356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

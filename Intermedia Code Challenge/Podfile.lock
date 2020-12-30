@@ -83,6 +83,7 @@ PODS:
   - SDWebImage (5.10.0):
     - SDWebImage/Core (= 5.10.0)
   - SDWebImage/Core (5.10.0)
+  - SnapshotTesting (1.8.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -93,6 +94,7 @@ DEPENDENCIES:
   - PureLayout
   - RxSwift
   - SDWebImage
+  - SnapshotTesting
 
 SPEC REPOS:
   trunk:
@@ -115,6 +117,7 @@ SPEC REPOS:
     - PureLayout
     - RxSwift
     - SDWebImage
+    - SnapshotTesting
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
@@ -136,7 +139,8 @@ SPEC CHECKSUMS:
   PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
 
-PODFILE CHECKSUM: 1c98d6466ed1059773cd94eab1935f2b0118e968
+PODFILE CHECKSUM: 5428940c667f0e23362e613a426d0d833aead5e3
 
 COCOAPODS: 1.10.0
