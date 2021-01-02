@@ -84,6 +84,8 @@
 		CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4C96B259CC49D00215702 /* CustomButtonSnapshotTestCases.swift */; };
 		CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA49259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift */; };
 		CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA50259D0D9C00215702 /* LoginViewSnapshotTestCases.swift */; };
+		CED4CA7F259E457700215702 /* RegisterViewSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA7E259E457700215702 /* RegisterViewSnapshotTestCases.swift */; };
+		CED4CA85259E46DE00215702 /* HeroCellSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -195,6 +197,8 @@
 		CED4C96B259CC49D00215702 /* CustomButtonSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonSnapshotTestCases.swift; sourceTree = "<group>"; };
 		CED4CA49259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextViewSnapshotTestCases.swift; sourceTree = "<group>"; };
 		CED4CA50259D0D9C00215702 /* LoginViewSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSnapshotTestCases.swift; sourceTree = "<group>"; };
+		CED4CA7E259E457700215702 /* RegisterViewSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewSnapshotTestCases.swift; sourceTree = "<group>"; };
+		CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellSnapshotTestCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -877,6 +881,8 @@
 			isa = PBXGroup;
 			children = (
 				CED4CA4F259D0D8500215702 /* Login Screen */,
+				CED4CA58259E43D900215702 /* Registration Screen */,
+				CED4CA83259E46BF00215702 /* Hero Screen */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -887,6 +893,22 @@
 				CED4CA50259D0D9C00215702 /* LoginViewSnapshotTestCases.swift */,
 			);
 			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		CED4CA58259E43D900215702 /* Registration Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CA7E259E457700215702 /* RegisterViewSnapshotTestCases.swift */,
+			);
+			path = "Registration Screen";
+			sourceTree = "<group>";
+		};
+		CED4CA83259E46BF00215702 /* Hero Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */,
+			);
+			path = "Hero Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1218,7 +1240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED4CA85259E46DE00215702 /* HeroCellSnapshotTestCases.swift in Sources */,
 				CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */,
+				CED4CA7F259E457700215702 /* RegisterViewSnapshotTestCases.swift in Sources */,
 				CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */,
 				CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */,
 				CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */,
