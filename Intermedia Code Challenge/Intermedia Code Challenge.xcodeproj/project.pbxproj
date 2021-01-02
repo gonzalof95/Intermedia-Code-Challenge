@@ -86,6 +86,8 @@
 		CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA50259D0D9C00215702 /* LoginViewSnapshotTestCases.swift */; };
 		CED4CA7F259E457700215702 /* RegisterViewSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA7E259E457700215702 /* RegisterViewSnapshotTestCases.swift */; };
 		CED4CA85259E46DE00215702 /* HeroCellSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */; };
+		CED4CAB825A1021000215702 /* BaseViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAB725A1021000215702 /* BaseViewControllerSpy.swift */; };
+		CED4CAC025A1030B00215702 /* BaseViewControllerProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CABF25A1030B00215702 /* BaseViewControllerProtocolTest.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -199,6 +201,8 @@
 		CED4CA50259D0D9C00215702 /* LoginViewSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSnapshotTestCases.swift; sourceTree = "<group>"; };
 		CED4CA7E259E457700215702 /* RegisterViewSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewSnapshotTestCases.swift; sourceTree = "<group>"; };
 		CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellSnapshotTestCases.swift; sourceTree = "<group>"; };
+		CED4CAB725A1021000215702 /* BaseViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerSpy.swift; sourceTree = "<group>"; };
+		CED4CABF25A1030B00215702 /* BaseViewControllerProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocolTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -754,6 +758,7 @@
 		CE9011DE2582DB7700ECCC0A /* Intermedia Code ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				CED4CA9F25A0FD6900215702 /* Unit Tests */,
 				CED4C968259CC45E00215702 /* UITests */,
 				CE9011DF2582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift */,
 				CE9011E12582DB7700ECCC0A /* Info.plist */,
@@ -909,6 +914,39 @@
 				CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */,
 			);
 			path = "Hero Screen";
+			sourceTree = "<group>";
+		};
+		CED4CA9F25A0FD6900215702 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAB325A101B700215702 /* AppResources */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		CED4CAB325A101B700215702 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAB425A101DC00215702 /* Custom Views */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		CED4CAB425A101DC00215702 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAB525A101E500215702 /* BaseViewController */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		CED4CAB525A101E500215702 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAB725A1021000215702 /* BaseViewControllerSpy.swift */,
+				CED4CABF25A1030B00215702 /* BaseViewControllerProtocolTest.swift */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1241,9 +1279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED4CA85259E46DE00215702 /* HeroCellSnapshotTestCases.swift in Sources */,
+				CED4CAC025A1030B00215702 /* BaseViewControllerProtocolTest.swift in Sources */,
 				CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */,
 				CED4CA7F259E457700215702 /* RegisterViewSnapshotTestCases.swift in Sources */,
 				CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */,
+				CED4CAB825A1021000215702 /* BaseViewControllerSpy.swift in Sources */,
 				CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */,
 				CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */,
 				CED4C964259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift in Sources */,
