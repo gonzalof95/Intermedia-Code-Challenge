@@ -8,7 +8,7 @@
 import UIKit
 import PureLayout
 
-protocol LoginViewControllerProtocol: BaseViewController {
+protocol LoginViewControllerProtocol: BaseViewControllerProtocol {
     func setupView()
 }
 

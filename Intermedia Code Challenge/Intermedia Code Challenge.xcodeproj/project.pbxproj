@@ -88,6 +88,15 @@
 		CED4CA85259E46DE00215702 /* HeroCellSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */; };
 		CED4CAB825A1021000215702 /* BaseViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAB725A1021000215702 /* BaseViewControllerSpy.swift */; };
 		CED4CAC025A1030B00215702 /* BaseViewControllerProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CABF25A1030B00215702 /* BaseViewControllerProtocolTest.swift */; };
+		CED4CADA25A13C1000215702 /* LoginSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAD925A13C1000215702 /* LoginSpy.swift */; };
+		CED4CAE525A13D4E00215702 /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAE425A13D4E00215702 /* LoginViewControllerProtocol.swift */; };
+		CED4CAED25A13F6D00215702 /* LoginViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAEC25A13F6D00215702 /* LoginViewSpy.swift */; };
+		CED4CAF525A13FAE00215702 /* LoginViewProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAF425A13FAE00215702 /* LoginViewProtocolTest.swift */; };
+		CED4CB0B25A1453300215702 /* RegisterViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB0A25A1453300215702 /* RegisterViewSpy.swift */; };
+		CED4CB1425A1457F00215702 /* RegisterViewProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB1325A1457F00215702 /* RegisterViewProtocolTest.swift */; };
+		CED4CB1F25A1484000215702 /* HeroMockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB1E25A1484000215702 /* HeroMockModel.swift */; };
+		CED4CB2A25A14A6500215702 /* HeroRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB2925A14A6500215702 /* HeroRepositorySpy.swift */; };
+		CED4CB3225A14AF200215702 /* HeroRepositoryProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB3125A14AF200215702 /* HeroRepositoryProtocolTest.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -203,6 +212,15 @@
 		CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellSnapshotTestCases.swift; sourceTree = "<group>"; };
 		CED4CAB725A1021000215702 /* BaseViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerSpy.swift; sourceTree = "<group>"; };
 		CED4CABF25A1030B00215702 /* BaseViewControllerProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocolTest.swift; sourceTree = "<group>"; };
+		CED4CAD925A13C1000215702 /* LoginSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSpy.swift; sourceTree = "<group>"; };
+		CED4CAE425A13D4E00215702 /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CED4CAEC25A13F6D00215702 /* LoginViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSpy.swift; sourceTree = "<group>"; };
+		CED4CAF425A13FAE00215702 /* LoginViewProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocolTest.swift; sourceTree = "<group>"; };
+		CED4CB0A25A1453300215702 /* RegisterViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewSpy.swift; sourceTree = "<group>"; };
+		CED4CB1325A1457F00215702 /* RegisterViewProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocolTest.swift; sourceTree = "<group>"; };
+		CED4CB1E25A1484000215702 /* HeroMockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMockModel.swift; sourceTree = "<group>"; };
+		CED4CB2925A14A6500215702 /* HeroRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositorySpy.swift; sourceTree = "<group>"; };
+		CED4CB3125A14AF200215702 /* HeroRepositoryProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocolTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -920,6 +938,7 @@
 			isa = PBXGroup;
 			children = (
 				CED4CAB325A101B700215702 /* AppResources */,
+				CED4CACF25A13B2300215702 /* App */,
 			);
 			path = "Unit Tests";
 			sourceTree = "<group>";
@@ -947,6 +966,134 @@
 				CED4CABF25A1030B00215702 /* BaseViewControllerProtocolTest.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		CED4CACF25A13B2300215702 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAD025A13B5300215702 /* Login Screen */,
+				CED4CB0725A1450000215702 /* Registration Screen */,
+				CED4CB1B25A1461800215702 /* Hero Screen */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CED4CAD025A13B5300215702 /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAE125A13D1400215702 /* Presentation */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		CED4CAE125A13D1400215702 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAFA25A1408A00215702 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CED4CAE225A13D2000215702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAEC25A13F6D00215702 /* LoginViewSpy.swift */,
+				CED4CAF425A13FAE00215702 /* LoginViewProtocolTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED4CAE325A13D2700215702 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAD925A13C1000215702 /* LoginSpy.swift */,
+				CED4CAE425A13D4E00215702 /* LoginViewControllerProtocol.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CED4CAFA25A1408A00215702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CAE225A13D2000215702 /* View */,
+				CED4CAE325A13D2700215702 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED4CB0725A1450000215702 /* Registration Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CB0825A1450E00215702 /* Presentation */,
+			);
+			path = "Registration Screen";
+			sourceTree = "<group>";
+		};
+		CED4CB0825A1450E00215702 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CB0925A1451800215702 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CED4CB0925A1451800215702 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CB0A25A1453300215702 /* RegisterViewSpy.swift */,
+				CED4CB1325A1457F00215702 /* RegisterViewProtocolTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED4CB1B25A1461800215702 /* Hero Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CB1C25A1467800215702 /* Core */,
+				CED4CB2725A149A000215702 /* Infrastructure */,
+			);
+			path = "Hero Screen";
+			sourceTree = "<group>";
+		};
+		CED4CB1C25A1467800215702 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CB1D25A1468200215702 /* Model */,
+				CED4CB2625A1497C00215702 /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CED4CB1D25A1468200215702 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CB1E25A1484000215702 /* HeroMockModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED4CB2625A1497C00215702 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "\U0010Service";
+			sourceTree = "<group>";
+		};
+		CED4CB2725A149A000215702 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CB2825A149AD00215702 /* Repository */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CED4CB2825A149AD00215702 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CB2925A14A6500215702 /* HeroRepositorySpy.swift */,
+				CED4CB3125A14AF200215702 /* HeroRepositoryProtocolTest.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1280,11 +1427,20 @@
 			files = (
 				CED4CA85259E46DE00215702 /* HeroCellSnapshotTestCases.swift in Sources */,
 				CED4CAC025A1030B00215702 /* BaseViewControllerProtocolTest.swift in Sources */,
+				CED4CB3225A14AF200215702 /* HeroRepositoryProtocolTest.swift in Sources */,
 				CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */,
 				CED4CA7F259E457700215702 /* RegisterViewSnapshotTestCases.swift in Sources */,
+				CED4CADA25A13C1000215702 /* LoginSpy.swift in Sources */,
+				CED4CAF525A13FAE00215702 /* LoginViewProtocolTest.swift in Sources */,
+				CED4CAE525A13D4E00215702 /* LoginViewControllerProtocol.swift in Sources */,
+				CED4CB1F25A1484000215702 /* HeroMockModel.swift in Sources */,
 				CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */,
+				CED4CB1425A1457F00215702 /* RegisterViewProtocolTest.swift in Sources */,
+				CED4CB0B25A1453300215702 /* RegisterViewSpy.swift in Sources */,
 				CED4CAB825A1021000215702 /* BaseViewControllerSpy.swift in Sources */,
+				CED4CAED25A13F6D00215702 /* LoginViewSpy.swift in Sources */,
 				CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */,
+				CED4CB2A25A14A6500215702 /* HeroRepositorySpy.swift in Sources */,
 				CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */,
 				CED4C964259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift in Sources */,
 			);
