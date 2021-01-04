@@ -17,49 +17,85 @@ final class BaseViewControllerProtocolTest: XCTestCase {
     }
 
     func testShowAnimationInvoked() {
-        //given
+        givenMock()
+        whenShowAnimation()
+        assertTestShowAnimation()
+    }
+
+    func testHideAnimation() {
+        givenMock()
+        whenHideAnimation()
+        assertTestHideAnimation()
+    }
+
+    func testPushNextViewController() {
+        givenMock()
+        let mockViewController = BaseViewController()
+        whenNextViewControllerPushed(mockViewController)
+        assertTestNextViewControllerPushed(mockViewController)
+    }
+
+    func testShowError() {
+        givenMock()
+        whenShowError()
+        assertWhenShowError()
+    }
+
+    func testPresentMainScreen() {
+        givenMock()
+        whenMainScreenPresenter()
+        assertTestPresentMainScreen()
+    }
+}
+
+private extension BaseViewControllerProtocolTest {
+    func givenMock() {
         spy = BaseViewControllerSpy()
+    }
+
+    func whenShowAnimation() {
         spy.showAnimation()
-        //verify
+    }
+
+    func whenHideAnimation() {
+        spy.hideAnimation()
+    }
+
+    func whenNextViewControllerPushed(_ mockViewController: BaseViewController) {
+        spy.pushNextViewController(mockViewController)
+    }
+
+    func whenShowError() {
+        spy.showError(message: "Error")
+    }
+
+    func whenMainScreenPresenter() {
+        spy.presentMainScreen()
+    }
+
+    func assertTestShowAnimation() {
         XCTAssertTrue(spy.invokedShowAnimation)
         XCTAssertEqual(spy.invokedShowAnimationCount, 1)
     }
 
-    func testHideAnimation() {
-        //given
-        spy = BaseViewControllerSpy()
-        spy.hideAnimation()
-        //verify
+    func assertTestHideAnimation() {
         XCTAssertTrue(spy.invokedHideAnimation)
         XCTAssertEqual(spy.invokedHideAnimationCount, 1)
     }
 
-    func testPushNextViewController() {
-        //given
-        spy = BaseViewControllerSpy()
-        let mockViewController = BaseViewController()
-        spy.pushNextViewController(mockViewController)
-        //verify
+    func assertTestNextViewControllerPushed(_ mockViewController: BaseViewController) {
         XCTAssertTrue(spy.invokedPushNextViewController)
         XCTAssertEqual(spy.invokedPushNextViewControllerCount, 1)
         XCTAssertEqual(spy.invokedPushNextViewControllerParameters, mockViewController)
     }
 
-    func testShowError() {
-        //given
-        spy = BaseViewControllerSpy()
-        spy.showError(message: "Error")
-        //verify
+    func assertWhenShowError() {
         XCTAssertTrue(spy.invokedShowError)
         XCTAssertEqual(spy.invokedShowErrorCount, 1)
         XCTAssertEqual(spy.invokedShowErrorParameters, "Error")
     }
 
-    func testPresentMainScreen() {
-        //given
-        spy = BaseViewControllerSpy()
-        spy.presentMainScreen()
-        //verify
+    func assertTestPresentMainScreen() {
         XCTAssertTrue(spy.invokedPresentMainScreen)
         XCTAssertEqual(spy.invokedPresentMainScreenCount, 1)
     }

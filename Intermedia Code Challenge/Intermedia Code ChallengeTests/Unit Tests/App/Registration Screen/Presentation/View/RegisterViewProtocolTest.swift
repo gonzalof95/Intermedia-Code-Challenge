@@ -17,10 +17,22 @@ final class RegisterviewProtocolTest: XCTestCase {
     }
 
     func testRegisterButtonTapped() {
-        //given
+        givenMock()
+        whenRegisterButtonTapped()
+        assertTestRegisterButtonTapped()
+    }
+}
+
+private extension RegisterviewProtocolTest {
+    func givenMock() {
         spy = RegisterViewSpy()
+    }
+
+    func whenRegisterButtonTapped() {
         spy.registerButtonTapped()
-        //verify
+    }
+
+    func assertTestRegisterButtonTapped() {
         XCTAssertTrue(spy.invokedRegisterButtonTapped)
         XCTAssertEqual(spy.invokedRegisterButtonTappedCount, 1)
     }

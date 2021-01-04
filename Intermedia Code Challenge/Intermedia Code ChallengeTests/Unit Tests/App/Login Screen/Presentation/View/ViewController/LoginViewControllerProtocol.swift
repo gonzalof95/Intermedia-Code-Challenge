@@ -8,7 +8,7 @@
 import XCTest
 @testable import Intermedia_Code_Challenge
 
-final class LoginViewControllerProtocolTest: XCTest {
+final class LoginViewControllerProtocolTest: XCTestCase {
     var spy: LoginSpy!
 
     override func tearDown() {
@@ -17,10 +17,22 @@ final class LoginViewControllerProtocolTest: XCTest {
     }
 
     func testSetupView() {
-        //given
+        givenMock()
+        whenTappedButton()
+        assertTestSetupView()
+    }
+}
+
+private extension LoginViewControllerProtocolTest {
+    func givenMock() {
         spy = LoginSpy()
+    }
+
+    func whenTappedButton() {
         spy.setupView()
-        //verify
+    }
+
+    func assertTestSetupView() {
         XCTAssertTrue(spy.invokedSetupView)
         XCTAssertEqual(spy.invokedSetupViewCount, 1)
     }

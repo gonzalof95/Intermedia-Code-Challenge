@@ -17,19 +17,37 @@ final class LoginViewProtocolTest: XCTestCase {
     }
 
     func testAccesButtonTapped() {
-        //given
+        givenMock()
+        whenAccessButtonTapped()
+        assertTestAccessButtonTapped()
+    }
+
+    func testRegisterButtonTapped() {
+        givenMock()
+        whenRegisterButtonTapped()
+        assertTestRegisterButtonTapped()
+    }
+}
+
+private extension LoginViewProtocolTest {
+    func givenMock() {
         spy = LoginViewSpy()
+    }
+
+    func whenAccessButtonTapped() {
         spy.accessButtonTapped()
-        //verify
+    }
+
+    func whenRegisterButtonTapped() {
+        spy.registerButtonTapped()
+    }
+
+    func assertTestAccessButtonTapped() {
         XCTAssertTrue(spy.invokedAccessButtonTapped)
         XCTAssertEqual(spy.invokedAccessButtonTappedCount, 1)
     }
 
-    func testRegisterButtonTapped() {
-        //given
-        spy = LoginViewSpy()
-        spy.registerButtonTapped()
-        //verify
+    func assertTestRegisterButtonTapped() {
         XCTAssertTrue(spy.invokedRegisterButtonTapped)
         XCTAssertEqual(spy.invokedRegisterButtonTappedCount, 1)
     }
