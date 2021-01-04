@@ -18,7 +18,7 @@ class HeroMockModel {
         }
     }
 
-    private func getMockData() -> HeroResponseModel {
+    func getMockData() -> HeroResponseModel {
         let thumbnailMock = ThumbnailModel(path: "imagepath/", imageExtension: ".jpg")
         let heroMock = HeroModel(id: 1, name: "Hero", description:
                                      "Description", thumbnail: thumbnailMock)

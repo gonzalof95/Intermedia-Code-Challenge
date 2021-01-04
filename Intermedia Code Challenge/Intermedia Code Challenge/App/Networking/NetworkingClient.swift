@@ -9,9 +9,9 @@ import Foundation
 import RxSwift
 import Alamofire
 
-class NetworkService {
-    private var publicKey: String = ""
-    private var hash: String = ""
+class NetworkService: NetworkServicePotocol {
+    var publicKey: String = ""
+    var hash: String = ""
 
     func execute<T: Decodable>(_ baseUrl: String, _ offset: Int = 0, _ limit: Int) -> Observable<T> {
         let url = appendQueryParams(baseUrl, offset, limit)

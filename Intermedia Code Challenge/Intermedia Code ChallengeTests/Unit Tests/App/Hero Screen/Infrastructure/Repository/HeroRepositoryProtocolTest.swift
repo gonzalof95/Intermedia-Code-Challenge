@@ -20,7 +20,7 @@ final class HeroRepositoryProtocoltest: XCTestCase {
     func testGetHeroesInvoked() {
         givenMock()
         let response = mock.getHeroes(10)
-        assertGetHeroesInvoked(response: response)
+        assertGetHeroesInvoked(response)
     }
 }
 
@@ -29,7 +29,7 @@ private extension HeroRepositoryProtocoltest {
         mock = HeroRepositoryProtocolMock()
     }
 
-    func assertGetHeroesInvoked(response: Observable<HeroResponseModel>) {
+    func assertGetHeroesInvoked(_ response: Observable<HeroResponseModel>) {
         XCTAssertTrue(mock.invokedGetHeroes)
         XCTAssertEqual(mock.invokedGetHeroesCount, 1)
         XCTAssertEqual(mock.invokedGetHeroesParameters, 10)

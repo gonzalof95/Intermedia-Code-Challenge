@@ -19,8 +19,8 @@ class HeroRepositoryProtocolMock: HeroRepositoryProtocol {
         invokedGetHeroesCount += 1
         invokedGetHeroesParameters = offset
 
-        let mock = HeroMockModel()
-        stubbedGetHeroesResult = mock.getMock()
+        let mockService = NetworkServiceMock()
+        stubbedGetHeroesResult = mockService.execute("base/", 0, 10)
 
         return stubbedGetHeroesResult
     }
