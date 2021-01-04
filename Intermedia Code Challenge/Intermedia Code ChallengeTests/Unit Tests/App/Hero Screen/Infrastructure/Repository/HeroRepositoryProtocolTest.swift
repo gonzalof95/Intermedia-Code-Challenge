@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import RxSwift
 @testable import Intermedia_Code_Challenge
 
 final class HeroRepositoryProtocoltest: XCTestCase {
@@ -17,10 +18,18 @@ final class HeroRepositoryProtocoltest: XCTestCase {
     }
 
     func testGetHeroesInvoked() {
-        //given
-        mock = HeroRepositoryProtocolMock()
+        givenMock()
         let response = mock.getHeroes(10)
-        //verify
+        assertGetHeroesInvoked(response: response)
+    }
+}
+
+private extension HeroRepositoryProtocoltest {
+    func givenMock() {
+        mock = HeroRepositoryProtocolMock()
+    }
+
+    func assertGetHeroesInvoked(response: Observable<HeroResponseModel>) {
         XCTAssertTrue(mock.invokedGetHeroes)
         XCTAssertEqual(mock.invokedGetHeroesCount, 1)
         XCTAssertEqual(mock.invokedGetHeroesParameters, 10)
