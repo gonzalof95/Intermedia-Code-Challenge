@@ -95,8 +95,12 @@
 		CED4CB0B25A1453300215702 /* RegisterViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB0A25A1453300215702 /* RegisterViewSpy.swift */; };
 		CED4CB1425A1457F00215702 /* RegisterViewProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB1325A1457F00215702 /* RegisterViewProtocolTest.swift */; };
 		CED4CB1F25A1484000215702 /* HeroMockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB1E25A1484000215702 /* HeroMockModel.swift */; };
-		CED4CB2A25A14A6500215702 /* HeroRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB2925A14A6500215702 /* HeroRepositorySpy.swift */; };
+		CED4CB2A25A14A6500215702 /* HeroRepositoryProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB2925A14A6500215702 /* HeroRepositoryProtocolMock.swift */; };
 		CED4CB3225A14AF200215702 /* HeroRepositoryProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB3125A14AF200215702 /* HeroRepositoryProtocolTest.swift */; };
+		CED4CB3F25A1578C00215702 /* HeroServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB3E25A1578C00215702 /* HeroServiceTest.swift */; };
+		CED4CB8F25A28B0500215702 /* HeroServiceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB8E25A28B0500215702 /* HeroServiceProtocolMock.swift */; };
+		CED4CBA725A291D300215702 /* HeroPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CBA625A291D300215702 /* HeroPresenterTest.swift */; };
+		CED4CBAF25A2926400215702 /* HeroViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CBAE25A2926400215702 /* HeroViewControllerMock.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -219,8 +223,12 @@
 		CED4CB0A25A1453300215702 /* RegisterViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewSpy.swift; sourceTree = "<group>"; };
 		CED4CB1325A1457F00215702 /* RegisterViewProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocolTest.swift; sourceTree = "<group>"; };
 		CED4CB1E25A1484000215702 /* HeroMockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMockModel.swift; sourceTree = "<group>"; };
-		CED4CB2925A14A6500215702 /* HeroRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositorySpy.swift; sourceTree = "<group>"; };
+		CED4CB2925A14A6500215702 /* HeroRepositoryProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocolMock.swift; sourceTree = "<group>"; };
 		CED4CB3125A14AF200215702 /* HeroRepositoryProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocolTest.swift; sourceTree = "<group>"; };
+		CED4CB3E25A1578C00215702 /* HeroServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroServiceTest.swift; sourceTree = "<group>"; };
+		CED4CB8E25A28B0500215702 /* HeroServiceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroServiceProtocolMock.swift; sourceTree = "<group>"; };
+		CED4CBA625A291D300215702 /* HeroPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroPresenterTest.swift; sourceTree = "<group>"; };
+		CED4CBAE25A2926400215702 /* HeroViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1051,6 +1059,7 @@
 			children = (
 				CED4CB1C25A1467800215702 /* Core */,
 				CED4CB2725A149A000215702 /* Infrastructure */,
+				CED4CB9325A28FCA00215702 /* Presentation */,
 			);
 			path = "Hero Screen";
 			sourceTree = "<group>";
@@ -1075,6 +1084,8 @@
 		CED4CB2625A1497C00215702 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CED4CB3E25A1578C00215702 /* HeroServiceTest.swift */,
+				CED4CB8E25A28B0500215702 /* HeroServiceProtocolMock.swift */,
 			);
 			path = "\U0010Service";
 			sourceTree = "<group>";
@@ -1090,10 +1101,19 @@
 		CED4CB2825A149AD00215702 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				CED4CB2925A14A6500215702 /* HeroRepositorySpy.swift */,
+				CED4CB2925A14A6500215702 /* HeroRepositoryProtocolMock.swift */,
 				CED4CB3125A14AF200215702 /* HeroRepositoryProtocolTest.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		CED4CB9325A28FCA00215702 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CBAE25A2926400215702 /* HeroViewControllerMock.swift */,
+				CED4CBA625A291D300215702 /* HeroPresenterTest.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1426,8 +1446,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED4CA85259E46DE00215702 /* HeroCellSnapshotTestCases.swift in Sources */,
+				CED4CB3F25A1578C00215702 /* HeroServiceTest.swift in Sources */,
+				CED4CBAF25A2926400215702 /* HeroViewControllerMock.swift in Sources */,
 				CED4CAC025A1030B00215702 /* BaseViewControllerProtocolTest.swift in Sources */,
 				CED4CB3225A14AF200215702 /* HeroRepositoryProtocolTest.swift in Sources */,
+				CED4CBA725A291D300215702 /* HeroPresenterTest.swift in Sources */,
 				CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */,
 				CED4CA7F259E457700215702 /* RegisterViewSnapshotTestCases.swift in Sources */,
 				CED4CADA25A13C1000215702 /* LoginSpy.swift in Sources */,
@@ -1440,9 +1463,10 @@
 				CED4CAB825A1021000215702 /* BaseViewControllerSpy.swift in Sources */,
 				CED4CAED25A13F6D00215702 /* LoginViewSpy.swift in Sources */,
 				CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */,
-				CED4CB2A25A14A6500215702 /* HeroRepositorySpy.swift in Sources */,
+				CED4CB2A25A14A6500215702 /* HeroRepositoryProtocolMock.swift in Sources */,
 				CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */,
 				CED4C964259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift in Sources */,
+				CED4CB8F25A28B0500215702 /* HeroServiceProtocolMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

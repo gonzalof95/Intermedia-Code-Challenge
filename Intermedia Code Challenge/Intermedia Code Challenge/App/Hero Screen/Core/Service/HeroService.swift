@@ -9,9 +9,9 @@ import Foundation
 import RxSwift
 
 class HeroService: HeroServiceProtocol {
-    private let repository: HeroRepository
+    private let repository: HeroRepositoryProtocol
 
-    init(repository: HeroRepository) {
+    init(repository: HeroRepositoryProtocol) {
         self.repository = repository
     }
 

@@ -9,21 +9,21 @@ import XCTest
 @testable import Intermedia_Code_Challenge
 
 final class HeroRepositoryProtocoltest: XCTestCase {
-    var spy: HeroRepositoryProtocolSpy!
+    var mock: HeroRepositoryProtocolMock!
 
     override func tearDown() {
         super.tearDown()
-        spy = nil
+        mock = nil
     }
 
     func testGetHeroesInvoked() {
         //given
-        spy = HeroRepositoryProtocolSpy()
-        let response = spy.getHeroes(10)
+        mock = HeroRepositoryProtocolMock()
+        let response = mock.getHeroes(10)
         //verify
-        XCTAssertTrue(spy.invokedGetHeroes)
-        XCTAssertEqual(spy.invokedGetHeroesCount, 1)
-        XCTAssertEqual(spy.invokedGetHeroesParameters, 10)
+        XCTAssertTrue(mock.invokedGetHeroes)
+        XCTAssertEqual(mock.invokedGetHeroesCount, 1)
+        XCTAssertEqual(mock.invokedGetHeroesParameters, 10)
         XCTAssertNotNil(response)
     }
 }

@@ -19,6 +19,8 @@ target 'Intermedia Code Challenge' do
     inherit! :search_paths
     # Pods for testing
   pod 'SnapshotTesting'
+  pod 'RxTest'
+  pod 'RxBlocking'
   end
 
   target 'Intermedia Code ChallengeUITests' do

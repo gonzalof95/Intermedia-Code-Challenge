@@ -79,7 +79,11 @@ PODS:
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
   - PureLayout (3.1.6)
+  - RxBlocking (5.1.1):
+    - RxSwift (~> 5)
   - RxSwift (5.1.1)
+  - RxTest (5.1.1):
+    - RxSwift (~> 5)
   - SDWebImage (5.10.0):
     - SDWebImage/Core (= 5.10.0)
   - SDWebImage/Core (5.10.0)
@@ -92,7 +96,9 @@ DEPENDENCIES:
   - Firebase/Database
   - lottie-ios
   - PureLayout
+  - RxBlocking
   - RxSwift
+  - RxTest
   - SDWebImage
   - SnapshotTesting
 
@@ -115,7 +121,9 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - PureLayout
+    - RxBlocking
     - RxSwift
+    - RxTest
     - SDWebImage
     - SnapshotTesting
 
@@ -137,10 +145,12 @@ SPEC CHECKSUMS:
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
+  RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
   SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
   SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
 
-PODFILE CHECKSUM: 5428940c667f0e23362e613a426d0d833aead5e3
+PODFILE CHECKSUM: cb55b4b2831899322278a8a38cd497eb77dd927e
 
 COCOAPODS: 1.10.0

@@ -10,12 +10,12 @@ import RxSwift
 class HeroPresenter {
     weak var delegate: HeroViewControllerProtocol?
     private let disposebag = DisposeBag()
-    private let service: HeroService
+    private let service: HeroServiceProtocol
     var heroesList: [HeroModel] = []
     var apiCalling = false
     var timesRecalled = 0
 
-    init(service: HeroService) {
+    init(service: HeroServiceProtocol) {
         self.service = service
     }
 
