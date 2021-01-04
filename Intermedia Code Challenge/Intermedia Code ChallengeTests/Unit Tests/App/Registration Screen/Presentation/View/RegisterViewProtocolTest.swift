@@ -9,11 +9,11 @@ import XCTest
 @testable import Intermedia_Code_Challenge
 
 final class RegisterviewProtocolTest: XCTestCase {
-    var spy: RegisterViewSpy!
+    var mock: RegisterViewProtocolMock!
 
     override func tearDown() {
         super.tearDown()
-        spy = nil
+        mock = nil
     }
 
     func testRegisterButtonTapped() {
@@ -25,15 +25,15 @@ final class RegisterviewProtocolTest: XCTestCase {
 
 private extension RegisterviewProtocolTest {
     func givenMock() {
-        spy = RegisterViewSpy()
+        mock = RegisterViewProtocolMock()
     }
 
     func whenRegisterButtonTapped() {
-        spy.registerButtonTapped()
+        mock.registerButtonTapped()
     }
 
     func assertTestRegisterButtonTapped() {
-        XCTAssertTrue(spy.invokedRegisterButtonTapped)
-        XCTAssertEqual(spy.invokedRegisterButtonTappedCount, 1)
+        XCTAssertTrue(mock.invokedRegisterButtonTapped)
+        XCTAssertEqual(mock.invokedRegisterButtonTappedCount, 1)
     }
 }

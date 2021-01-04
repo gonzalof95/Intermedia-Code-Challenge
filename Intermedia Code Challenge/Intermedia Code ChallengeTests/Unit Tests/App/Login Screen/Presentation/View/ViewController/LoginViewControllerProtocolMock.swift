@@ -1,5 +1,5 @@
 //
-//  LoginSpy.swift
+//  LoginViewControllerProtocolMock.swift
 //  Intermedia Code ChallengeTests
 //
 //  Created by Gonzalo Ivan Fuentes on 02/01/2021.
@@ -7,7 +7,7 @@
 
 @testable import Intermedia_Code_Challenge
 
-class LoginSpy: BaseViewControllerSpy, LoginViewControllerProtocol {
+class LoginViewControllerProtocolMock: BaseViewControllerSpy, LoginViewControllerProtocol {
     var invokedSetupView = false
     var invokedSetupViewCount = 0
 

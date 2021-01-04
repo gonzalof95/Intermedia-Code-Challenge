@@ -9,11 +9,11 @@ import XCTest
 @testable import Intermedia_Code_Challenge
 
 final class LoginViewControllerProtocolTest: XCTestCase {
-    var spy: LoginSpy!
+    var mock: LoginViewControllerProtocolMock!
 
     override func tearDown() {
         super.tearDown()
-        spy = nil
+        mock = nil
     }
 
     func testSetupView() {
@@ -25,15 +25,15 @@ final class LoginViewControllerProtocolTest: XCTestCase {
 
 private extension LoginViewControllerProtocolTest {
     func givenMock() {
-        spy = LoginSpy()
+        mock = LoginViewControllerProtocolMock()
     }
 
     func whenTappedButton() {
-        spy.setupView()
+        mock.setupView()
     }
 
     func assertTestSetupView() {
-        XCTAssertTrue(spy.invokedSetupView)
-        XCTAssertEqual(spy.invokedSetupViewCount, 1)
+        XCTAssertTrue(mock.invokedSetupView)
+        XCTAssertEqual(mock.invokedSetupViewCount, 1)
     }
 }

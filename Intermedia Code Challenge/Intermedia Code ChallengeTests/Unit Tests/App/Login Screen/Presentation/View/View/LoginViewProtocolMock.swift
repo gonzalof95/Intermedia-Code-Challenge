@@ -1,5 +1,5 @@
 //
-//  LoginViewSpy.swift
+//  LoginViewProtocolMock.swift
 //  Intermedia Code ChallengeTests
 //
 //  Created by Gonzalo Ivan Fuentes on 02/01/2021.
@@ -7,7 +7,7 @@
 
 @testable import Intermedia_Code_Challenge
 
-class LoginViewSpy: LoginViewProtocol {
+class LoginViewProtocolMock: LoginViewProtocol {
     var invokedAccessButtonTapped = false
     var invokedAccessButtonTappedCount = 0
 

@@ -88,11 +88,11 @@
 		CED4CA85259E46DE00215702 /* HeroCellSnapshotTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */; };
 		CED4CAB825A1021000215702 /* BaseViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAB725A1021000215702 /* BaseViewControllerSpy.swift */; };
 		CED4CAC025A1030B00215702 /* BaseViewControllerProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CABF25A1030B00215702 /* BaseViewControllerProtocolTest.swift */; };
-		CED4CADA25A13C1000215702 /* LoginSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAD925A13C1000215702 /* LoginSpy.swift */; };
+		CED4CADA25A13C1000215702 /* LoginViewControllerProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAD925A13C1000215702 /* LoginViewControllerProtocolMock.swift */; };
 		CED4CAE525A13D4E00215702 /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAE425A13D4E00215702 /* LoginViewControllerProtocol.swift */; };
-		CED4CAED25A13F6D00215702 /* LoginViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAEC25A13F6D00215702 /* LoginViewSpy.swift */; };
+		CED4CAED25A13F6D00215702 /* LoginViewProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAEC25A13F6D00215702 /* LoginViewProtocolMock.swift */; };
 		CED4CAF525A13FAE00215702 /* LoginViewProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CAF425A13FAE00215702 /* LoginViewProtocolTest.swift */; };
-		CED4CB0B25A1453300215702 /* RegisterViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB0A25A1453300215702 /* RegisterViewSpy.swift */; };
+		CED4CB0B25A1453300215702 /* RegisterViewProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB0A25A1453300215702 /* RegisterViewProtocolMock.swift */; };
 		CED4CB1425A1457F00215702 /* RegisterViewProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB1325A1457F00215702 /* RegisterViewProtocolTest.swift */; };
 		CED4CB1F25A1484000215702 /* HeroMockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB1E25A1484000215702 /* HeroMockModel.swift */; };
 		CED4CB2A25A14A6500215702 /* HeroRepositoryProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4CB2925A14A6500215702 /* HeroRepositoryProtocolMock.swift */; };
@@ -216,11 +216,11 @@
 		CED4CA84259E46DE00215702 /* HeroCellSnapshotTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellSnapshotTestCases.swift; sourceTree = "<group>"; };
 		CED4CAB725A1021000215702 /* BaseViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerSpy.swift; sourceTree = "<group>"; };
 		CED4CABF25A1030B00215702 /* BaseViewControllerProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocolTest.swift; sourceTree = "<group>"; };
-		CED4CAD925A13C1000215702 /* LoginSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSpy.swift; sourceTree = "<group>"; };
+		CED4CAD925A13C1000215702 /* LoginViewControllerProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocolMock.swift; sourceTree = "<group>"; };
 		CED4CAE425A13D4E00215702 /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
-		CED4CAEC25A13F6D00215702 /* LoginViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSpy.swift; sourceTree = "<group>"; };
+		CED4CAEC25A13F6D00215702 /* LoginViewProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocolMock.swift; sourceTree = "<group>"; };
 		CED4CAF425A13FAE00215702 /* LoginViewProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocolTest.swift; sourceTree = "<group>"; };
-		CED4CB0A25A1453300215702 /* RegisterViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewSpy.swift; sourceTree = "<group>"; };
+		CED4CB0A25A1453300215702 /* RegisterViewProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocolMock.swift; sourceTree = "<group>"; };
 		CED4CB1325A1457F00215702 /* RegisterViewProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewProtocolTest.swift; sourceTree = "<group>"; };
 		CED4CB1E25A1484000215702 /* HeroMockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMockModel.swift; sourceTree = "<group>"; };
 		CED4CB2925A14A6500215702 /* HeroRepositoryProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRepositoryProtocolMock.swift; sourceTree = "<group>"; };
@@ -1005,7 +1005,7 @@
 		CED4CAE225A13D2000215702 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CED4CAEC25A13F6D00215702 /* LoginViewSpy.swift */,
+				CED4CAEC25A13F6D00215702 /* LoginViewProtocolMock.swift */,
 				CED4CAF425A13FAE00215702 /* LoginViewProtocolTest.swift */,
 			);
 			path = View;
@@ -1014,7 +1014,7 @@
 		CED4CAE325A13D2700215702 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CED4CAD925A13C1000215702 /* LoginSpy.swift */,
+				CED4CAD925A13C1000215702 /* LoginViewControllerProtocolMock.swift */,
 				CED4CAE425A13D4E00215702 /* LoginViewControllerProtocol.swift */,
 			);
 			path = ViewController;
@@ -1048,7 +1048,7 @@
 		CED4CB0925A1451800215702 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CED4CB0A25A1453300215702 /* RegisterViewSpy.swift */,
+				CED4CB0A25A1453300215702 /* RegisterViewProtocolMock.swift */,
 				CED4CB1325A1457F00215702 /* RegisterViewProtocolTest.swift */,
 			);
 			path = View;
@@ -1453,15 +1453,15 @@
 				CED4CBA725A291D300215702 /* HeroPresenterTest.swift in Sources */,
 				CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */,
 				CED4CA7F259E457700215702 /* RegisterViewSnapshotTestCases.swift in Sources */,
-				CED4CADA25A13C1000215702 /* LoginSpy.swift in Sources */,
+				CED4CADA25A13C1000215702 /* LoginViewControllerProtocolMock.swift in Sources */,
 				CED4CAF525A13FAE00215702 /* LoginViewProtocolTest.swift in Sources */,
 				CED4CAE525A13D4E00215702 /* LoginViewControllerProtocol.swift in Sources */,
 				CED4CB1F25A1484000215702 /* HeroMockModel.swift in Sources */,
 				CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */,
 				CED4CB1425A1457F00215702 /* RegisterViewProtocolTest.swift in Sources */,
-				CED4CB0B25A1453300215702 /* RegisterViewSpy.swift in Sources */,
+				CED4CB0B25A1453300215702 /* RegisterViewProtocolMock.swift in Sources */,
 				CED4CAB825A1021000215702 /* BaseViewControllerSpy.swift in Sources */,
-				CED4CAED25A13F6D00215702 /* LoginViewSpy.swift in Sources */,
+				CED4CAED25A13F6D00215702 /* LoginViewProtocolMock.swift in Sources */,
 				CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */,
 				CED4CB2A25A14A6500215702 /* HeroRepositoryProtocolMock.swift in Sources */,
 				CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */,
