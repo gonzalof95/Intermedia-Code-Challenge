@@ -24,20 +24,35 @@ class HeroServiceTest: XCTestCase {
         mock = nil
     }
 
-    func testGetHeroresSuccess() {
+    func testGetHeroesSuccess() {
+        whenGetHeroes()
+        assertGetHeores()
+    }
+
+    func testExecuteInvoked() {
+        givenMock()
+        let response = mock.execute(10)
+        assertTestGetHeroes(response: response)
+    }
+}
+
+private extension HeroServiceTest {
+    func givenMock() {
+        mock = HeroServiceProtocolMock()
+    }
+
+    func whenGetHeroes() {
         repository.getHeroes(10).subscribe(onNext: { [weak self] response in
             self?.heroData = response.data.results
         })
         .disposed(by: disposeBag)
+    }
 
+    func assertGetHeores() {
         XCTAssertNotNil(heroData)
     }
 
-    func testExecuteInvoked() {
-        //given
-        mock = HeroServiceProtocolMock()
-        let response = mock.execute(10)
-        //verify
+    func assertTestGetHeroes(response: Observable<HeroResponseModel>) {
         XCTAssertTrue(mock.invokedExecute)
         XCTAssertEqual(mock.invokedExecuteCount, 1)
         XCTAssertEqual(mock.invokedExecuteParameters, 10)
