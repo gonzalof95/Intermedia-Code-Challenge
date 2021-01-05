@@ -11,14 +11,14 @@ import RxSwift
 class DetailPresenter {
     weak var delegate: DetailViewControllerProtocol?
     private let disposebag = DisposeBag()
-    private let service: ComicsService
+    private let service: ComicsServiceProtocol
     var comicsList: [ComicsModel] = []
     let hero: HeroModel
     var apiCalling = false
     var timesRecalled = 0
     var limit = 0
 
-    init(hero: HeroModel, service: ComicsService) {
+    init(hero: HeroModel, service: ComicsServiceProtocol) {
         self.hero = hero
         self.service = service
     }

@@ -50,6 +50,11 @@ private extension HeroServiceTest {
 
     func assertGetHeores() {
         XCTAssertNotNil(heroData)
+        XCTAssertEqual(heroData[0].id, 1)
+        XCTAssertEqual(heroData[0].name, "Hero")
+        XCTAssertEqual(heroData[0].description, "Description")
+        XCTAssertEqual(heroData[0].thumbnail.path, "imagepath/")
+        XCTAssertEqual(heroData[0].thumbnail.imageExtension, ".jpg")
     }
 
     func assertTestGetHeroes(response: Observable<HeroResponseModel>) {

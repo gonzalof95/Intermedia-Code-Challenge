@@ -104,6 +104,13 @@
 		CEE2217D25A3602700FB5CAB /* NetworkServicePotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2217C25A3602700FB5CAB /* NetworkServicePotocol.swift */; };
 		CEE2218625A36A0C00FB5CAB /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2218525A36A0C00FB5CAB /* NetworkServiceMock.swift */; };
 		CEE2218E25A3D63800FB5CAB /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2218D25A3D63800FB5CAB /* NetworkServiceTest.swift */; };
+		CEE2219925A3DCF600FB5CAB /* ComicsMockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2219825A3DCF600FB5CAB /* ComicsMockModel.swift */; };
+		CEE221B125A3DE9E00FB5CAB /* ComicsServiceProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE221B025A3DE9E00FB5CAB /* ComicsServiceProtocolMock.swift */; };
+		CEE221B625A3DEB500FB5CAB /* ComicsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE221B525A3DEB500FB5CAB /* ComicsServiceTest.swift */; };
+		CEE221BC25A3DEDB00FB5CAB /* ComicsRepositoryProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE221BB25A3DEDB00FB5CAB /* ComicsRepositoryProtocolTest.swift */; };
+		CEE221C425A3DEEE00FB5CAB /* ComicsRepositoryProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE221C325A3DEEE00FB5CAB /* ComicsRepositoryProtocolMock.swift */; };
+		CEE221E225A3E4E000FB5CAB /* DetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE221E125A3E4E000FB5CAB /* DetailPresenterTest.swift */; };
+		CEE221E725A3E4EC00FB5CAB /* DetailViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE221E625A3E4EC00FB5CAB /* DetailViewControllerMock.swift */; };
 		D686F299D812E854721CADAD /* Pods_Intermedia_Code_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C69698FCEA57D7424544F1E /* Pods_Intermedia_Code_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +242,13 @@
 		CEE2217C25A3602700FB5CAB /* NetworkServicePotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServicePotocol.swift; sourceTree = "<group>"; };
 		CEE2218525A36A0C00FB5CAB /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
 		CEE2218D25A3D63800FB5CAB /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		CEE2219825A3DCF600FB5CAB /* ComicsMockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsMockModel.swift; sourceTree = "<group>"; };
+		CEE221B025A3DE9E00FB5CAB /* ComicsServiceProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsServiceProtocolMock.swift; sourceTree = "<group>"; };
+		CEE221B525A3DEB500FB5CAB /* ComicsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsServiceTest.swift; sourceTree = "<group>"; };
+		CEE221BB25A3DEDB00FB5CAB /* ComicsRepositoryProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsRepositoryProtocolTest.swift; sourceTree = "<group>"; };
+		CEE221C325A3DEEE00FB5CAB /* ComicsRepositoryProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsRepositoryProtocolMock.swift; sourceTree = "<group>"; };
+		CEE221E125A3E4E000FB5CAB /* DetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterTest.swift; sourceTree = "<group>"; };
+		CEE221E625A3E4EC00FB5CAB /* DetailViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -990,6 +1004,7 @@
 				CED4CAD025A13B5300215702 /* Login Screen */,
 				CED4CB0725A1450000215702 /* Registration Screen */,
 				CED4CB1B25A1461800215702 /* Hero Screen */,
+				CEE2219225A3DCA000FB5CAB /* Detail Screen */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1131,6 +1146,68 @@
 				CEE2218D25A3D63800FB5CAB /* NetworkServiceTest.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEE2219225A3DCA000FB5CAB /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2219525A3DCD100FB5CAB /* Core */,
+				CEE2219425A3DCCA00FB5CAB /* Infrastructure */,
+				CEE2219325A3DCC300FB5CAB /* Presentation */,
+			);
+			path = "Detail Screen";
+			sourceTree = "<group>";
+		};
+		CEE2219325A3DCC300FB5CAB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CEE221E625A3E4EC00FB5CAB /* DetailViewControllerMock.swift */,
+				CEE221E125A3E4E000FB5CAB /* DetailPresenterTest.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CEE2219425A3DCCA00FB5CAB /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CEE221BA25A3DEC900FB5CAB /* Repository */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CEE2219525A3DCD100FB5CAB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2219725A3DCDE00FB5CAB /* Model */,
+				CEE2219625A3DCD900FB5CAB /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEE2219625A3DCD900FB5CAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEE221B025A3DE9E00FB5CAB /* ComicsServiceProtocolMock.swift */,
+				CEE221B525A3DEB500FB5CAB /* ComicsServiceTest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEE2219725A3DCDE00FB5CAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2219825A3DCF600FB5CAB /* ComicsMockModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEE221BA25A3DEC900FB5CAB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CEE221C325A3DEEE00FB5CAB /* ComicsRepositoryProtocolMock.swift */,
+				CEE221BB25A3DEDB00FB5CAB /* ComicsRepositoryProtocolTest.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1470,23 +1547,30 @@
 				CED4CB3225A14AF200215702 /* HeroRepositoryProtocolTest.swift in Sources */,
 				CED4CBA725A291D300215702 /* HeroPresenterTest.swift in Sources */,
 				CEE2218E25A3D63800FB5CAB /* NetworkServiceTest.swift in Sources */,
+				CEE221E725A3E4EC00FB5CAB /* DetailViewControllerMock.swift in Sources */,
 				CED4C96C259CC49D00215702 /* CustomButtonSnapshotTestCases.swift in Sources */,
 				CED4CA7F259E457700215702 /* RegisterViewSnapshotTestCases.swift in Sources */,
 				CED4CADA25A13C1000215702 /* LoginViewControllerProtocolMock.swift in Sources */,
 				CED4CAF525A13FAE00215702 /* LoginViewProtocolTest.swift in Sources */,
+				CEE221E225A3E4E000FB5CAB /* DetailPresenterTest.swift in Sources */,
 				CED4CAE525A13D4E00215702 /* LoginViewControllerProtocol.swift in Sources */,
 				CED4CB1F25A1484000215702 /* HeroMockModel.swift in Sources */,
 				CED4CA51259D0D9C00215702 /* LoginViewSnapshotTestCases.swift in Sources */,
 				CED4CB1425A1457F00215702 /* RegisterViewProtocolTest.swift in Sources */,
+				CEE221C425A3DEEE00FB5CAB /* ComicsRepositoryProtocolMock.swift in Sources */,
+				CEE221B625A3DEB500FB5CAB /* ComicsServiceTest.swift in Sources */,
 				CED4CB0B25A1453300215702 /* RegisterViewProtocolMock.swift in Sources */,
+				CEE221BC25A3DEDB00FB5CAB /* ComicsRepositoryProtocolTest.swift in Sources */,
 				CED4CAB825A1021000215702 /* BaseViewControllerSpy.swift in Sources */,
 				CED4CAED25A13F6D00215702 /* LoginViewProtocolMock.swift in Sources */,
 				CE9011E02582DB7700ECCC0A /* Intermedia_Code_ChallengeTests.swift in Sources */,
+				CEE221B125A3DE9E00FB5CAB /* ComicsServiceProtocolMock.swift in Sources */,
 				CED4CB2A25A14A6500215702 /* HeroRepositoryProtocolMock.swift in Sources */,
 				CED4CA4A259CFBB700215702 /* CustomTextViewSnapshotTestCases.swift in Sources */,
 				CEE2218625A36A0C00FB5CAB /* NetworkServiceMock.swift in Sources */,
 				CED4C964259CC1D000215702 /* FirebaseViewSnapshotTestCases.swift in Sources */,
 				CED4CB8F25A28B0500215702 /* HeroServiceProtocolMock.swift in Sources */,
+				CEE2219925A3DCF600FB5CAB /* ComicsMockModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
