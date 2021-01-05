@@ -40,9 +40,16 @@ final class NetworkServiceMock: NetworkServicePotocol {
         invokedExecuteParameters = (baseUrl, offset, limit)
 
         return Observable.create { observer -> Disposable in
-            let mock = HeroMockModel()
-            let mockResponse = mock.getMockData()
-            observer.onNext(mockResponse as! T)
+
+            if baseUrl == "/hero/" {
+                let mock = HeroMockModel()
+                let mockResponse = mock.getMockData()
+                observer.onNext(mockResponse as! T)
+            } else if baseUrl == "/comics/" {
+                let mock = ComicsMockModel()
+                let mockResponse = mock.getMockData()
+                observer.onNext(mockResponse as! T)
+            }
 
             return Disposables.create()
         }

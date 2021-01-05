@@ -20,7 +20,7 @@ class HeroRepositoryProtocolMock: HeroRepositoryProtocol {
         invokedGetHeroesParameters = offset
 
         let mockService = NetworkServiceMock()
-        stubbedGetHeroesResult = mockService.execute("base/", 0, 10)
+        stubbedGetHeroesResult = mockService.execute("/hero/", 0, 10)
 
         return stubbedGetHeroesResult
     }

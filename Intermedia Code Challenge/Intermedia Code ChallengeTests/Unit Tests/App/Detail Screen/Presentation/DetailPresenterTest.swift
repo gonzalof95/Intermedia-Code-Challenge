@@ -62,6 +62,8 @@ private extension DetailPresenterTest {
 
     func assertTestViewLoaded() {
         XCTAssertNotNil(presenter.comicsList)
+        XCTAssertEqual(presenter.comicsList[0].id, 1)
+        XCTAssertEqual(presenter.comicsList[0].title, "title")
     }
 
     func assertMoreDataRequested() {

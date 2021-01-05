@@ -20,8 +20,8 @@ final class ComicsRepositoryProtocolMock: ComicsRepositoryProtocol {
         invokedGetComicsCount += 1
         invokedGetComicsParameters = (offset, heroID)
 
-        let mock = ComicsMockModel()
-        stubbedGetComicsResult = mock.getMock()
+        let mockService = NetworkServiceMock()
+        stubbedGetComicsResult = mockService.execute("/comics/", 0, 10)
 
         return stubbedGetComicsResult
     }
